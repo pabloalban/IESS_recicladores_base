@@ -57,7 +57,7 @@ parametros$hostname <- Sys.info()[[4]]
 parametros$work_dir <- paste0( getwd(), '/' )
 
 #Servidor de datos
-parametros$data_server <- 'Y:/IESS_2020/'
+parametros$data_server <- 'Y:/IESS_recicladores_base/'
 parametros$risko_conf <- FALSE
 parametros$prod_conf <- TRUE
 
@@ -109,28 +109,14 @@ if ( parametros$risko_conf ) {
 }
 
 # Configuraciones particulares por seguro ----------------------------------------------------------
-message( '\tConfiguración por seguro' )
+message( '\tConfiguración' )
 #Dem corresponde a demografía
 #Mor corresponde a mortalidad
 #EPI
-message( '\t\tLas opciones son: IVM, SAL, RTR, DES, SSC, CES, DEM, MOR, EPI' )
-parametros$seguro <- toupper( readline( prompt = '\tIngrese seguro: ' ) )
-if ( !( parametros$seguro %in% c( 'IVM', 'SAL', 'RTR', 'DES', 'SSC', 'CES', 'DEM', 'MOR', 'EPI' ) ) ) {
-  stop( 'El seguro ingresado no está entre las opciones' )
-}
+parametros$seguro <- 'REC'
 
-if ( parametros$seguro == 'DEM'){
-  parametros$seguro <- 'demografia'
-  parametros$conf_seg <- paste0( parametros$work_dir, 'R/', tolower( parametros$seguro ), '/', 
-                                 '002_configurar_demografia.R' )
-} else if ( parametros$seguro == 'MOR'){
-  parametros$seguro <- 'morbilidad'
-  parametros$conf_seg <- paste0( parametros$work_dir, 'R/', tolower( parametros$seguro ), '/', 
-                                 '002_configurar_morbilidad.R' )
-} else{
-  parametros$conf_seg <- paste0( parametros$work_dir, 'R/', tolower( parametros$seguro ), '/', 
+parametros$conf_seg <- paste0( parametros$work_dir, 'R/', tolower( parametros$seguro ), '/', 
                                  '002_configuracion_seguro.R' )
-}
 
 source( parametros$conf_seg, encoding = 'UTF-8', echo = FALSE )
 

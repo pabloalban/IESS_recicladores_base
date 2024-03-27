@@ -22,6 +22,3 @@ source( 'R/demografia/002_configurar_demografia.R', encoding = 'UTF-8', echo = F
 
 # Configuración global del modelo macroeconómico
 source( 'R/macro/002_configurar_macro.R', encoding = 'UTF-8', echo = FALSE )
-
-# Configuración global de morbilidad
-source( 'R/morbilidad/002_configurar_morbilidad.R', encoding = 'UTF-8', echo = FALSE )

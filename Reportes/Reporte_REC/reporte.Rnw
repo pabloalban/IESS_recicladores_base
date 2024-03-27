@@ -26,54 +26,54 @@
 <<cap01, child='01_cobertura.Rnw'>>=
 @
 
-<<cap02, child='02_contenido.Rnw'>>=
-@
+% <<cap02, child='02_contenido.Rnw'>>=
+% @
 
 %---------------------------------------------------------------------------------------------------
 % Cuerpo del estudio
 %\mainmatter
 
-<<cap03, child='03_resumen_ejecutivo.Rnw'>>=
-@
-
-<<cap04, child='04_introduccion.Rnw'>>=
-@
- 
-<<cap05, child='05_reglamentacion.Rnw'>>=
-@
-
-<<cap06, child='06_analisis_contexto.Rnw'>>=
-@
- 
-<<cap07, child='07_analisis_financiero.Rnw'>>=
-@
- 
-<<cap08, child='08_inversiones.Rnw'>>=
-@
-  
-<<cap09, child='09_demografia.Rnw'>>=
-@
-   
-<<cap10, child='10_metodologia.Rnw'>>=
-@
-   
-<<cap11, child='11_hipotesis.Rnw'>>=
-@ 
-   
-<<cap12, child='12_riesgos.Rnw'>>=
-@
-  
-<<cap13, child='13_situacion.Rnw'>>=
-@
-
-<<cap14, child='14_sensibilidad.Rnw'>>=
-@
-
-<<cap15, child='15_conclusion.Rnw'>>=
-@
- 
-<<cap16, child='16_opinion_actuarial.Rnw'>>=
-@
+% <<cap03, child='03_resumen_ejecutivo.Rnw'>>=
+% @
+% 
+% <<cap04, child='04_introduccion.Rnw'>>=
+% @
+%  
+% <<cap05, child='05_reglamentacion.Rnw'>>=
+% @
+% 
+% <<cap06, child='06_analisis_contexto.Rnw'>>=
+% @
+%  
+% <<cap07, child='07_analisis_financiero.Rnw'>>=
+% @
+%  
+% <<cap08, child='08_inversiones.Rnw'>>=
+% @
+%   
+% <<cap09, child='09_demografia.Rnw'>>=
+% @
+%    
+% <<cap10, child='10_metodologia.Rnw'>>=
+% @
+%    
+% <<cap11, child='11_hipotesis.Rnw'>>=
+% @ 
+%    
+% <<cap12, child='12_riesgos.Rnw'>>=
+% @
+%   
+% <<cap13, child='13_situacion.Rnw'>>=
+% @
+% 
+% <<cap14, child='14_sensibilidad.Rnw'>>=
+% @
+% 
+% <<cap15, child='15_conclusion.Rnw'>>=
+% @
+%  
+% <<cap16, child='16_opinion_actuarial.Rnw'>>=
+% @
 
 %---------------------------------------------------------------------------------------------------
 % Apéndices
