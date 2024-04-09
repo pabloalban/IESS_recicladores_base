@@ -7,6 +7,7 @@ load( paste0( parametros$RData, "MIESS_censo_recicladores.RData" ) )
 
 #Número de recicladores por edad y sexo------------------------------------------------------------
 
+
 edad_sexo <- censo_miess %>%
   group_by( sexo_reciclador, edad_mies ) %>% 
   mutate( recicladores = n( ) ) %>% 
