@@ -1,10 +1,7 @@
 message( paste( rep( "-", 100 ), collapse = "" ) )
 #Cargando Rdatas------------------------------------------------------------------------------------
-message( "\tCargando pagos del SGRT" )
-load( paste0( parametros$RData_seg, "IESS_RTR_rentas.RData" ) )
-load( paste0( parametros$RData_seg, "IESS_RTR_indemnizaciones.RData" ) )
-load( paste0( parametros$RData_seg, "IESS_RTR_subsidios.RData" ) )
-load( parametros$demo_rdata_sgo_tran_prep )
+message( "\tCargando datos" )
+load( paste0( parametros$RData, "MIESS_censo_recicladores.RData" ) )
 
 #1. Funciones---------------------------------------------------------------------------------------
 message( "\tCargando funciones" )

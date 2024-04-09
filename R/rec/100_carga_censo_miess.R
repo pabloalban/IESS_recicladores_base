@@ -19,7 +19,7 @@ censo_miess <- read_excel(
 
 
 #Guardando en un Rdata------------------------------------------------------------------------------
-message( '\tGuardando causas de desfinanciamiento' )
+message( '\tGuardando base de recicladores de MIESS ' )
 
 save( censo_miess,
   file = paste0( 
