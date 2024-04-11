@@ -26,27 +26,27 @@
 <<cap01, child='01_cobertura.Rnw'>>=
 @
 
-% <<cap02, child='02_contenido.Rnw'>>=
-% @
+<<cap02, child='02_contenido.Rnw'>>=
+@
 
 %---------------------------------------------------------------------------------------------------
 % Cuerpo del estudio
-%\mainmatter
+\mainmatter
 
 % <<cap03, child='03_resumen_ejecutivo.Rnw'>>=
 % @
 % 
-% <<cap04, child='04_introduccion.Rnw'>>=
+% <<cap04, child='04_antecedentes.Rnw'>>=
 % @
 %  
-% <<cap05, child='05_reglamentacion.Rnw'>>=
+% <<cap05, child='05_base_legal.Rnw'>>=
 % @
 % 
 % <<cap06, child='06_analisis_contexto.Rnw'>>=
 % @
 %  
-% <<cap07, child='07_analisis_financiero.Rnw'>>=
-% @
+<<cap07, child='07_demografia.Rnw'>>=
+@
 %  
 % <<cap08, child='08_inversiones.Rnw'>>=
 % @
