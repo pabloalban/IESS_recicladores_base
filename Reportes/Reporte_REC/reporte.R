@@ -33,7 +33,7 @@ REP$bib_lib <- 'bibliografia_libros.bib'
 REP$bib_art <- 'bibliografia_articulos.bib'
 REP$bib_ley <- 'bibliografia_leyes.bib'
 
-REP$tit <- 'Valuación Actuarial del Fondo del Seguro General de Riesgos del Trabajo'
+REP$tit <- 'Estudio para determinar la base presuntiva de aportación del trabajador autónomo reciclador de base'
 REP$nom_seg <- 'Seguro de Invalidez, Vejez y Muerte'
 REP$seg <- switch( parametros$seguro,
                    'ivm' = 'Seguro IVM',
