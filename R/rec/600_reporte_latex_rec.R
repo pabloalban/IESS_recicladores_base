@@ -1,4 +1,5 @@
 # Preparación --------------------------------------------------------------------------------------
+source( 'R/rec/100_carga_censo_miess.R', encoding = 'UTF-8', echo = FALSE )
 source( 'R/400_preparar_reporte.R', encoding = 'UTF-8', echo = FALSE )
 
 # Estadísticas descriptivas-------------------------------------------------------------------------

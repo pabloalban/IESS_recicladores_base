@@ -7,10 +7,14 @@ load( file = paste0( parametros$RData, 'IESS_REC_tablas_demografia.RData' ) )
 source( 'R/500_tildes_a_latex.R', encoding = 'UTF-8', echo = FALSE )
 
 #Tabla de reclicladores por edad y sexo-------------------------------------------------------------
-message( '\tTabla de reclicladores por edad y sexo' )
-aux <- edad_sexo
 
-aux_xtab <- xtable( aux, digits = c( 0, 0, 0, 0, 0 ) )
+message( '\tTabla de reclicladores por edad y sexo' )
+aux <- edad_sexo %>%
+  mutate( Mujer = as.integer(Mujer), 
+          Hombre = as.integer(Hombre),
+          total = as.integer(total) )
+
+aux_xtab <- xtable( aux)
 
 aux_xtab <- tildes_a_latex( aux_xtab )
 
@@ -28,7 +32,7 @@ print( aux_xtab,
 message( '\tTabla de porcentaje de reclicladores por edad y sexo' )
 aux <- porc_edad_sexo
 
-aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2 ) )
+aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2 ) )
 
 aux_xtab <- tildes_a_latex( aux_xtab )
 
@@ -43,8 +47,12 @@ print( aux_xtab,
        sanitize.text.function = identity )
 
 #Tabla de reclicladores por instrucción y sexo------------------------------------------------------
+
 message( '\tTabla de reclicladores por instrucción y sexo' )
-aux <- instr_sexo
+aux <- instr_sexo %>%
+  mutate( Mujer = as.integer(Mujer), 
+          Hombre = as.integer(Hombre),
+          total = as.integer(total) )
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, 0, 2, 0, 2, 2, 2 ) )
 
@@ -61,10 +69,11 @@ print( aux_xtab,
        sanitize.text.function = identity )
 
 #Tabla de ingresos promedio por edad y sexo----------------------------------------------------------
+
 message( '\tTabla de ingresos promedio por edad y sexo' )
 aux <- edad_sal_prom
 
-aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2 ) )
+aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2 ) )
 
 aux_xtab <- tildes_a_latex( aux_xtab )
 
@@ -80,10 +89,11 @@ print( aux_xtab,
 
 
 #Tabla de ingreso total promedio por edad y sexo----------------------------------------------------------
+
 message( '\tTabla de ingreso total promedio por edad y sexo' )
 aux <- edad_sal_total_prom
 
-aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2 ) )
+aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2 ) )
 
 aux_xtab <- tildes_a_latex( aux_xtab )
 
@@ -97,11 +107,36 @@ print( aux_xtab,
        hline.after = c(nrow( aux )-1,nrow(aux)),
        sanitize.text.function = identity )
 
+#Tabla de  rangos de ingreso de reciclaje por sexo-------------------------------------------------------
+
+message( '\tTabla de rangos de ingreso total por sexo' )
+aux <- rang_sal_rec %>%
+  mutate( sexo_reciclador_Mujer = as.integer(sexo_reciclador_Mujer), 
+          sexo_reciclador_Hombre = as.integer(sexo_reciclador_Hombre),
+          total = as.integer(total) )
+
+aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2, 2, 2, 2 ) )
+
+aux_xtab <- tildes_a_latex( aux_xtab )
+
+print( aux_xtab,
+       file = paste0( parametros$resultado_tablas, 'iess_rec_rang_sal_rec', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE, 
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = c(nrow( aux )-1,nrow(aux)),
+       sanitize.text.function = identity )
+
 
 #Tabla de  rangos de ingreso total por sexo---------------------------------------------------------
 
 message( '\tTabla de rangos de ingreso total por sexo' )
-aux <- rang_sal_total
+aux <- rang_sal_total %>%
+  mutate( sexo_reciclador_Mujer = as.integer(sexo_reciclador_Mujer), 
+          sexo_reciclador_Hombre = as.integer(sexo_reciclador_Hombre),
+          total = as.integer(total) )
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2, 2, 2, 2 ) )
 
@@ -118,8 +153,12 @@ print( aux_xtab,
        sanitize.text.function = identity )
 
 #Tabla de ingresos de reciclaje por edad y sexo-----------------------------------------------------
+
 message( '\tTabla de ingresos de reciclaje por edad y sexo' )
-aux <- edad_sal_reciclaje
+aux <- edad_sal_reciclaje %>%
+  mutate( Mujer = as.integer(Mujer), 
+          Hombre = as.integer(Hombre),
+          total = as.integer(total) )
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2, 2, 2, 2 ) )
 
@@ -137,7 +176,10 @@ print( aux_xtab,
 
 #Tabla de ingresos totales por edad y sexo----------------------------------------------------------
 message( '\tTabla de ingresos totales por edad y sexo' )
-aux <- edad_sal_total
+aux <- edad_sal_total %>%
+  mutate( Mujer = as.integer(Mujer), 
+          Hombre = as.integer(Hombre),
+          total = as.integer(total) )
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2, 2, 2, 2 ) )
 
@@ -155,7 +197,10 @@ print( aux_xtab,
 
 #Tabla de afiliados por sexo------------------------------------------------------------------------
 message( '\tTabla del número de afiliados por sexo' )
-aux <- afiliados_sexo
+aux <- afiliados_sexo %>%
+  mutate( Mujer = as.integer(Mujer), 
+          Hombre = as.integer(Hombre),
+          total = as.integer(total) )
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, 0, 2, 0, 2, 2, 2 ) )
 

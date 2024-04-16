@@ -18,9 +18,9 @@ aux <- pir_porc_edad_sexo %>%
                          porcentaje ) ) %>%
   arrange( sexo_reciclador, edad_mies )
 
-salto_x <- 15
-brks_y <- seq( -75, 75, salto_x )
-lbls_y <- paste0( as.character( c( seq( 75, 0, -salto_x ), seq( salto_x, 75, salto_x ) ) ), '%')
+salto_x <- 5
+brks_y <- seq( -35, 35, salto_x )
+lbls_y <- paste0( as.character( c( seq( 35, 0, -salto_x ), seq( salto_x, 35, salto_x ) ) ), '%')
 
 rec_pir_porc_edad_sexo <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Rangos de Edad' ) +
@@ -56,9 +56,9 @@ aux <- pir_instr_sexo %>%
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, instruccion )
 
-salto_x <- 15
-brks_y <- seq( -60, 60, salto_x )
-lbls_y <- paste0( as.character( c( seq( 60, 0, -salto_x ), seq( salto_x, 60, salto_x ) ) ), '%')
+salto_x <- 5
+brks_y <- seq( -25, 25, salto_x )
+lbls_y <- paste0( as.character( c( seq( 25, 0, -salto_x ), seq( salto_x, 25, salto_x ) ) ), '%')
 
 rec_pir_instr_sexo <- ggplot( aux, aes( x = instruccion, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +
@@ -129,9 +129,9 @@ aux <- pir_edad_sal_reciclaje %>%
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, edad_mies )
 
-salto_x <- 15
-brks_y <- seq( -80, 80, salto_x )
-lbls_y <- paste0( as.character( c( seq( 80, 0, -salto_x ), seq( salto_x, 80, salto_x ) ) ), '%')
+salto_x <- 5
+brks_y <- seq( -45, 45, salto_x )
+lbls_y <- paste0( as.character( c( seq( 45, 0, -salto_x ), seq( salto_x, 45, salto_x ) ) ), '%')
 
 rec_pir_edad_sal_reciclaje <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +
@@ -165,9 +165,9 @@ aux <- pir_edad_sal_total %>%
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, edad_mies )
 
-salto_x <- 15
-brks_y <- seq( -80, 80, salto_x )
-lbls_y <- paste0( as.character( c( seq( 80, 0, -salto_x ), seq( salto_x, 80, salto_x ) ) ), '%')
+salto_x <- 5
+brks_y <- seq( -45, 45, salto_x )
+lbls_y <- paste0( as.character( c( seq( 45, 0, -salto_x ), seq( salto_x, 45, salto_x ) ) ), '%')
 
 rec_pir_edad_sal_total <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +

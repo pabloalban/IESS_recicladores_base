@@ -3,6 +3,7 @@ message( paste( rep( "-", 100 ), collapse = "" ) )
 message( "\tCargando datos" )
 load( paste0( parametros$RData, "MIESS_censo_recicladores.RData" ) )
 
+
 #1. Funciones---------------------------------------------------------------------------------------
 message( "\tCargando funciones" )
 ##1.1. Función evolución de beneficiarios-----------------------------------------------------------

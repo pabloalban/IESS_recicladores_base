@@ -37,9 +37,11 @@ edad_sexo <- censo_miess %>%
 #Porcentaje de recicladores por edad y sexo---------------------------------------------------------
 
 porc_edad_sexo <- edad_sexo %>%
-  mutate(porcentaje_mujeres = Mujer * 100 / Mujer[5],
-         porcentaje_hombres = Hombre * 100 / Hombre[5]) %>%
-  dplyr::select( edad_mies, porcentaje_mujeres, porcentaje_hombres )
+  mutate(porcentaje_mujeres = Mujer * 100 / total[5],
+         porcentaje_hombres = Hombre * 100 / total[5],
+         porcentaje_total = total * 100 / total[5] ) %>%
+  dplyr::select( edad_mies, porcentaje_mujeres, porcentaje_hombres, porcentaje_total )
+
 
 #Número de recicladores por instrucción y sexo------------------------------------------------------
 
@@ -65,8 +67,8 @@ instr_sexo <- censo_miess %>%
           instruccion = as.character( instruccion ) ) %>% 
   rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(porcentaje_mujeres = Mujer * 100 / Mujer[10],
-         porcentaje_hombres = Hombre * 100 / Hombre[10],
+  mutate(porcentaje_mujeres = Mujer * 100 / total[10],
+         porcentaje_hombres = Hombre * 100 / total[10],
          porc = total * 100 / total[10]) %>%
   dplyr::select( instruccion, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total, porc) 
 
@@ -74,18 +76,23 @@ instr_sexo <- censo_miess %>%
 
 edad_sal_prom <- censo_miess %>%
   group_by(edad_mies, sexo_reciclador) %>%
-  mutate(ingreso_promedio = mean(ingresos_reciclaje)) %>%
-  ungroup(edad_mies, sexo_reciclador) %>%
+  mutate(ingreso_promedio = mean(ingresos_reciclaje) ) %>%
+  ungroup(edad_mies, sexo_reciclador)%>%
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
-  dplyr::select( sexo_reciclador, edad_mies, ingreso_promedio ) %>% 
+  group_by( edad_mies) %>% 
+  mutate( total = mean(ingresos_reciclaje) ) %>% 
+  ungroup() %>% 
+  dplyr::select( sexo_reciclador, edad_mies, ingreso_promedio, total ) %>% 
   mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
                                                       'De 18 a 29 años',
                                                       'De 30 a 64 años',
                                                       'Mayor a 65 años') ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = ingreso_promedio, values_fill = 0) %>% 
-  arrange( edad_mies ) 
+  arrange( edad_mies ) %>% 
+  dplyr::select( edad_mies, Mujer, Hombre, total )
+
 levels(edad_sal_prom$edad_mies) <- c(levels(edad_sal_prom$edad_mies), "Total")
-edad_sal_prom <- rbind( edad_sal_prom, c("Total", mean(censo_miess$ingresos_reciclaje[censo_miess$sexo_reciclador=="Mujer"]), mean(censo_miess$ingresos_reciclaje[censo_miess$sexo_reciclador=="Hombre"] )) ) 
+edad_sal_prom <- rbind( edad_sal_prom, c("Total", mean(censo_miess$ingresos_reciclaje[censo_miess$sexo_reciclador=="Mujer"]), mean(censo_miess$ingresos_reciclaje[censo_miess$sexo_reciclador=="Hombre"]), mean(censo_miess$ingresos_reciclaje) ) ) 
 edad_sal_prom <- edad_sal_prom %>%
   mutate_at(  c( 2:ncol( . ) ), as.numeric )
 
@@ -97,15 +104,20 @@ edad_sal_total_prom <- censo_miess %>%
   mutate(ingreso_promedio = mean(ingreso_total)) %>%
   ungroup(edad_mies, sexo_reciclador) %>%
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
-  dplyr::select( sexo_reciclador, edad_mies, ingreso_promedio ) %>% 
+  group_by( edad_mies) %>% 
+  mutate( total = mean(ingreso_total) ) %>% 
+  ungroup() %>%
+  dplyr::select( sexo_reciclador, edad_mies, ingreso_promedio, total ) %>% 
   mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
                                                       'De 18 a 29 años',
                                                       'De 30 a 64 años',
                                                       'Mayor a 65 años') ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = ingreso_promedio, values_fill = 0) %>% 
-  arrange( edad_mies ) 
-levels(edad_sal_prom$edad_mies) <- c(levels(edad_sal_prom$edad_mies), "Total")
-edad_sal_total_prom <- rbind( edad_sal_total_prom, c("Total", mean(censo_miess$ingreso_total[censo_miess$sexo_reciclador=="Mujer"]), mean(censo_miess$ingreso_total[censo_miess$sexo_reciclador=="Hombre"] )) ) 
+  arrange( edad_mies ) %>% 
+  dplyr::select( edad_mies, Mujer, Hombre, total )
+
+levels(edad_sal_total_prom$edad_mies) <- c(levels(edad_sal_total_prom$edad_mies), "Total")
+edad_sal_total_prom <- rbind( edad_sal_total_prom, c("Total", mean(censo_miess$ingreso_total[censo_miess$sexo_reciclador=="Mujer"]), mean(censo_miess$ingreso_total[censo_miess$sexo_reciclador=="Hombre"] ), mean(censo_miess$ingreso_total)) ) 
 edad_sal_total_prom <- edad_sal_prom %>%
   mutate_at(  c( 2:ncol( . ) ), as.numeric )
 
@@ -127,37 +139,14 @@ edad_sal_reciclaje <- censo_miess %>%
           edad_mies = as.character( edad_mies ) ) %>% 
   rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(porcentaje_mujeres = Mujer * 100 / Mujer[5],
-         porcentaje_hombres = Hombre * 100 / Hombre[5],
-         porc = total * 100 / total[5]) %>%
-  dplyr::select( edad_mies, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total, porc)
-
-#Ingreso total por edad y sexo----------------------------------------------------------------------
-
-edad_sal_total <- censo_miess %>%
-  group_by(edad_mies, sexo_reciclador) %>%
-  mutate(ingresos_total = sum(ingreso_total)) %>%
-  ungroup(edad_mies, sexo_reciclador) %>%
-  distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
-  dplyr::select( sexo_reciclador, edad_mies, ingresos_total ) %>% 
-  mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
-                                                      'De 18 a 29 años',
-                                                      'De 30 a 64 años',
-                                                      'Mayor a 65 años') ) ) %>% 
-  pivot_wider( ., names_from = sexo_reciclador, values_from = ingresos_total, values_fill = 0) %>% 
-  arrange( edad_mies ) %>% 
-  mutate( total = Mujer + Hombre,
-          edad_mies = as.character( edad_mies ) ) %>% 
-  rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
-  mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(porcentaje_mujeres = Mujer * 100 / Mujer[5],
-         porcentaje_hombres = Hombre * 100 / Hombre[5],
+  mutate(porcentaje_mujeres = Mujer * 100 / total[5],
+         porcentaje_hombres = Hombre * 100 / total[5],
          porc = total * 100 / total[5]) %>%
   dplyr::select( edad_mies, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total, porc)
 
 
-#Rango de ingreso total por sexo------------------------------------------------------------------- 
-  
+#Rango de ingreso de reciclaje e ingreso total por sexo--------------------------------------------- 
+
 cortes_monto <- c(0, 50, 90, 106.25, 212.5, 425, Inf)
 
 etiquetas_monto <- c(paste0("(\\$", formatC(cortes_monto[1:5],
@@ -193,6 +182,57 @@ rang_sal_total <- censo_miess %>%
                   sexo_reciclador_Hombre, porc_hombre, total, porc_total ) %>%
   distinct(  ., rango_monto, .keep_all = TRUE  )
 
+rang_sal_rec <- censo_miess %>%
+  mutate(  rango_monto = cut(  ingresos_reciclaje, 
+                               breaks = cortes_monto,
+                               labels = etiquetas_monto,
+                               include.lowest = TRUE,
+                               right = TRUE ) ) %>%
+  group_by(  rango_monto, sexo_reciclador ) %>%
+  mutate(  recicladores = n(  )  ) %>%
+  ungroup(   ) %>%
+  distinct(  sexo_reciclador, rango_monto, .keep_all = TRUE  ) %>%
+  dplyr::select(  sexo_reciclador,
+                  rango_monto,
+                  recicladores ) %>%
+  arrange(  sexo_reciclador, rango_monto  ) %>%
+  spread(   ., sexo_reciclador, value = c(  recicladores  ),  sep = "_"  )  %>%
+  mutate_if(  is.numeric , replace_na, replace = 0 ) %>%
+  mutate(  total = rowSums( .[2:ncol( . )] )  ) %>%
+  mutate(  rango_monto = as.character(  rango_monto  )  ) %>%
+  rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) )  %>%
+  mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
+  mutate(  porc_mujer = 100 * sexo_reciclador_Mujer / total[7] , 
+           porc_hombre = 100* sexo_reciclador_Hombre / total[7] , 
+           porc_total = 100 * total / total[7] ) %>%
+  dplyr::select(  rango_monto, sexo_reciclador_Mujer, porc_mujer, 
+                  sexo_reciclador_Hombre, porc_hombre, total, porc_total ) %>%
+  distinct(  ., rango_monto, .keep_all = TRUE  )
+
+
+
+#Ingreso total por edad y sexo----------------------------------------------------------------------
+
+edad_sal_total <- censo_miess %>%
+  group_by(edad_mies, sexo_reciclador) %>%
+  mutate(ingresos_total = sum(ingreso_total)) %>%
+  ungroup(edad_mies, sexo_reciclador) %>%
+  distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
+  dplyr::select( sexo_reciclador, edad_mies, ingresos_total ) %>% 
+  mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
+                                                      'De 18 a 29 años',
+                                                      'De 30 a 64 años',
+                                                      'Mayor a 65 años') ) ) %>% 
+  pivot_wider( ., names_from = sexo_reciclador, values_from = ingresos_total, values_fill = 0) %>% 
+  arrange( edad_mies ) %>% 
+  mutate( total = Mujer + Hombre,
+          edad_mies = as.character( edad_mies ) ) %>% 
+  rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
+  mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
+  mutate(porcentaje_mujeres = Mujer * 100 / total[5],
+         porcentaje_hombres = Hombre * 100 / total[5],
+         porc = total * 100 / total[5]) %>%
+  dplyr::select( edad_mies, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total, porc)
 
 
 #Número de afiliados por sexo-----------------------------------------------------------------------
@@ -218,8 +258,8 @@ afiliados_sexo <- censo_miess %>%
           caracteristica_social_afiliado = as.character( caracteristica_social_afiliado ) ) %>% 
   rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(porcentaje_mujeres = Mujer * 100 / Mujer[10],
-         porcentaje_hombres = Hombre * 100 / Hombre[10],
+  mutate(porcentaje_mujeres = Mujer * 100 / total[10],
+         porcentaje_hombres = Hombre * 100 / total[10],
          porc = total * 100 / total[10]) %>%
   dplyr::select( caracteristica_social_afiliado, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total,porc)
 
@@ -247,10 +287,12 @@ afiliados_antiguos_sexo <- censo_miess %>%
           caracteristica_social_estuvo_afiliado = as.character( caracteristica_social_estuvo_afiliado ) ) %>% 
   rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(porcentaje_mujeres = Mujer * 100 / Mujer[11],
-         porcentaje_hombres = Hombre * 100 / Hombre[11],
+  mutate(porcentaje_mujeres = Mujer * 100 / total[11],
+         porcentaje_hombres = Hombre * 100 / total[11],
          porc = total * 100 / total[11]) %>%
   dplyr::select( caracteristica_social_estuvo_afiliado, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total, porc)
+
+
 
 #Tablas para elaboración de pirámides----------------------------------------------------------------
 #Pirámide del porcentaje de recicladores base según edad y sexo--------------------------------------
@@ -259,12 +301,8 @@ pir_porc_edad_sexo <- censo_miess %>%
   mutate( recicladores = n( ) ) %>% 
   ungroup( sexo_reciclador, edad_mies ) %>% 
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
-  dplyr::select( sexo_reciclador, edad_mies, recicladores )%>%
-  group_by(sexo_reciclador) %>%
-  mutate(total_sexo = sum(recicladores)) %>%
-  ungroup() %>%
-  mutate(porcentaje = ifelse(sexo_reciclador == "Hombre", recicladores / sum(recicladores[sexo_reciclador == "Hombre"]) * 100,
-                             recicladores / sum(recicladores[sexo_reciclador == "Mujer"]) * 100)) %>%
+  dplyr::select( sexo_reciclador, edad_mies, recicladores ) %>%
+  mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, edad_mies, porcentaje )
 
 #Pirámide según instrucción y sexo------------------------------------------------------------------
@@ -273,12 +311,8 @@ pir_instr_sexo <- censo_miess %>%
   mutate( recicladores = n( ) ) %>% 
   ungroup( sexo_reciclador, instruccion ) %>% 
   distinct( sexo_reciclador, instruccion, .keep_all = TRUE ) %>% 
-  dplyr::select( sexo_reciclador, instruccion, recicladores )%>%
-  group_by(sexo_reciclador) %>%
-  mutate(total_sexo = sum(recicladores)) %>%
-  ungroup() %>%
-  mutate(porcentaje = ifelse(sexo_reciclador == "Hombre", recicladores / sum(recicladores[sexo_reciclador == "Hombre"]) * 100,
-                             recicladores / sum(recicladores[sexo_reciclador == "Mujer"]) * 100)) %>%
+  dplyr::select( sexo_reciclador, instruccion, recicladores ) %>%
+  mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, instruccion, porcentaje )
 
 #Pirámide de ingreso promedio de reciclaje según instrucción y sexo------------------------------------------------------------------
@@ -295,12 +329,8 @@ pir_edad_sal_reciclaje <- censo_miess %>%
   mutate( recicladores = sum(ingresos_reciclaje) ) %>% 
   ungroup( sexo_reciclador, edad_mies ) %>% 
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
-  dplyr::select( sexo_reciclador, edad_mies, recicladores )%>%
-  group_by(sexo_reciclador) %>%
-  mutate(total_sexo = sum(recicladores)) %>%
-  ungroup() %>%
-  mutate(porcentaje = ifelse(sexo_reciclador == "Hombre", recicladores / sum(recicladores[sexo_reciclador == "Hombre"]) * 100,
-                             recicladores / sum(recicladores[sexo_reciclador == "Mujer"]) * 100)) %>%
+  dplyr::select( sexo_reciclador, edad_mies, recicladores ) %>%
+  mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, edad_mies, porcentaje )
 
 #Pirámide de ingreso total según instrucción y sexo---------------------------------------------------------------------------------
@@ -310,25 +340,17 @@ pir_edad_sal_total <- censo_miess %>%
   ungroup( sexo_reciclador, edad_mies ) %>% 
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, edad_mies, recicladores )%>%
-  group_by(sexo_reciclador) %>%
-  mutate(total_sexo = sum(recicladores)) %>%
-  ungroup() %>%
-  mutate(porcentaje = ifelse(sexo_reciclador == "Hombre", recicladores / sum(recicladores[sexo_reciclador == "Hombre"]) * 100,
-                             recicladores / sum(recicladores[sexo_reciclador == "Mujer"]) * 100)) %>%
+  mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, edad_mies, porcentaje )
 
 #Pirámide de afiliados por sexo-----------------------------------------------------------------------------------------------------
 pir_afiliados_sexo <- censo_miess %>%
-  group_by( sexo_reciclador, caracteristica_social_afiliado ) %>% 
+  group_by( caracteristica_social_afiliado, sexo_reciclador ) %>% 
   mutate( recicladores = n( ) ) %>% 
-  ungroup( sexo_reciclador, caracteristica_social_afiliado ) %>% 
-  distinct( sexo_reciclador, caracteristica_social_afiliado, .keep_all = TRUE ) %>% 
+  ungroup( caracteristica_social_afiliado, sexo_reciclador ) %>% 
+  distinct( caracteristica_social_afiliado, sexo_reciclador, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, caracteristica_social_afiliado, recicladores )%>%
-  group_by(sexo_reciclador) %>%
-  mutate(total_sexo = sum(recicladores)) %>%
-  ungroup() %>%
-  mutate(porcentaje = ifelse(sexo_reciclador == "Hombre", recicladores / sum(recicladores[sexo_reciclador == "Hombre"]) * 100,
-                             recicladores / sum(recicladores[sexo_reciclador == "Mujer"]) * 100)) %>%
+  mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, caracteristica_social_afiliado, porcentaje )
 
 #Pirámide de antiguos afiliados por sexo-----------------------------------------------------------------------------------------------------
@@ -338,11 +360,7 @@ pir_afiliados_antiguos_sexo <- censo_miess %>%
   ungroup( sexo_reciclador, caracteristica_social_estuvo_afiliado ) %>% 
   distinct( sexo_reciclador, caracteristica_social_estuvo_afiliado, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, caracteristica_social_estuvo_afiliado, recicladores )%>%
-  group_by(sexo_reciclador) %>%
-  mutate(total_sexo = sum(recicladores)) %>%
-  ungroup() %>%
-  mutate(porcentaje = ifelse(sexo_reciclador == "Hombre", recicladores / sum(recicladores[sexo_reciclador == "Hombre"]) * 100,
-                             recicladores / sum(recicladores[sexo_reciclador == "Mujer"]) * 100)) %>%
+  mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, caracteristica_social_estuvo_afiliado, porcentaje )
 
 
@@ -364,5 +382,6 @@ save(  afiliados_antiguos_sexo,
        pir_afiliados_sexo,
        pir_afiliados_antiguos_sexo,
        rang_sal_total,
+       rang_sal_rec,
        file = paste0(  parametros$RData, 'IESS_REC_tablas_demografia.RData'  )  )
 
