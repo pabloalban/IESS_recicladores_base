@@ -70,7 +70,7 @@ print( aux_xtab,
 
 #Tabla de reclicladores por provincia y sexo---------------------------------------------------------
 
-message( '\tTabla de reclicladores por edad y sexo' )
+message( '\tTabla de reclicladores por provincia y sexo' )
 aux <- prov_sexo %>%
   mutate( Mujer = as.integer(Mujer), 
           Hombre = as.integer(Hombre),
