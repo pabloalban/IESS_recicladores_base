@@ -72,7 +72,27 @@ instr_sexo <- censo_miess %>%
          porc = total * 100 / total[10]) %>%
   dplyr::select( instruccion, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total, porc) 
 
-#Ingreso promedio de reciclaje por edad y sexo-------------------------------------------------------
+#Número de recicladores por provincia y sexo--------------------------------------------------------
+
+prov_sexo <- censo_miess %>%
+  group_by( sexo_reciclador, provincia ) %>% 
+  mutate( recicladores = n( ) ) %>% 
+  ungroup( sexo_reciclador, provincia ) %>% 
+  distinct( sexo_reciclador, provincia, .keep_all = TRUE ) %>% 
+  dplyr::select( sexo_reciclador, provincia, recicladores ) %>% 
+  pivot_wider( ., names_from = sexo_reciclador, values_from = recicladores, values_fill = 0) %>%
+  arrange( provincia ) %>% 
+  mutate( total = Mujer + Hombre,
+          provincia = as.character( provincia ) ) %>% 
+  rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
+  mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
+  mutate(porcentaje_mujeres = Mujer * 100 / total[25],
+         porcentaje_hombres = Hombre * 100 / total[25],
+         porc = total * 100 / total[25]) %>%
+  dplyr::select( provincia, Mujer, porcentaje_mujeres, Hombre, porcentaje_hombres, total, porc)
+
+
+#Ingreso promedio de reciclaje por edad y sexo------------------------------------------------------
 
 edad_sal_prom <- censo_miess %>%
   group_by(edad_mies, sexo_reciclador) %>%
@@ -97,7 +117,7 @@ edad_sal_prom <- edad_sal_prom %>%
   mutate_at(  c( 2:ncol( . ) ), as.numeric )
 
 
-#Ingreso promedio total por edad y sexo-------------------------------------------------------
+#Ingreso promedio total por edad y sexo-------------------------------------------------------------
 
 edad_sal_total_prom <- censo_miess %>%
   group_by(edad_mies, sexo_reciclador) %>%
@@ -294,8 +314,8 @@ afiliados_antiguos_sexo <- censo_miess %>%
 
 
 
-#Tablas para elaboración de pirámides----------------------------------------------------------------
-#Pirámide del porcentaje de recicladores base según edad y sexo--------------------------------------
+#Tablas para elaboración de pirámides---------------------------------------------------------------
+#Pirámide del porcentaje de recicladores base según edad y sexo-------------------------------------
 pir_porc_edad_sexo <- censo_miess %>%
   group_by( sexo_reciclador, edad_mies ) %>% 
   mutate( recicladores = n( ) ) %>% 
@@ -315,7 +335,18 @@ pir_instr_sexo <- censo_miess %>%
   mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, instruccion, porcentaje )
 
-#Pirámide de ingreso promedio de reciclaje según instrucción y sexo------------------------------------------------------------------
+#Pirámide según provincia y sexo--------------------------------------------------------------------
+pir_prov_sexo <- censo_miess %>%
+  group_by( sexo_reciclador, provincia ) %>% 
+  mutate( recicladores = n( ) ) %>% 
+  ungroup( sexo_reciclador, provincia ) %>% 
+  distinct( sexo_reciclador, provincia, .keep_all = TRUE ) %>% 
+  dplyr::select( sexo_reciclador, provincia, recicladores ) %>%
+  mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
+  dplyr::select( sexo_reciclador, provincia, porcentaje ) %>% 
+  arrange( provincia )
+
+#Pirámide de ingreso promedio de reciclaje según instrucción y sexo---------------------------------
 pir_edad_sal_prom <- censo_miess %>%
   group_by( sexo_reciclador, edad_mies ) %>% 
   mutate( promedio = mean(ingresos_reciclaje)) %>% 
@@ -323,7 +354,7 @@ pir_edad_sal_prom <- censo_miess %>%
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, edad_mies, promedio )
 
-#Pirámide de ingreso de reciclaje según instrucción y sexo---------------------------------------------------------------------------
+#Pirámide de ingreso de reciclaje según instrucción y sexo------------------------------------------
 pir_edad_sal_reciclaje <- censo_miess %>%
   group_by( sexo_reciclador, edad_mies ) %>% 
   mutate( recicladores = sum(ingresos_reciclaje) ) %>% 
@@ -333,7 +364,7 @@ pir_edad_sal_reciclaje <- censo_miess %>%
   mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, edad_mies, porcentaje )
 
-#Pirámide de ingreso total según instrucción y sexo---------------------------------------------------------------------------------
+#Pirámide de ingreso total según instrucción y sexo-------------------------------------------------
 pir_edad_sal_total <- censo_miess %>%
   group_by( sexo_reciclador, edad_mies ) %>% 
   mutate( recicladores = sum(ingreso_total) ) %>% 
@@ -343,7 +374,7 @@ pir_edad_sal_total <- censo_miess %>%
   mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, edad_mies, porcentaje )
 
-#Pirámide de afiliados por sexo-----------------------------------------------------------------------------------------------------
+#Pirámide de afiliados por sexo---------------------------------------------------------------------
 pir_afiliados_sexo <- censo_miess %>%
   group_by( caracteristica_social_afiliado, sexo_reciclador ) %>% 
   mutate( recicladores = n( ) ) %>% 
@@ -353,7 +384,7 @@ pir_afiliados_sexo <- censo_miess %>%
   mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
   dplyr::select( sexo_reciclador, caracteristica_social_afiliado, porcentaje )
 
-#Pirámide de antiguos afiliados por sexo-----------------------------------------------------------------------------------------------------
+#Pirámide de antiguos afiliados por sexo------------------------------------------------------------
 pir_afiliados_antiguos_sexo <- censo_miess %>%
   group_by( sexo_reciclador, caracteristica_social_estuvo_afiliado ) %>% 
   mutate( recicladores = n( ) ) %>% 
@@ -369,19 +400,21 @@ message( "\tGuardando Rdatas" )
 save(  afiliados_antiguos_sexo,
        afiliados_sexo,
        edad_sal_prom,
-       edad_sal_total_prom,
        edad_sal_reciclaje,
        edad_sal_total,
+       edad_sal_total_prom,
        edad_sexo,
        instr_sexo,
-       pir_porc_edad_sexo,
-       pir_instr_sexo,
+       pir_afiliados_antiguos_sexo,
+       pir_afiliados_sexo,
        pir_edad_sal_prom,
        pir_edad_sal_reciclaje,
        pir_edad_sal_total,
-       pir_afiliados_sexo,
-       pir_afiliados_antiguos_sexo,
-       rang_sal_total,
+       pir_instr_sexo,
+       pir_porc_edad_sexo,
+       pir_prov_sexo,
+       prov_sexo,
        rang_sal_rec,
+       rang_sal_total,
        file = paste0(  parametros$RData, 'IESS_REC_tablas_demografia.RData'  )  )
 

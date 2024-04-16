@@ -80,6 +80,7 @@ En la figura \ref{fig:IESS_rec_pir_porc_edad_sexo}, se presenta la distribución
 
 %Tabla de reclicladores por instrucción y sexo------------------------------------------------------
 A continuación, se indica el número de recicladores base según instrucción y sexo en la tabla \ref{tab:iess_rec_instr_sexo}.
+
 {\fontsize{9}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
 \caption{Distribución de Recicladores Base por instrucción y sexo}
@@ -117,6 +118,7 @@ A continuación, se indica el número de recicladores base según instrucción y
 Se evidencia que la mayoría de los recicladores base cuentan con una instrucción primaria, con un porcentaje del 42,62\%. De este total, el 21,07\% corresponde a mujeres y el 21,56\% a hombres.
 
 En la figura \ref{fig:IESS_rec_pir_instr_sexo}, se ilustra la distribución de la población de recicladores base según su instrucción y sexo.
+
 \begin{figure}[H]
   \caption{Distribución por instrucción y sexo de la población de recicladores base}
   \label{fig:IESS_rec_pir_instr_sexo}
@@ -126,8 +128,59 @@ En la figura \ref{fig:IESS_rec_pir_instr_sexo}, se ilustra la distribución de l
     \textbf{Elaborado:} DAIE.}
 \end{figure}
 
+%Tabla de recicladores por provincia y sexo----------------------------------------------------------
+
+En la Tabla \ref{tab:iess_rec_prov_sexo}, se detalla la cantidad de recicladores base agrupados por provincia y género.
+
+{\fontsize{9}{13}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de Recicladores Base por provincia y sexo}
+\label{tab:iess_rec_prov_sexo}\\
+\toprule
+\multicolumn{1}{c}{Provincia} &
+\multicolumn{1}{c}{Femenino } & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Masculino} &
+\multicolumn{1}{c}{Porcentaje (\%)} &
+\multicolumn{1}{c}{Total} &
+\multicolumn{1}{c}{Porcentaje (\%)}\\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Provincia} &
+\multicolumn{1}{c}{Femenino } & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Masculino} &
+\multicolumn{1}{c}{Porcentaje (\%)} &
+\multicolumn{1}{c}{Total}&
+\multicolumn{1}{c}{Porcentaje (\%)}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...}\\
+\endfoot
+\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_rec_prov_sexo.tex}
+\end{longtable}
+}
+
+La figura \ref{fig:IESS_rec_pir_prov_sexo} muestra que la mayoría de personas que se dedican a esta actividad lo hacen en las provincias de Guayas, donde el 5,56\% son mujeres y el 14,73\% son hombres, y en Pichincha, donde el 12,09\% son mujeres y el 6,67\% son hombres.
+
+\begin{figure}[H]
+  \caption{Distribución por provincia y sexo de la población de recicladores base}
+  \label{fig:IESS_rec_pir_prov_sexo}
+  \centering
+  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_prov_sexo.pdf}
+  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
+    \textbf{Elaborado:} DAIE.}
+\end{figure}
+
 
 %Tabla de ingresos promedio por edad y sexo----------------------------------------------------------
+
 En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio según edad y sexo.
 
 {\fontsize{9}{13}\selectfont

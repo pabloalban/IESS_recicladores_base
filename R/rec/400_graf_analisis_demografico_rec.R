@@ -8,7 +8,7 @@ source( 'R/rec/200_estadisticas_descriptivas_rec.R', encoding = 'UTF-8', echo = 
 # Carga de datos -----------------------------------------------------------------------------------
 load( file = paste0( parametros$RData, 'IESS_REC_tablas_demografia.RData' ) )
 
-# Pirámide por edad y sexo ----------------------------------------------------
+# Pirámide por edad y sexo -------------------------------------------------------------------------
 
 message( '\tGraficando población de recicladores base por edad y sexo' )
 
@@ -46,8 +46,7 @@ ggsave( plot = rec_pir_porc_edad_sexo,
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
 
-
-# Pirámide por instrucción y sexo ----------------------------------------------------
+# Pirámide por instrucción y sexo ------------------------------------------------------------------
 
 message( '\tGraficando población de recicladores base por instrucción y sexo' )
 aux <- pir_instr_sexo %>%
@@ -84,7 +83,45 @@ ggsave( plot = rec_pir_instr_sexo,
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
 
-# Pirámide de ingreso promedio por edad y sexo ----------------------------------------------------
+# Pirámide por provincia y sexo --------------------------------------------------------------------
+
+message( '\tGraficando población de recicladores base por provincia y sexo' )
+aux <- pir_prov_sexo %>%
+  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+                                -porcentaje,
+                                porcentaje ) ) %>%
+  arrange( sexo_reciclador, provincia )
+
+salto_x <- 5
+brks_y <- seq( -55, 55, salto_x )
+lbls_y <- paste0( as.character( c( seq( 55, 0, -salto_x ), seq( salto_x, 55, salto_x ) ) ), '%')
+
+rec_pir_prov_sexo <- ggplot( aux, aes( x = provincia, y = porcentaje, fill = sexo_reciclador ) ) +
+  xlab( 'Provincia' ) +
+  ylab( 'Porcentaje por grupo') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
+  coord_flip( ) +
+  theme_bw( ) +
+  plt_theme +
+  guides( fill = guide_legend( title = NULL,
+                               label.position = 'right', 
+                               label.hjust = 0, 
+                               label.vjust = 0.5,
+                               reverse = TRUE ) )+
+  theme( legend.position = 'bottom' ) +
+  scale_fill_manual( values = c( parametros$iess_green, parametros$iess_blue ),
+                     labels = c( 'Hombres', 'Mujeres' ) )
+
+ggsave( plot = rec_pir_prov_sexo, 
+        filename = paste0( parametros$resultado_graficos, 'IESS_rec_pir_prov_sexo',
+                           parametros$graf_ext ),
+        width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
+
+
+
+# Pirámide de ingreso promedio por edad y sexo -----------------------------------------------------
 
 message( '\tGraficando ingreso promedio por instrucción y sexo' )
 aux <- pir_edad_sal_prom %>%
@@ -121,7 +158,8 @@ ggsave( plot = rec_pir_edad_sal_prom,
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
 
-#Pirámide de ingreso de reciclaje según edad y sexo------------------------------------------------
+#Pirámide de ingreso de reciclaje según edad y sexo-------------------------------------------------
+
 message( '\tGraficando ingreso ingreso de reciclaje según edad y sexo' )
 aux <- pir_edad_sal_reciclaje %>%
   mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
@@ -156,7 +194,7 @@ ggsave( plot = rec_pir_edad_sal_reciclaje,
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
 
-#Pirámide de ingreso total según edad y sexo-------------------------------------------------------
+#Pirámide de ingreso total según edad y sexo--------------------------------------------------------
 
 message( '\tGraficando ingreso ingreso total según edad y sexo' )
 aux <- pir_edad_sal_total %>%
@@ -192,7 +230,7 @@ ggsave( plot = rec_pir_edad_sal_total,
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
 
-#Pirámide de afiliados por sexo--------------------------------------------------------------------
+#Pirámide de afiliados por sexo---------------------------------------------------------------------
 
 message( '\tGraficando población de afiliados por sexo' )
 aux <- pir_afiliados_sexo %>%
@@ -229,9 +267,10 @@ ggsave( plot = rec_pir_afiliados_sexo,
                            parametros$graf_ext ),
         width = graf_width, height = graf_height, units = graf_units, dpi = graf_dpi )
 
-#Pirámide de afiliados antiguos por sexo-----------------------------------------------------------
 
-message( '\tGraficando población de afiliados por sexo' )
+#Pirámide de afiliados antiguos por sexo------------------------------------------------------------
+
+message( '\tGraficando población de afiliados antiguos por sexo' )
 aux <- pir_afiliados_antiguos_sexo %>%
   mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
                                 -porcentaje,

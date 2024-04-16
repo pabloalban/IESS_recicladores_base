@@ -68,6 +68,28 @@ print( aux_xtab,
        hline.after = c(nrow( aux )-1,nrow(aux)),
        sanitize.text.function = identity )
 
+#Tabla de reclicladores por provincia y sexo---------------------------------------------------------
+
+message( '\tTabla de reclicladores por edad y sexo' )
+aux <- prov_sexo %>%
+  mutate( Mujer = as.integer(Mujer), 
+          Hombre = as.integer(Hombre),
+          total = as.integer(total) )
+
+aux_xtab <- xtable( aux)
+
+aux_xtab <- tildes_a_latex( aux_xtab )
+
+print( aux_xtab,
+       file = paste0( parametros$resultado_tablas, 'iess_rec_prov_sexo', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE, 
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = c(nrow( aux )-1,nrow(aux)),
+       sanitize.text.function = identity )
+
 #Tabla de ingresos promedio por edad y sexo----------------------------------------------------------
 
 message( '\tTabla de ingresos promedio por edad y sexo' )
