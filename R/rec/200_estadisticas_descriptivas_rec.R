@@ -3,17 +3,10 @@ message( paste( rep( "-", 100 ), collapse = "" ) )
 message( "\tCargando datos" )
 load( paste0( parametros$RData, "MIESS_censo_recicladores.RData" ) )
 
-censo_miess <- censo_miess %>%
-  filter(!(edad_mies %in% c('De 7 a 11 años'))) %>%
-  filter(!(instruccion %in% c('Postgrado, Doctorado, PHD')))
-censo_miess$instruccion <- gsub( 'Superior Universitario Técnico Tecnologico', 'Técnico', censo_miess$instruccion )
-censo_miess[ which(censo_miess$instruccion == 'Superior Universitario (Universidades y Escuelas Politécnicas)'), ]$instruccion <- 'Universitario' 
-censo_miess[ which(censo_miess$caracteristica_social_afiliado == 'Seguro Ministerio de la Salud Pública (MSP)'), ]$caracteristica_social_afiliado <- 'Seguro Ministerio de la Salud Pública'
-censo_miess[ which(censo_miess$caracteristica_social_estuvo_afiliado == 'Seguro Ministerio de la Salud Pública (MSP)'), ]$caracteristica_social_estuvo_afiliado <- 'Seguro Ministerio de la Salud Pública'
-censo_miess[ which(censo_miess$caracteristica_social_estuvo_afiliado == 'Aseguramiento Universal de la Salud (AUS)'), ]$caracteristica_social_estuvo_afiliado <- 'Aseguramiento Universal de la Salud'
-
-
 #Estadísticas descriptivas--------------------------------------------------------------------------
+censo_miess <- censo_miess #%>%
+#filter(!(edad_mies %in% c('De 7 a 11 años'))) %>%
+#filter(!(instruccion %in% c('Postgrado, Doctorado, PHD')))
 
 #Número de recicladores por edad y sexo-------------------------------------------------------------
 
@@ -23,10 +16,6 @@ edad_sexo <- censo_miess %>%
   ungroup( sexo_reciclador, edad_mies ) %>% 
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, edad_mies, recicladores ) %>% 
-  mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
-                                                      'De 18 a 29 años',
-                                                      'De 30 a 64 años',
-                                                      'Mayor a 65 años') ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = recicladores, values_fill = 0) %>% 
   arrange( edad_mies ) %>% 
   mutate( total = Mujer + Hombre,
@@ -103,10 +92,6 @@ edad_sal_prom <- censo_miess %>%
   mutate( total = mean(ingresos_reciclaje) ) %>% 
   ungroup() %>% 
   dplyr::select( sexo_reciclador, edad_mies, ingreso_promedio, total ) %>% 
-  mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
-                                                      'De 18 a 29 años',
-                                                      'De 30 a 64 años',
-                                                      'Mayor a 65 años') ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = ingreso_promedio, values_fill = 0) %>% 
   arrange( edad_mies ) %>% 
   dplyr::select( edad_mies, Mujer, Hombre, total )
@@ -128,10 +113,6 @@ edad_sal_total_prom <- censo_miess %>%
   mutate( total = mean(ingreso_total) ) %>% 
   ungroup() %>%
   dplyr::select( sexo_reciclador, edad_mies, ingreso_promedio, total ) %>% 
-  mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
-                                                      'De 18 a 29 años',
-                                                      'De 30 a 64 años',
-                                                      'Mayor a 65 años') ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = ingreso_promedio, values_fill = 0) %>% 
   arrange( edad_mies ) %>% 
   dplyr::select( edad_mies, Mujer, Hombre, total )
@@ -149,10 +130,6 @@ edad_sal_reciclaje <- censo_miess %>%
   ungroup(edad_mies, sexo_reciclador) %>%
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, edad_mies, ingreso_reciclaje ) %>% 
-  mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
-                                                      'De 18 a 29 años',
-                                                      'De 30 a 64 años',
-                                                      'Mayor a 65 años') ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = ingreso_reciclaje, values_fill = 0) %>% 
   arrange( edad_mies ) %>% 
   mutate( total = Mujer + Hombre,
@@ -239,10 +216,6 @@ edad_sal_total <- censo_miess %>%
   ungroup(edad_mies, sexo_reciclador) %>%
   distinct( sexo_reciclador, edad_mies, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, edad_mies, ingresos_total ) %>% 
-  mutate( edad_mies = factor( edad_mies,  levels = c( 'De 12 a 17 años',
-                                                      'De 18 a 29 años',
-                                                      'De 30 a 64 años',
-                                                      'Mayor a 65 años') ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = ingresos_total, values_fill = 0) %>% 
   arrange( edad_mies ) %>% 
   mutate( total = Mujer + Hombre,
@@ -416,5 +389,10 @@ save(  afiliados_antiguos_sexo,
        prov_sexo,
        rang_sal_rec,
        rang_sal_total,
+       porc_edad_sexo,
        file = paste0(  parametros$RData, 'IESS_REC_tablas_demografia.RData'  )  )
 
+# Limpiar Ram---------------------------------------------------------------------------------------
+message( paste( rep('-', 100 ), collapse = '' ) )
+rm( list = ls( )[ !( ls( ) %in% 'parametros' ) ] )
+gc( )

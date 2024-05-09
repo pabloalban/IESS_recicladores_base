@@ -256,3 +256,7 @@ print( aux_xtab,
        hline.after = c(nrow( aux )-1,nrow(aux)),
        sanitize.text.function = identity )
 
+# Limpiar Ram---------------------------------------------------------------------------------------
+message( paste( rep('-', 100 ), collapse = '' ) )
+rm( list = ls( )[ !( ls( ) %in% 'parametros' ) ] )
+gc( )

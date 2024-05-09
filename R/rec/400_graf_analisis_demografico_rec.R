@@ -3,7 +3,6 @@ message( '\tGraficando demografía del SGRT' )
 
 # Plantilla gráfica --------------------------------------------------------------------------------
 source( 'R/401_graf_plantilla.R', encoding = 'UTF-8', echo = FALSE )
-source( 'R/rec/200_estadisticas_descriptivas_rec.R', encoding = 'UTF-8', echo = FALSE)
 
 # Carga de datos -----------------------------------------------------------------------------------
 load( file = paste0( parametros$RData, 'IESS_REC_tablas_demografia.RData' ) )
