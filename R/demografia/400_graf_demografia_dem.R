@@ -52,7 +52,7 @@ y_lbl <- formatC( y_brk, digits = 2, format = 'f', big.mark = '.', decimal.mark 
 iess_afi <- ggplot( data = aux, aes( x = anio, y = rt, fill = Sexo, color = Sexo ) ) + 
   geom_line( color = c( rep( parametros$iess_green, nrow( aux )/2 ), 
                         rep( parametros$iess_blue, nrow( aux )/2 ) ), 
-             size = graf_line_size ) + 
+             linewidth = graf_line_size ) + 
   geom_point( color = c( rep( parametros$iess_green, nrow( aux )/2 ), 
                          rep( parametros$iess_blue, nrow( aux )/2 ) ), 
               size = graf_line_size, 

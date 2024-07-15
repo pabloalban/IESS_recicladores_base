@@ -44,19 +44,15 @@ parametros$demo_rdata_sgo_probs_tran <- paste0( parametros$RData_dem, 'IESS_SGO_
 parametros$demo_rdata_sgo_probs_tran_ts <- paste0( parametros$RData_dem, 'IESS_SGO_probabilidades_transicion_edad_tiempo_servicio_', parametros$anio_ini, '.RData' )
 parametros$demo_rdata_sgo_pob_ini <- paste0( parametros$RData_dem, 'IESS_SGO_poblacion_inicial_', parametros$anio_ini, '.RData' )
 parametros$demo_rdata_sgo_din_dec <- paste0( parametros$RData_dem, 'IESS_SGO_tabla_mortalidad_dinamica_', parametros$anio_ini, '.RData' )
-parametros$demo_rdata_sgo_pob_proy <- paste0( parametros$RData_dem, 'IESS_SGO_proyeccion_poblacion_', parametros$anio_ini, '.RData' )
 parametros$demo_rdata_sgo_est_dem <- paste0( parametros$RData_dem, 'IESS_SGO_estadisticas_salarios_pensiones_', parametros$anio_ini, '.RData' )
-#parametros$demo_rdata_inec_fert_model <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_2010.RData' )
-parametros$demo_rdata_inec_censo <- paste0( parametros$RData_dem, 'INEC_censo_poblacion_2010.RData' )
-parametros$demo_rdata_inec_fert_model_todo <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_todo_2020.RData' )
-parametros$demo_rdata_inec_fert_model <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_2020.RData' )
-
-parametros$demo_rdata_inec_pea <- paste0( parametros$RData_dem, 'INEC_PEA_proyectada.RData' ) 
 parametros$demo_rdata_sgo_pea_proj <- paste0( parametros$RData_dem, 'IESS_ECU_pea_proj.RData' )
-# parametros$demo_rdata_sgo_pea_proj <- paste0( parametros$RData_dem, 'IESS_onu_pea_ecu_int.RData' )
-parametros$demo_rdata_onu_int_life_tab <- paste0( parametros$RData_dem, 'ONU_interpolado_life_table_survivors_2019.RData' ) 
-parametros$demo_rdata_onu_pob_proy <- paste0( parametros$RData_dem, 'ONU_proyeccion_poblacion.RData' ) 
 parametros$demo_rdata_sgo_est_sal_pen_auto_info <- paste0( parametros$RData_dem, 'IESS_SGO_estadísticas_auto_informacion.RData' ) 
+
+parametros$demo_rdata_onu_pob_proy <- paste0( parametros$RData_dem, 'ONU_proyeccion_poblacion.RData' ) 
+parametros$demo_rdata_onu_int_life_tab <- paste0( parametros$RData_dem, 'ONU_interpolado_life_table_survivors_2019.RData' ) 
+parametros$demo_rdata_inec_pea <- paste0( parametros$RData_dem, 'INEC_PEA_proyectada.RData' ) 
+parametros$demo_rdata_inec_censo <- paste0( parametros$RData_dem, 'INEC_censo_poblacion_2010.RData' )
+
 parametros$demo_data_afi_pen_dic <- paste0( parametros$Data_dem, 'IESS_SGO_afi_pen_dic_2020.xlsx' ) 
 parametros$demo_rdata_afi_pen_dic_prep <- paste0( parametros$RData_dem, 'IESS_SGO_afi_pen_dic_2020_prep.RData' ) 
 
@@ -77,7 +73,6 @@ parametros$demo_rdata_ssc_probs_tran <- paste0( parametros$RData_dem, 'IESS_SSC_
 # parametros$demo_rdata_sgo_probs_tran_ts <- paste0( parametros$RData_dem, 'IESS_SGO_probabilidades_transicion_edad_tiempo_servicio_', parametros$anio_ini, '.RData' )
 parametros$demo_rdata_ssc_pob_ini <- paste0( parametros$RData_dem, 'IESS_SSC_poblacion_inicial_', parametros$anio_ini, '.RData' )
 parametros$demo_rdata_ssc_din_dec <- paste0( parametros$RData_dem, 'IESS_SSC_tabla_mortalidad_dinamica_', parametros$anio_ini, '.RData' )
-parametros$demo_rdata_ssc_pob_proy <- paste0( parametros$RData_dem, 'IESS_SSC_proyeccion_poblacion_', parametros$anio_ini, '.RData' )
 parametros$demo_rdata_ssc_est_dem <- paste0( parametros$RData_dem, 'IESS_SSC_estadisticas_salarios_pensiones_', parametros$anio_ini, '.RData' )
 parametros$demo_rdata_ssc_sal_pen_proy <- paste0( parametros$RData_dem, 'IESS_SSC_proyeccion_salarios_', parametros$anio_ini, '.RData' )
 # parametros$demo_rdata_inec_fert_model <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_2010.RData' )
@@ -88,6 +83,26 @@ parametros$demo_rdata_ssc_pea_rural_proj <- paste0( parametros$RData_dem, 'IESS_
 # parametros$demo_rdata_onu_pob_proy <- paste0( parametros$RData_dem, 'ONU_proyeccion_poblacion.RData' ) 
 
 parametros$coef_inv_ssc <- 0.5
+
+# Selección del modelo de nupcialidad y fertilidad a ser utilizado en las proyecciones -------------
+parametros$new_mod_fert_nupc <- TRUE  # TRUE: corre con nueva estructura familiar. FALSE: corre estructura familiar anterior
+if ( parametros$new_mod_fert_nupc ) {
+  
+  # Nueva proyección con ajustes en el modelo de nupcialidad y fertilidad
+  parametros$demo_rdata_inec_fert_model_todo <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_todo_2020_nueva.RData' )
+  parametros$demo_rdata_inec_fert_model <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_2020_nueva.RData' )
+  parametros$demo_rdata_sgo_pob_proy <- paste0( parametros$RData_dem, 'IESS_SGO_proyeccion_poblacion_', parametros$anio_ini, '_nueva.RData' )
+  parametros$demo_rdata_ssc_pob_proy <- paste0( parametros$RData_dem, 'IESS_SSC_proyeccion_poblacion_', parametros$anio_ini, '_nueva.RData' )
+  
+} else {
+  
+  # Utilizada en IVM con corte al 2020
+  parametros$demo_rdata_inec_fert_model_todo <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_todo_2020.RData' )
+  parametros$demo_rdata_inec_fert_model <- paste0( parametros$RData_dem, 'INEC_censo_iess_fertilidad_alisado_2020.RData' )
+  parametros$demo_rdata_sgo_pob_proy <- paste0( parametros$RData_dem, 'IESS_SGO_proyeccion_poblacion_', parametros$anio_ini, '.RData' )
+  parametros$demo_rdata_ssc_pob_proy <- paste0( parametros$RData_dem, 'IESS_SSC_proyeccion_poblacion_', parametros$anio_ini, '.RData' )
+}
+
 # Función con condiciones de eligibilidad ----------------------------------------------------------
 parametros$elig_vej_ssc <- function( s, x ) {
   e <- 10

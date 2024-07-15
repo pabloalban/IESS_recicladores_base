@@ -10,9 +10,11 @@ source( 'R/rec/002_configuracion_seguro.R', encoding = 'UTF-8', echo = FALSE )
 
 # Tablas genéricas----------------------------------------------------------------------------------
 source( 'R/macro/500_tab_contexto_economico.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/ivm/500_tab_analisis_demografico_ivm.R', encoding = 'UTF-8', echo = FALSE )
 
 # Gráficos genéricos--------------------------------------------------------------------------------
 source( 'R/macro/400_graf_contexto_economico.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/ivm/400_graf_analisis_demografico_ivm.R', encoding = 'UTF-8', echo = FALSE )
 
 # Gráficos específicas de REC ----------------------------------------------------------------------
 source('R/rec/400_graf_analisis_demografico_rec.R', encoding = 'UTF-8', echo = FALSE )
