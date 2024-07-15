@@ -41,10 +41,10 @@
 %  
 <<cap05, child='05_base_legal.Rnw'>>=
 @
-% 
-% <<cap06, child='06_analisis_contexto.Rnw'>>=
-% @
-%  
+ 
+<<cap06, child='06_analisis_contexto.Rnw'>>=
+@
+  
 <<cap07, child='07_demografia.Rnw'>>=
 @
 %  
@@ -97,8 +97,8 @@
 %<<cap21, child='21_anx_acronimos.Rnw'>>=
 %@
 
-<<cap16, child='18_anexos.Rnw'>>=
-@
+%<<cap16, child='18_anexos.Rnw'>>=
+%@
 
 %---------------------------------------------------------------------------------------------------
 %\backmatter

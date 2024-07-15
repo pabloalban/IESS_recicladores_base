@@ -18,8 +18,7 @@ if( parametros$seguro %in% c( 'SAL' ) ) {
   anio_fin = 40 + 2020
 }
 
-anio_ini <- 2021
-anio_corte <- 2020
+anio_corte <- 2022
 
 #Tabla del contexto económico-----------------------------------------------------------------------
 message( '\tTablas del contexto económico' )
@@ -44,7 +43,7 @@ print( aux_xtab,
        include.colnames = FALSE, include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = NULL,
+       hline.after = nrow( aux ),
        sanitize.text.function = identity )
 
 #Tabla de desempleo---------------------------------------------------------------------------------
@@ -66,7 +65,7 @@ print( aux_xtab,
        include.colnames = FALSE, include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = NULL,
+       hline.after = nrow( aux ),
        sanitize.text.function = identity )
 
 #Tabla de PIB---------------------------------------------------------------------------------------
@@ -82,7 +81,7 @@ print( aux_xtab,
        include.colnames = FALSE, include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = NULL,
+       hline.after = nrow( aux ),
        sanitize.text.function = identity )
 
 #Tabla de SBU---------------------------------------------------------------------------------------
@@ -97,7 +96,7 @@ print( aux_xtab,
        include.colnames = FALSE, include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = NULL,
+       hline.after = nrow( aux ),
        sanitize.text.function = identity )
 
 #Tabla de salarios promedio-------------------------------------------------------------------------
@@ -121,15 +120,14 @@ print( aux_xtab,
        include.colnames = FALSE, include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = NULL,
+       hline.after = nrow( aux ),
        sanitize.text.function = identity )
 
 #Tabla de aumento de pensiones----------------------------------------------------------------------
-aux <- incre_pensiones %>%
-  dplyr::select( -x2021,
-                 -x2022 )
+aux <- incre_pensiones
 
-aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, 6 ) ) )
+aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
+
 print( aux_xtab, 
        file = paste0( parametros$resultado_tablas, 'iess_incre_pensiones', '.tex' ),
        type = 'latex',

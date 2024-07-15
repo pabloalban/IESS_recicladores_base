@@ -22,3 +22,6 @@ source( 'R/demografia/002_configurar_demografia.R', encoding = 'UTF-8', echo = F
 
 # Configuración global del modelo macroeconómico
 source( 'R/macro/002_configurar_macro.R', encoding = 'UTF-8', echo = FALSE )
+
+#Ejecutar reporte
+source("~/IESS_recicladores_base/R/rec/600_reporte_latex_rec.R", encoding = 'UTF-8', echo = FALSE )
