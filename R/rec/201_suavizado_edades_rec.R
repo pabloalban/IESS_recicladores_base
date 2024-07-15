@@ -119,6 +119,38 @@ edad_sexo <- rbind( edad_sexo_h,
 
 plot( edad_sexo$x, edad_sexo$lx_int )
 
+#5. Redondear y precisar frecuencias----------------------------------------------------------------
+
+edad_sexo_int <- edad_sexo %>% 
+  mutate( lx_int = round( lx_int, 0 ) ) %>%
+  mutate( lx_int = if_else( g == 'Mujer' & x == 17,
+                            lx_int - 7,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'Mujer' & x == 17,
+                            lx_int + 1,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'Mujer' & x == 63,
+                            lx_int + 4,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'Mujer' & x == 85,
+                            lx_int + 1,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'Hombre' & x == 17,
+                            lx_int - 7 ,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'Hombre' & x == 28,
+                            lx_int - 1 ,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'Hombre' & x == 63,
+                            lx_int - 3 ,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'Hombre' & x == 85,
+                            lx_int + 3 ,
+                            lx_int ) ) %>%
+  group_by( g ) %>% 
+  mutate( lx_acu_int = cumsum( lx_int ) ) %>% 
+  ungroup( )
+
 # Guarda resultados --------------------------------------------------------------------------------
 message( '\tGuardando suavizamiento de edades' )
 
