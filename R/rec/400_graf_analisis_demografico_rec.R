@@ -6,27 +6,33 @@ source( 'R/401_graf_plantilla.R', encoding = 'UTF-8', echo = FALSE )
 
 # Carga de datos -----------------------------------------------------------------------------------
 load( file = paste0( parametros$RData, 'IESS_REC_tablas_demografia.RData' ) )
+load( paste0( parametros$RData, 'MIESS_censo_recicladores_ajustado.RData' ) )
 
 # Pirámide por edad y sexo -------------------------------------------------------------------------
 
 message( '\tGraficando población de recicladores base por edad y sexo' )
 
-aux <- pir_porc_edad_sexo %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+aux <- edad_sexo_int %>%
+  mutate( porcentaje = lx_int / sum( lx_int, na.rm = TRUE ) ) %>% 
+  mutate( porcentaje = if_else( g == 'Mujer',
                          -porcentaje,
                          porcentaje ) ) %>%
-  arrange( sexo_reciclador, edad_mies )
+  arrange( g, x )
 
-salto_x <- 5
-brks_y <- seq( -35, 35, salto_x )
-lbls_y <- paste0( as.character( c( seq( 35, 0, -salto_x ), seq( salto_x, 35, salto_x ) ) ), '%')
+salto_y <- 0.005
+brks_y <- seq( -0.04, 0.04, salto_y )
+lbls_y <- paste0( as.character( c( seq( 0.04, 0, -salto_y )*100, seq( salto_y, 0.04, salto_y )*100 ) ), '%')
+salto_x <- 10
+brks_x <- seq( 15, 100, salto_x )
+lbls_x <- paste0( as.character( brks_x ) )
 
-rec_pir_porc_edad_sexo <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
-  xlab( 'Rangos de Edad' ) +
-  ylab( 'Porcentaje por grupo' ) +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+rec_pir_porc_edad_sexo <- ggplot( aux, aes( x = x, y = porcentaje, fill = g ) ) +
+  xlab( 'Edad' ) +
+  #ylab( 'Porcentaje por grupo' ) +
+  geom_bar( data = aux %>% filter( g == 'Mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( g == 'Hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
+  scale_x_continuous( breaks = brks_x, labels = lbls_x, limits = c( 15, 90 ) ) +
   coord_flip( ) +
   theme_bw( ) +
   plt_theme +

@@ -30,6 +30,10 @@ censo_miess[ which(censo_miess$caracteristica_social_afiliado == 'Seguro Ministe
 censo_miess[ which(censo_miess$caracteristica_social_estuvo_afiliado == 'Seguro Ministerio de la Salud Pública (MSP)'), ]$caracteristica_social_estuvo_afiliado <- 'Seguro Ministerio de la Salud Pública'
 censo_miess[ which(censo_miess$caracteristica_social_estuvo_afiliado == 'Aseguramiento Universal de la Salud (AUS)'), ]$caracteristica_social_estuvo_afiliado <- 'Aseguramiento Universal de la Salud'
 
+#Arreglo de sexo------------------------------------------------------------------------------------
+censo_miess <- censo_miess %>% 
+  mutate( sexo_reciclador = tolower( sexo_reciclador ) )
+
 #Guardando en un Rdata------------------------------------------------------------------------------
 message( '\tGuardando base de recicladores de MIESS ' )
 

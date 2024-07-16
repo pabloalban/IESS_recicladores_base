@@ -155,6 +155,7 @@ edad_sexo_int <- edad_sexo %>%
 message( '\tGuardando suavizamiento de edades' )
 
 save( edad_sexo,
+      edad_sexo_int,
       file = paste0( parametros$RData, 'MIESS_censo_recicladores_ajustado.RData' ) )
 
 # Limpiar Ram---------------------------------------------------------------------------------------
