@@ -57,7 +57,13 @@ parametros$hostname <- Sys.info()[[4]]
 parametros$work_dir <- paste0( getwd(), '/' )
 
 #Servidor de datos
-parametros$data_server <- 'Y:/IESS_recicladores_base/'
+
+if( parametros$hostname == 'PCUIOMTDAI3L35') {
+  parametros$data_server <- 'Y:/IESS_recicladores_base/'
+} else {
+  parametros$data_server <- 'D:/OneDrive - Instituto Ecuatoriano de Seguridad Social/IESS_recicladores_base'
+}
+
 parametros$risko_conf <- FALSE
 parametros$prod_conf <- TRUE
 
