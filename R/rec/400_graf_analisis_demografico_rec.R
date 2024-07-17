@@ -54,11 +54,12 @@ ggsave( plot = rec_pir_porc_edad_sexo,
 # Pirámide por instrucción y sexo ------------------------------------------------------------------
 
 message( '\tGraficando población de recicladores base por instrucción y sexo' )
+
 aux <- pir_instr_sexo %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+  mutate( porcentaje = ifelse( sexo_reciclador == 'mujer',
                                 -porcentaje,
                                 porcentaje ) ) %>%
-  arrange( sexo_reciclador, instruccion )
+  arrange( sexo_reciclador, ( instruccion ) )
 
 salto_x <- 5
 brks_y <- seq( -25, 25, salto_x )
@@ -67,8 +68,8 @@ lbls_y <- paste0( as.character( c( seq( 25, 0, -salto_x ), seq( salto_x, 25, sal
 rec_pir_instr_sexo <- ggplot( aux, aes( x = instruccion, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +
   ylab( 'Porcentaje por grupo') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   coord_flip( ) +
   theme_bw( ) +
@@ -92,7 +93,7 @@ ggsave( plot = rec_pir_instr_sexo,
 
 message( '\tGraficando población de recicladores base por provincia y sexo' )
 aux <- pir_prov_sexo %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+  mutate( porcentaje = if_else( sexo_reciclador == 'mujer',
                                 -porcentaje,
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, provincia )
@@ -104,8 +105,8 @@ lbls_y <- paste0( as.character( c( seq( 55, 0, -salto_x ), seq( salto_x, 55, sal
 rec_pir_prov_sexo <- ggplot( aux, aes( x = provincia, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Provincia' ) +
   ylab( 'Porcentaje por grupo') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   coord_flip( ) +
   theme_bw( ) +
@@ -130,7 +131,7 @@ ggsave( plot = rec_pir_prov_sexo,
 
 message( '\tGraficando ingreso promedio por instrucción y sexo' )
 aux <- pir_edad_sal_prom %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+  mutate( porcentaje = if_else( sexo_reciclador == 'mujer',
                                 -promedio,
                                 promedio ) ) %>%
   arrange( sexo_reciclador, edad_mies )
@@ -141,8 +142,8 @@ lbls_y <- paste0( as.character( c( seq( 440, 0, -salto_x ), seq( salto_x, 440, s
 
 rec_pir_edad_sal_prom <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   coord_flip( ) +
   theme_bw( ) +
@@ -167,7 +168,7 @@ ggsave( plot = rec_pir_edad_sal_prom,
 
 message( '\tGraficando ingreso ingreso de reciclaje según edad y sexo' )
 aux <- pir_edad_sal_reciclaje %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+  mutate( porcentaje = if_else( sexo_reciclador == 'mujer',
                                 -porcentaje,
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, edad_mies )
@@ -178,8 +179,8 @@ lbls_y <- paste0( as.character( c( seq( 45, 0, -salto_x ), seq( salto_x, 45, sal
 
 rec_pir_edad_sal_reciclaje <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   coord_flip( ) +
   theme_bw( ) +
@@ -203,7 +204,7 @@ ggsave( plot = rec_pir_edad_sal_reciclaje,
 
 message( '\tGraficando ingreso ingreso total según edad y sexo' )
 aux <- pir_edad_sal_total %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+  mutate( porcentaje = if_else( sexo_reciclador == 'mujer',
                                 -porcentaje,
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, edad_mies )
@@ -214,8 +215,8 @@ lbls_y <- paste0( as.character( c( seq( 45, 0, -salto_x ), seq( salto_x, 45, sal
 
 rec_pir_edad_sal_total <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   coord_flip( ) +
   theme_bw( ) +
@@ -239,7 +240,7 @@ ggsave( plot = rec_pir_edad_sal_total,
 
 message( '\tGraficando población de afiliados por sexo' )
 aux <- pir_afiliados_sexo %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+  mutate( porcentaje = if_else( sexo_reciclador == 'mujer',
                                 -porcentaje,
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, caracteristica_social_afiliado )
@@ -251,8 +252,8 @@ lbls_y <- paste0( as.character( c( seq( 100, 0, -salto_x ), seq( salto_x, 100, s
 rec_pir_afiliados_sexo <- ggplot( aux, aes( x = caracteristica_social_afiliado, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'caracteristica social' ) +
   ylab( 'Porcentaje por grupo') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   coord_flip( ) +
   theme_bw( ) +
@@ -277,7 +278,7 @@ ggsave( plot = rec_pir_afiliados_sexo,
 
 message( '\tGraficando población de afiliados antiguos por sexo' )
 aux <- pir_afiliados_antiguos_sexo %>%
-  mutate( porcentaje = if_else( sexo_reciclador == 'Mujer',
+  mutate( porcentaje = if_else( sexo_reciclador == 'mujer',
                                 -porcentaje,
                                 porcentaje ) ) %>%
   arrange( sexo_reciclador, caracteristica_social_estuvo_afiliado )
@@ -289,8 +290,8 @@ lbls_y <- paste0( as.character( c( seq( 100, 0, -salto_x ), seq( salto_x, 100, s
 rec_pir_afiliados_antiguos_sexo <- ggplot( aux, aes( x = caracteristica_social_estuvo_afiliado, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Caracteristica Social' ) +
   ylab( 'Porcentaje por grupo') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( sexo_reciclador == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( sexo_reciclador == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   coord_flip( ) +
   theme_bw( ) +

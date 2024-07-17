@@ -42,7 +42,7 @@ edad_sexo <- edad_sexo_int %>%
   mutate( recicladores = sum( lx_int, na.rm = TRUE ) ) %>%
   ungroup( ) %>% 
   distinct( rango_edad, g, .keep_all = TRUE ) %>% 
-  mutate( porcentaje = round( 100 * recicladores / sum( recicladores, na.rm = TRUE ), 2 ) ) %>% 
+  mutate( porcentaje = round( 100 * recicladores / sum( recicladores, na.rm = TRUE ), 4 ) ) %>% 
   dplyr::select( g, rango_edad,  recicladores, porcentaje ) %>% 
   pivot_wider( names_from = g,
                values_from = c( recicladores, porcentaje ),
@@ -207,16 +207,16 @@ instr_sexo <- censo_miess %>%
   ungroup( sexo_reciclador, instruccion ) %>% 
   distinct( sexo_reciclador, instruccion, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, instruccion, recicladores ) %>% 
-  mutate( instruccion = factor( instruccion,  levels = c( 'Centro de alfabetización',
-                                                          'Educación Básica',
-                                                          'Educación Media/Bachillerato',
-                                                          'Jardín de Infantes',
-                                                          'Ninguno',
-                                                          'Postgrado, Doctorado, PHD',
-                                                          'Primaria',
-                                                          'Secundaria',
+  mutate( instruccion = factor( instruccion,  levels = c( 'Postgrado, Doctorado, PHD',
+                                                          'Universitario',
                                                           'Técnico',
-                                                          'Universitario') ) ) %>% 
+                                                          'Educación Media/Bachillerato',
+                                                          'Secundaria',
+                                                          'Primaria',
+                                                          'Educación Básica',
+                                                          'Centro de alfabetización',
+                                                          'Jardín de Infantes',
+                                                          'Ninguno' ) ) ) %>% 
   pivot_wider( ., names_from = sexo_reciclador, values_from = recicladores, values_fill = 0) %>% 
   arrange( instruccion ) %>% 
   mutate( total = mujer + hombre,
@@ -399,7 +399,17 @@ pir_instr_sexo <- censo_miess %>%
   distinct( sexo_reciclador, instruccion, .keep_all = TRUE ) %>% 
   dplyr::select( sexo_reciclador, instruccion, recicladores ) %>%
   mutate(porcentaje = recicladores * 100/ sum(recicladores) ) %>%
-  dplyr::select( sexo_reciclador, instruccion, porcentaje )
+  dplyr::select( sexo_reciclador, instruccion, porcentaje ) %>% 
+  mutate( instruccion = factor( instruccion,  levels = c( 'Postgrado, Doctorado, PHD',
+                                                          'Universitario',
+                                                          'Técnico',
+                                                          'Educación Media/Bachillerato',
+                                                          'Secundaria',
+                                                          'Primaria',
+                                                          'Educación Básica',
+                                                          'Centro de alfabetización',
+                                                          'Jardín de Infantes',
+                                                          'Ninguno' ) ) )
 
 ## 7.2 Pirámide según provincia y sexo--------------------------------------------------------------
 pir_prov_sexo <- censo_miess %>%
