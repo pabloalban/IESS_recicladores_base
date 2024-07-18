@@ -14,7 +14,7 @@ message( '\tGraficando población de recicladores base por edad y sexo' )
 
 aux <- edad_sexo_int %>%
   mutate( porcentaje = lx_int / sum( lx_int, na.rm = TRUE ) ) %>% 
-  mutate( porcentaje = if_else( g == 'Mujer',
+  mutate( porcentaje = if_else( g == 'mujer',
                          -porcentaje,
                          porcentaje ) ) %>%
   arrange( g, x )
@@ -29,8 +29,8 @@ lbls_x <- paste0( as.character( brks_x ) )
 rec_pir_porc_edad_sexo <- ggplot( aux, aes( x = x, y = porcentaje, fill = g ) ) +
   xlab( 'Edad' ) +
   #ylab( 'Porcentaje por grupo' ) +
-  geom_bar( data = aux %>% filter( g == 'Mujer' ), stat = 'identity', colour = 'white') +
-  geom_bar( data = aux %>% filter( g == 'Hombre' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( g == 'mujer' ), stat = 'identity', colour = 'white') +
+  geom_bar( data = aux %>% filter( g == 'hombre' ), stat = 'identity', colour = 'white') +
   scale_y_continuous( breaks = brks_y, labels = lbls_y ) +
   scale_x_continuous( breaks = brks_x, labels = lbls_x, limits = c( 15, 90 ) ) +
   coord_flip( ) +
@@ -136,9 +136,9 @@ aux <- pir_edad_sal_prom %>%
                                 promedio ) ) %>%
   arrange( sexo_reciclador, edad_mies )
 
-salto_x <- 15
-brks_y <- seq( -440, 440, salto_x )
-lbls_y <- paste0( as.character( c( seq( 440, 0, -salto_x ), seq( salto_x, 440, salto_x ) ) ), '$')
+salto_y <- 50
+brks_y <- seq( -250, 500, salto_y )
+lbls_y <- paste0( paste0( '$', as.character( c( seq( -brks_y[1], 0, -salto_y ), seq( salto_y, brks_y[ length( brks_y ) ], salto_y ) ) ) ) )
 
 rec_pir_edad_sal_prom <- ggplot( aux, aes( x = edad_mies, y = porcentaje, fill = sexo_reciclador ) ) +
   xlab( 'Instruccion' ) +

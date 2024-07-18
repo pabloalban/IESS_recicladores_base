@@ -39,7 +39,7 @@ edad_sexo <- censo_miess %>%
 #2. Suavizado para hombres--------------------------------------------------------------------------
 
 edad_sexo_h <- edad_sexo %>% 
-  filter( g == 'Hombre' )
+  filter( g == 'hombre' )
 
 aux <- edad_sexo_h %>% 
   dplyr::select( x, lx_acu  ) %>% 
@@ -62,7 +62,7 @@ pred <- data.frame( x = age_grid,
                               0,
                               lx_acu_int ) )
 
-edad_sexo_h <- expand.grid( g = c( 'Hombre' ),
+edad_sexo_h <- expand.grid( g = c( 'hombre' ),
                             x = age_grid ) %>% 
   full_join( ., edad_sexo_h, by = c( 'x', 'g' ) ) %>%
   full_join( ., pred, by = 'x' )
@@ -74,7 +74,7 @@ lines( edad_sexo_h$x, edad_sexo_h$lx_acu_int )
 #3. Suavizado para mujeres--------------------------------------------------------------------------
 
 edad_sexo_m <- edad_sexo %>% 
-  filter( g == 'Mujer' )
+  filter( g == 'mujer' )
 
 aux <- edad_sexo_m %>% 
   dplyr::select( x, lx_acu  ) %>% 
@@ -97,7 +97,7 @@ pred <- data.frame( x = age_grid,
                                 0,
                                 lx_acu_int ) )
 
-edad_sexo_m <- expand.grid( g = c( 'Mujer' ),
+edad_sexo_m <- expand.grid( g = c( 'mujer' ),
                             x = age_grid )%>% 
   full_join( ., edad_sexo_m, by = c( 'x', 'g' ) ) %>%
   full_join( ., pred, by = 'x' ) 
@@ -123,30 +123,36 @@ plot( edad_sexo$x, edad_sexo$lx_int )
 
 edad_sexo_int <- edad_sexo %>% 
   mutate( lx_int = round( lx_int, 0 ) ) %>%
-  mutate( lx_int = if_else( g == 'Mujer' & x == 17,
-                            lx_int - 7,
-                            lx_int ) ) %>%
-  mutate( lx_int = if_else( g == 'Mujer' & x == 17,
-                            lx_int + 1,
-                            lx_int ) ) %>%
-  mutate( lx_int = if_else( g == 'Mujer' & x == 63,
-                            lx_int + 4,
-                            lx_int ) ) %>%
-  mutate( lx_int = if_else( g == 'Mujer' & x == 85,
-                            lx_int + 1,
-                            lx_int ) ) %>%
-  mutate( lx_int = if_else( g == 'Hombre' & x == 17,
-                            lx_int - 7 ,
-                            lx_int ) ) %>%
-  mutate( lx_int = if_else( g == 'Hombre' & x == 28,
+  mutate( lx_int = if_else( g == 'hombre' & x == 11,
                             lx_int - 1 ,
                             lx_int ) ) %>%
-  mutate( lx_int = if_else( g == 'Hombre' & x == 63,
-                            lx_int - 3 ,
+  mutate( lx_int = if_else( g == 'hombre' & x == 17,
+                            lx_int - 6 ,
                             lx_int ) ) %>%
-  mutate( lx_int = if_else( g == 'Hombre' & x == 85,
-                            lx_int + 3 ,
+  mutate( lx_int = if_else( g == 'hombre' & x == 29,
+                            lx_int - 1 ,
                             lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'hombre' & x == 64,
+                            lx_int - 2 ,
+                            lx_int ) ) %>%
+  # mutate( lx_int = if_else( g == 'hombre' & x == 85,
+  #                           lx_int + 1 ,
+  #                           lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'mujer' & x == 11,
+                            lx_int - 4,
+                            lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'mujer' & x == 17,
+                            lx_int - 3,
+                            lx_int ) ) %>%
+  # mutate( lx_int = if_else( g == 'mujer' & x == 17,
+  #                           lx_int + 1,
+  #                           lx_int ) ) %>%
+  mutate( lx_int = if_else( g == 'mujer' & x == 64,
+                            lx_int + 1,
+                            lx_int ) ) %>%
+  # mutate( lx_int = if_else( g == 'mujer' & x == 85,
+  #                           lx_int + 1,
+  #                           lx_int ) ) %>%
   group_by( g ) %>% 
   mutate( lx_acu_int = cumsum( lx_int ) ) %>% 
   ungroup( )

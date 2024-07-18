@@ -136,6 +136,30 @@ print( aux_xtab,
                         nrow( aux ) ),
        sanitize.text.function = identity )
 
+#Tabla de  rangos de ingreso total en jovenes-------------------------------------------------------
+
+message( '\tTabla de rangos de ingreso en jovenes' )
+
+aux <- rang_sal_total_joven %>%
+  mutate( sexo_reciclador_mujer = as.integer( sexo_reciclador_mujer ), 
+          sexo_reciclador_hombre = as.integer( sexo_reciclador_hombre ),
+          total = as.integer( total ) )
+
+aux_xtab <- xtable( aux, digits = c( 0, 0, 2, 2, 2, 2, 2, 2 ) )
+
+aux_xtab <- tildes_a_latex( aux_xtab )
+
+print( aux_xtab,
+       file = paste0( parametros$resultado_tablas, 'iess_rec_rang_sal_joven', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE, 
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = c( nrow( aux ) - 1,
+                        nrow( aux ) ),
+       sanitize.text.function = identity )
+
 
 #Tabla de afiliados por sexo------------------------------------------------------------------------
 message( '\tTabla del número de afiliados por sexo' )
@@ -188,7 +212,7 @@ aux <- discapacidad_con_carnet
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
 
-aux_xtab <- tildes_a_latex( aux_xtab )
+#aux_xtab <- tildes_a_latex( aux_xtab )
 
 print( aux_xtab,
        file = paste0( parametros$resultado_tablas, 'iess_discapacidad_con_carnet', '.tex' ),

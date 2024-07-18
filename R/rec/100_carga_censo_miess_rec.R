@@ -8,7 +8,7 @@ file <-
           'IESS_28-11-2023.xlsx' )
 
 #Carga de recursos administrados por el BIESS-------------------------------------------------------
-censo_miess <- read_excel( 
+censo_miess_original <- read_excel( 
   file,
   sheet = 'Hoja1',
   col_names = TRUE,
@@ -20,7 +20,12 @@ censo_miess <- read_excel(
                                                      'De 12 a 17 años',
                                                      'De 18 a 29 años',
                                                      'De 30 a 64 años',
-                                                     'Mayor a 65 años' ) ) ) 
+                                                     'Mayor a 65 años' ) ) )
+
+censo_miess <- censo_miess_original %>% 
+  distinct( iddatosreciclador, .keep_all = TRUE ) %>% 
+  filter( ingresos_reciclaje < 5072 ) %>% 
+  filter( ingreso_total < 5072 )
 
 #Depuración de datos--------------------------------------------------------------------------------
 
@@ -38,6 +43,7 @@ censo_miess <- censo_miess %>%
 message( '\tGuardando base de recicladores de MIESS ' )
 
 save( censo_miess,
+      censo_miess_original,
   file = paste0( 
     parametros$RData,
     'MIESS_censo_recicladores.RData'

@@ -934,7 +934,7 @@ La tabla \ref{tab:iess_rec_edad_sexo} presenta el número de recicladores base s
 {\fontsize{9}{11}\selectfont
 \begin{longtable}[H]{lrrrrrr}
 \caption{Distribución de recicladores de base por rangos de edad y sexo}
-\label{tab:iess_rec_edad_sal_prom}\\
+\label{tab:iess_rec_edad_sexo}\\
 \toprule
 \multirow{2}[2]{*}{Rango edad:} &
 \multicolumn{2}{c}{Femenino} & 
@@ -977,7 +977,7 @@ La tabla \ref{tab:iess_rec_edad_sexo} presenta el número de recicladores base s
 \end{longtable}
 }
 
-En la siguiente tabla \ref{tab:iess_rec_porc_edad_sexo}, se observa que, del total de personas dedicadas a esta actividad, el 33,57\% de mujeres corresponde a aquellas con edades comprendidas entre los 30 y los 64 años, seguidas por un 8,35\% perteneciente al grupo de entre 18 y 29 años. En el caso de los hombres, los porcentajes más altos son del 31,24\% y el 12,54\%, respectivamente, dentro del mismo rango de edades.
+Del total de personas dedicadas a esta actividad, el 33,57\% de mujeres corresponde a aquellas con edades comprendidas entre los 30 y los 64 años, seguidas por un 8,35\% perteneciente al grupo de entre 18 y 29 años. En el caso de los hombres, los porcentajes más altos son del 31,24\% y el 12,54\%, respectivamente, dentro del mismo rango de edades.
 
 En la figura \ref{fig:IESS_rec_pir_porc_edad_sexo}, se presenta la distribución de la población de recicladores base por edad y sexo.
 
@@ -985,7 +985,7 @@ En la figura \ref{fig:IESS_rec_pir_porc_edad_sexo}, se presenta la distribución
   \caption{Distribución por edad y sexo de la población de recicladores base}
   \label{fig:IESS_rec_pir_porc_edad_sexo}
   \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_porc_edad_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_porc_edad_sexo.pdf}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
     \textbf{Elaborado:} DAIE.}
 \end{figure}
@@ -995,43 +995,80 @@ En la figura \ref{fig:IESS_rec_pir_porc_edad_sexo}, se presenta la distribución
 
 En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio según edad y sexo.
 
-{\fontsize{9}{11}\selectfont
-\begin{longtable}[H]{lrrrrrr}
+{\setlength{\tabcolsep}{3pt}
+{\fontsize{10}{11}\selectfont
+\begin{longtable}[H]{lrrrrrrrrr}
 \caption{Ingresos económicos de los recicladores base por edad y sexo}
 \label{tab:iess_rec_edad_sal_prom}\\
 \toprule
-\multirow{2}[2]{*}{Rango:} &
-\multicolumn{2}{c}{Femenino} & 
-\multicolumn{2}{c}{Masculino} &
-\multicolumn{2}{c}{Total}\\
-\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+\multirow{3}[2]{*}{Rango:} &
+\multicolumn{3}{c}{Femenino} & 
+\multicolumn{3}{c}{Masculino} &
+\multicolumn{3}{c}{Total}\\
+\cmidrule(r){2-4} \cmidrule(r){5-7}\cmidrule(r){8-10}
 &
-\multicolumn{1}{c}{Recicladoras}   &
-\multicolumn{1}{c}{Porcentaje (\%)}   & 
-\multicolumn{1}{c}{Recicladores}   &
-\multicolumn{1}{c}{Porcentaje (\%)} & 
-\multicolumn{1}{c}{Recicladores} & 
-\multicolumn{1}{c}{Porcentaje (\%)} \\
+\multicolumn{1}{c}{Reciclaje}   &
+\multicolumn{1}{c}{Otros}   & 
+\multicolumn{1}{c}{Total}   & 
+\multicolumn{1}{c}{Reciclaje}   &
+\multicolumn{1}{c}{Otros}   & 
+\multicolumn{1}{c}{Total}   & 
+\multicolumn{1}{c}{Reciclaje}   &
+\multicolumn{1}{c}{Otros}   & 
+\multicolumn{1}{c}{Total}  \\
+&
+\multicolumn{1}{c}{(USD)}   &
+\multicolumn{1}{c}{Ingresos}   &
+\multicolumn{1}{c}{(USD)}   &
+\multicolumn{1}{c}{(USD)}   &
+\multicolumn{1}{c}{Ingresos}   &
+\multicolumn{1}{c}{(USD)}   &
+\multicolumn{1}{c}{(USD)}   &
+\multicolumn{1}{c}{Ingresos}   & 
+\multicolumn{1}{c}{(USD)} \\
+&
+&
+\multicolumn{1}{c}{(USD)}   &
+&
+&
+\multicolumn{1}{c}{(USD)}   &
+&
+&
+\multicolumn{1}{c}{(USD)}   & 
+\\
 \midrule
 \endfirsthead
 
 \toprule
-\multirow{2}[2]{*}{Rango:} &
-\multicolumn{2}{c}{Femenino} & 
-\multicolumn{2}{c}{Masculino} &
-\multicolumn{2}{c}{Total}\\
-\cmidrule(r){2-3} \cmidrule(r){4-5}\cmidrule(r){6-7}
+\multirow{3}[2]{*}{Rango:} &
+\multicolumn{3}{c}{Femenino} & 
+\multicolumn{3}{c}{Masculino} &
+\multicolumn{3}{c}{Total}\\
+\cmidrule(r){2-4} \cmidrule(r){5-7}\cmidrule(r){8-10}
 &
-\multicolumn{1}{c}{Recicladoras}   &
-\multicolumn{1}{c}{Porcentaje (\%)}   & 
-\multicolumn{1}{c}{Recicladores}   &
-\multicolumn{1}{c}{Porcentaje (\%)} & 
-\multicolumn{1}{c}{Recicladores} & 
-\multicolumn{1}{c}{Porcentaje (\%)} \\
+\multicolumn{1}{c}{Reciclaje}   &
+\multicolumn{1}{c}{Otros}   & 
+\multicolumn{1}{c}{Total}   & 
+\multicolumn{1}{c}{Reciclaje}   &
+\multicolumn{1}{c}{Otros}   & 
+\multicolumn{1}{c}{Total}   & 
+\multicolumn{1}{c}{Reciclaje}   &
+\multicolumn{1}{c}{Otros}   & 
+\multicolumn{1}{c}{Total}  \\
+&
+&
+\multicolumn{1}{c}{(USD)}   &
+&
+&
+\multicolumn{1}{c}{(USD)}   &
+&
+&
+\multicolumn{1}{c}{(USD)}   & 
+\\
 \midrule
 \endhead
 
-\bottomrule \multicolumn{7}{r}{continúa...} \\
+\bottomrule \multicolumn{10}{r}{continúa...} \\
 \endfoot
 %\bottomrule
 \caption*{\scriptsize Fuente: Censo de Recicladores de Base.
@@ -1040,6 +1077,7 @@ En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio seg
   \input{tablas/iess_rec_edad_sal_prom.tex}
 \end{longtable}
 }
+}
 
 Se puede observar en la figura \ref{fig:IESS_rec_pir_edad_sal_prom} que los ingresos promedio más altos se encuentran en los rangos de edad de 18 a 29 y de 30 a 64, junto con una marcada disparidad entre los sexos, favoreciendo al masculino.
 
@@ -1047,21 +1085,12 @@ Se puede observar en la figura \ref{fig:IESS_rec_pir_edad_sal_prom} que los ingr
   \caption{Ingreso promedio de reciclaje por edad y sexo de la población de recicladores base}
   \label{fig:IESS_rec_pir_edad_sal_prom}
   \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_edad_sal_prom.pdf}
+  \includegraphics[ scale = 1.1 ]{graficos/IESS_rec_pir_edad_sal_prom.pdf}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
     \textbf{Elaborado:} DAIE.}
 \end{figure}
 
 Los mayores ingresos exclusivamente del reciclaje se registran en el sexo masculino en comparación con el total. Se evidencian los porcentajes más altos en el grupo de edades comprendido entre 30 y 64 años, del 26,15\% en mujeres y 40,15\% en hombres.
-
-\begin{figure}[H]
-  \caption{Ingreso generado por reciclaje por edad y sexo de la población de recicladores base}
-  \label{fig:IESS_rec_pir_edad_sal_reciclaje}
-  \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_edad_sal_reciclaje.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
-\end{figure}
 
 {\fontsize{9}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -1098,16 +1127,44 @@ Los mayores ingresos exclusivamente del reciclaje se registran en el sexo mascul
 \end{longtable}
 }
 
-En la figura \ref{fig:IESS_rec_pir_edad_sal_total}, se muestra el total de ingresos provenientes del reciclaje según edad y sexo. El menor ingreso total se constata en el grupo de edad de 12 a 17 años, representando un 0,11\% para mujeres y un 0,27\% para hombres. Por otro lado, el ingreso total más elevado corresponde al sexo masculino de entre 30 y 64 años, alcanzando el 40,4\% respecto al total, evidenciando una diferencia significativa con respecto al sexo femenino en ese mismo rango de edad.
+El total de ingresos provenientes del reciclaje según edad y sexo. El menor ingreso total se constata en el grupo de edad de 12 a 17 años, representando un 0,11\% para mujeres y un 0,27\% para hombres. Por otro lado, el ingreso total más elevado corresponde al sexo masculino de entre 30 y 64 años, alcanzando el 40,4\% respecto al total, evidenciando una diferencia significativa con respecto al sexo femenino en ese mismo rango de edad.
 
-\begin{figure}[H]
-  \caption{Ingreso total por edad y sexo de la población de recicladores base}
-  \label{fig:IESS_rec_pir_edad_sal_total}
-  \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_edad_sal_total.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
-\end{figure}
+\subsubsection{Ingresos de recicladores de base de entre 18 a 29 años}
+
+{\fontsize{9}{13}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+\caption{Distribución de Personas según rango de ingreso total}
+\label{tab:iess_rec_rang_sal_total}\\
+\toprule
+\multicolumn{1}{c}{Rango ingreso total} &
+\multicolumn{1}{c}{Femenino } & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Masculino} &
+\multicolumn{1}{c}{Porcentaje (\%)} &
+\multicolumn{1}{c}{Total}&
+\multicolumn{1}{c}{Porcentaje (\%)}\\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{Rango ingreso total} &
+\multicolumn{1}{c}{Femenino } & 
+\multicolumn{1}{c}{Porcentaje (\%)} & 
+\multicolumn{1}{c}{Masculino} &
+\multicolumn{1}{c}{Porcentaje (\%)} &
+\multicolumn{1}{c}{Total}&
+\multicolumn{1}{c}{Porcentaje (\%)}\\
+\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{r}{continúa...}\\
+\endfoot
+\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\\Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_rec_rang_sal_joven.tex}
+\end{longtable}
+}
 
 \subsection{Acceso a la Seguridad Social}
 
@@ -1157,7 +1214,7 @@ En la figura \ref{fig:IESS_rec_pir_afiliados_sexo}, se presenta la distribución
   \caption{Distribución por edad y sexo de la población afiliada}
   \label{fig:IESS_rec_pir_afiliados_sexo}
   \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_afiliados_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_afiliados_sexo.pdf}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
     \textbf{Elaborado:} DAIE.}
 \end{figure}
@@ -1210,7 +1267,7 @@ La figura \ref{fig:IESS_rec_pir_afiliados_antiguos_sexo} ilustra la distribució
   \caption{Distribución por edad y sexo de la población que estuvo afiliada}
   \label{fig:IESS_rec_pir_afiliados_antiguos_sexo}
   \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_afiliados_antiguos_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_afiliados_antiguos_sexo.pdf}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
     \textbf{Elaborado:} DAIE.}
 \end{figure}
@@ -1310,7 +1367,7 @@ En la figura \ref{fig:IESS_rec_pir_instr_sexo}, se ilustra la distribución de l
   \caption{Distribución por instrucción y sexo de la población de recicladores base}
   \label{fig:IESS_rec_pir_instr_sexo}
   \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_instr_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_instr_sexo.pdf}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
     \textbf{Elaborado:} DAIE.}
 \end{figure}
@@ -1359,7 +1416,7 @@ La figura \ref{fig:IESS_rec_pir_prov_sexo} muestra que la mayoría de personas q
   \caption{Distribución por provincia y sexo de la población de recicladores base}
   \label{fig:IESS_rec_pir_prov_sexo}
   \centering
-  \includegraphics[ scale = 0.8 ]{graficos/IESS_rec_pir_prov_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_prov_sexo.pdf}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
     \textbf{Elaborado:} DAIE.}
 \end{figure}
