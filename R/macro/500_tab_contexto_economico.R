@@ -621,6 +621,46 @@ print( xtb_aux,
                                    sigma_modelo,
                                    " sobre 131 grados de libertad} \\\\ " ) ) ) )
 
+#Tabla de tasas de pobresa--------------------------------------------------------------------------
+
+message( '\tTabla de tasas de pobreza' )
+
+aux <- pobreza %>% 
+  mutate( anio = as.character( anio ) )
+
+aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
+
+aux_xtab <- tildes_a_latex( aux_xtab )
+
+print( aux_xtab,
+       file = paste0( parametros$resultado_tablas, 'iess_tasa_pobreza', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE, include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow( aux ),
+       sanitize.text.function = identity )
+
+#Tabla de tasas pobresa extrema---------------------------------------------------------------------
+
+message( '\tTabla de tasas de pobreza extrema' )
+
+aux <- pobreza_extrema %>% 
+  mutate( anio = as.character( anio ) ) 
+
+aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
+
+aux_xtab <- tildes_a_latex( aux_xtab )
+
+print( aux_xtab,
+       file = paste0( parametros$resultado_tablas, 'iess_tasa_pobreza_extrema', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE, include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = nrow( aux ),
+       sanitize.text.function = identity )
+
 #Borrando data frames-------------------------------------------------------------------------------
 message( paste( rep( '-', 100 ), collapse = '' ) )
 rm( list = ls( )[ !( ls( ) %in% c( 'parametros' ) ) ] )

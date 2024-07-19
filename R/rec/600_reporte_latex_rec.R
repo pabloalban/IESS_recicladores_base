@@ -20,7 +20,8 @@ source( 'R/ivm/400_graf_analisis_demografico_ivm.R', encoding = 'UTF-8', echo = 
 source('R/rec/400_graf_analisis_demografico_rec.R', encoding = 'UTF-8', echo = FALSE )
 
 # Tablas específicas de REC ------------------------------------------------------------------------
-source( 'R/rec/500_tablas_demograficas_rec.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/rec/500_tab_demograficas_rec.R', encoding = 'UTF-8', echo = FALSE )
+source( 'R/rec/501_tab_resultados_actuariales_rec.R', encoding = 'UTF-8', echo = FALSE )
 
 # Reporte LaTeX ------------------------------------------------------------------------------------
 source( parametros$reporte_script, encoding = 'UTF-8', echo = FALSE )
