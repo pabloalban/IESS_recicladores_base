@@ -66,3 +66,21 @@ las siguientes recomendaciones, con la finalidad de que:
 
 \end{enumerate}
 
+
+Quito, 29 de enero de 2024 \\
+
+%\vspace{2cm}
+Atentamente,
+\vspace{4cm}
+%--------------------------------------------------------------------------------------------------
+% \begin{figure}[H]
+% 	\centering
+% 		\includegraphics[scale=0.28]{graficos/firma_actuario.pdf}
+% 	\end{figure}
+%\vspace{-2cm}
+\begin{center}
+\textbf{Ramiro Vega Suárez, Lic.} \\
+Director Actuarial, de Investigación y Estadística \\
+Instituto Ecuatoriano de Seguridad Social\\
+\textit{\small{Calificación Profesional Superintendencia de Bancos mediante Resolución No. SB-DTL-2018-799}}
+\end{center}

@@ -621,12 +621,16 @@ print( xtb_aux,
                                    sigma_modelo,
                                    " sobre 131 grados de libertad} \\\\ " ) ) ) )
 
-#Tabla de tasas de pobresa--------------------------------------------------------------------------
+#Tabla de tasas de pobreza--------------------------------------------------------------------------
 
 message( '\tTabla de tasas de pobreza' )
 
 aux <- pobreza %>% 
-  mutate( anio = as.character( anio ) )
+  mutate( anio = as.character( anio ),
+          t_pobreza_hombre = 100 * t_pobreza_hombre,
+          t_pobreza_mujer = 100 * t_pobreza_mujer,
+          t_pobreza_n = 100 * t_pobreza_n,
+          crecmiento = 100 * crecmiento )
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
 
@@ -641,12 +645,16 @@ print( aux_xtab,
        hline.after = nrow( aux ),
        sanitize.text.function = identity )
 
-#Tabla de tasas pobresa extrema---------------------------------------------------------------------
+#Tabla de tasas pobreza extrema---------------------------------------------------------------------
 
 message( '\tTabla de tasas de pobreza extrema' )
 
 aux <- pobreza_extrema %>% 
-  mutate( anio = as.character( anio ) ) 
+  mutate( anio = as.character( anio ),
+          t_pobreza_hombre = 100 * t_pobreza_hombre,
+          t_pobreza_mujer = 100 * t_pobreza_mujer,
+          t_pobreza_nacional  = 100 * t_pobreza_nacional,
+          crecimiento = 100 * crecimiento )
 
 aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
 

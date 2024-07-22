@@ -47,6 +47,17 @@ resultados <- read_excel(
   skip = 0
 ) %>% clean_names(  )
 
+
+#Aportes según primas suficientes-------------------------------------------------------------------
+primas_suficientes <- read_excel( 
+  file,
+  sheet = 'primas_suficientes',
+  col_names = TRUE,
+  col_types = NULL,
+  na = "",
+  skip = 0
+) %>% clean_names(  )
+
 #Guardando en un Rdata------------------------------------------------------------------------------
 message( '\tGuardando resultados actuariales' )
 
@@ -54,6 +65,7 @@ save( tasas_legal,
       aportes_legal,
       minimos_pen,
       resultados,
+      primas_suficientes,
       file = paste0( 
         parametros$RData,
         'IESS_resultados_actuariales.RData'

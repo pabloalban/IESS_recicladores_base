@@ -1,0 +1,289 @@
+%---------------------------------------------------------------------------------------------------
+\chapter{Presentación de resultados valuaciones y primas de aportación}
+\label{chp_resultados}
+%---------------------------------------------------------------------------------------------------
+\section{Tasa de aportación vigentes para afiliados voluntarios}
+
+{\setlength{\tabcolsep}{7pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{lrrr}
+  \caption{Tasas de aportación vigentes para afiliados voluntarios}
+\label{tab:iess_tasas_legal} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{3}{c}{Tasa de aportación} \\
+ \cline{2-4}
+ &
+\multicolumn{1}{c}{Personal} &
+\multicolumn{1}{c}{Patronal} &
+\multicolumn{1}{c}{Total} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{3}{c}{Tasa de aportación} \\
+ \cline{2-3}
+ &
+\multicolumn{1}{c}{Personal} &
+\multicolumn{1}{c}{Patronal} &
+\multicolumn{1}{c}{Total} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{3}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: Valuaciones Actuariales, con corte 31/12/2020\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_tasas_legal.tex}
+\end{longtable}
+}
+}
+
+\subsection{Pensiones mínimas de vejez del IESS}
+
+
+{\setlength{\tabcolsep}{7pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{lcc}
+  \caption{Pensiones mínimas de vejez del IESS en 2022 por años aportados}
+\label{tab:iess_minimos_pen} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Años Aportados:}}  &
+\multicolumn{3}{c}{2022} \\
+ \cline{2-3}
+ &
+\multicolumn{1}{c}{Pensión Mínima} &
+\multicolumn{1}{c}{Pensión Mínima} \\
+ &
+\multicolumn{1}{c}{Porcentaje SBU (\%)} &
+\multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Años Aportados:}}  &
+\multicolumn{3}{c}{2022} \\
+ \cline{2-3}
+ &
+\multicolumn{1}{c}{Pensión Mínima} &
+\multicolumn{1}{c}{Pensión Mínima} \\
+ &
+\multicolumn{1}{c}{Porcentaje SBU (\%)} &
+\multicolumn{1}{c}{(USD)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{3}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: Valuaciones Actuariales, con corte 31/12/2020\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_minimos_pen.tex}
+\end{longtable}
+}
+}
+
+\section{Bases de aportación por porcentaje del SBU}
+
+{\setlength{\tabcolsep}{4pt}
+{\fontsize{10}{13}\selectfont
+\begin{longtable}[H]{lccccccc}
+  \caption{Base de aportación según porcentaje del SBU}
+\label{tab:iess_aportes_sbu} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Base aportación:}}  &
+\multicolumn{1}{c}{Porcentaje}  &
+\multicolumn{2}{c}{2022} &
+\multicolumn{2}{c}{2023} &
+\multicolumn{2}{c}{2024} \\
+ \cmidrule(lr){3-4}  \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+ &
+\multicolumn{1}{c}{SBU} &
+\multicolumn{1}{c}{Base aportación} &
+\multicolumn{1}{c}{Aporte} &
+\multicolumn{1}{c}{Base aportación} &
+\multicolumn{1}{c}{Aporte} &
+\multicolumn{1}{c}{Base aportación} &
+\multicolumn{1}{c}{Aporte}\\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Base aportación:}}  &
+\multicolumn{1}{c}{Porcentaje}  &
+\multicolumn{2}{c}{2022} &
+\multicolumn{2}{c}{2023} &
+\multicolumn{2}{c}{2024} \\
+ \cmidrule(lr){3-4}  \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+ &
+\multicolumn{1}{c}{SBU} &
+\multicolumn{1}{c}{Base aportación} &
+\multicolumn{1}{c}{Aporte} &
+\multicolumn{1}{c}{Base aportación} &
+\multicolumn{1}{c}{Aporte} &
+\multicolumn{1}{c}{Base aportación} &
+\multicolumn{1}{c}{Aporte}\\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{8}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: Valuaciones Actuariales, con corte 31/12/2020\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_aportes_sbu.tex}
+\end{longtable}
+}
+}
+
+
+\section{Resultados de las Valuaciones Actuariales}
+
+
+{\setlength{\tabcolsep}{4pt}
+{\fontsize{10}{13}\selectfont
+\begin{longtable}[H]{lrrrr}
+  \caption{Resultados de las Valuaciones Actuariales, con fecha de corte 31/12/2020}
+\label{tab:iess_resultados} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{1}{c}{Tasa}  &
+\multicolumn{1}{c}{Prima} &
+\multicolumn{1}{c}{Balance} &
+\multicolumn{1}{c}{Año} \\
+&
+\multicolumn{1}{c}{Aporte actual} &
+\multicolumn{1}{c}{Suficiente} &
+\multicolumn{1}{c}{Actuarial} &
+\multicolumn{1}{c}{desfinanciamiento}\\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{1}{c}{Tasa}  &
+\multicolumn{1}{c}{Prima} &
+\multicolumn{1}{c}{Balance} &
+\multicolumn{1}{c}{Año} \\
+&
+\multicolumn{1}{c}{Aporte actual} &
+\multicolumn{1}{c}{Suficiente} &
+\multicolumn{1}{c}{Actuarial} &
+\multicolumn{1}{c}{desfinanciamiento}\\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{5}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: Valuaciones Actuariales, con corte 31/12/2020\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_resultados.tex}
+\end{longtable}
+}
+}
+
+
+\subsection{Prima suficiente}
+
+
+
+{\setlength{\tabcolsep}{4pt}
+{\fontsize{10}{13}\selectfont
+\begin{longtable}[H]{lrrrrrr}
+  \caption{Base de aportación según prima suficientes de los Estudios Actuariales, con fecha de corte 31/12/2020}
+\label{tab:iess_primas_suficientes} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{3}{c}{Primas Vigentes C.D. 515}  &
+\multicolumn{3}{c}{Primas Suficientes} \\
+ \cmidrule(lr){2-4}  \cmidrule(lr){5-7}
+ &
+\multicolumn{1}{c}{Prima} &
+\multicolumn{1}{c}{50\% SBU} &
+\multicolumn{1}{c}{100 \% SBU } &
+\multicolumn{1}{c}{Prima} &
+\multicolumn{1}{c}{50\% SBU} &
+\multicolumn{1}{c}{100 \% SBU } \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{3}{c}{Primas Vigentes C.D. 515}  &
+\multicolumn{3}{c}{Primas Suficientes} \\
+ \cmidrule(lr){2-4}  \cmidrule(lr){5-7}
+ &
+\multicolumn{1}{c}{Prima} &
+\multicolumn{1}{c}{50\% SBU} &
+\multicolumn{1}{c}{100 \% SBU } &
+\multicolumn{1}{c}{Prima} &
+\multicolumn{1}{c}{50\% SBU} &
+\multicolumn{1}{c}{100 \% SBU } \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{7}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: Valuaciones Actuariales, con corte 31/12/2020\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_primas_suficientes.tex}
+\end{longtable}
+}
+}

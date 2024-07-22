@@ -578,7 +578,7 @@ Elaborado: DAIE}
 }
 
 
-{\setlength{\tabcolsep}{5pt}
+{\setlength{\tabcolsep}{7pt}
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lcrrrrrrr}
   \caption{Evolución histórica de las pensiones máximas}
@@ -660,6 +660,131 @@ Elaborado: DAIE}
 Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_pension_max.tex}
+\end{longtable}
+}
+}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Evolución histórica de los indicadores de pobreza}
+
+
+
+{\setlength{\tabcolsep}{5pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{crrrcc}
+  \caption{Evolución histórica de los indicadores de pobreza}
+\label{tab:iess_tasa_pobreza} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Año:}}  &
+\multicolumn{3}{c}{Tasa pobreza} &
+\multicolumn{1}{c}{Línea de} &
+\multicolumn{1}{c}{Tasa de } \\
+ \cline{2-4}
+ &
+\multicolumn{1}{c}{Hombre} &
+\multicolumn{1}{c}{Mujer} &
+\multicolumn{1}{c}{Nacional} &
+\multicolumn{1}{c}{pobreza} &
+\multicolumn{1}{c}{crecimiento} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Año:}}  &
+\multicolumn{3}{c}{Tasa pobreza} &
+\multicolumn{1}{c}{Línea de} &
+\multicolumn{1}{c}{Tasa de } \\
+ \cline{2-4}
+ &
+\multicolumn{1}{c}{Hombre} &
+\multicolumn{1}{c}{Mujer} &
+\multicolumn{1}{c}{Nacional} &
+\multicolumn{1}{c}{pobreza} &
+\multicolumn{1}{c}{crecimiento} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{6}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: INEC\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_tasa_pobreza.tex}
+\end{longtable}
+}
+}
+
+%---------------------------------------------------------------------------------------------------
+\subsection{Evolución histórica de los indicadores de pobreza extrema}
+
+
+{\setlength{\tabcolsep}{7pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{crrrcc}
+  \caption{Evolución histórica de los indicadores de pobreza extrema}
+\label{tab:iess_tasa_pobreza_extrema} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Año:}}  &
+\multicolumn{3}{c}{Tasa pobreza} &
+\multicolumn{1}{c}{Línea de} &
+\multicolumn{1}{c}{Tasa de } \\
+ \cline{2-4}
+ &
+\multicolumn{1}{c}{Hombre} &
+\multicolumn{1}{c}{Mujer} &
+\multicolumn{1}{c}{Nacional} &
+\multicolumn{1}{c}{pobreza extrema} &
+\multicolumn{1}{c}{crecimiento} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Año:}}  &
+\multicolumn{3}{c}{Tasa pobreza} &
+\multicolumn{1}{c}{Línea de} &
+\multicolumn{1}{c}{Tasa de } \\
+ \cline{2-4}
+ &
+\multicolumn{1}{c}{Hombre} &
+\multicolumn{1}{c}{Mujer} &
+\multicolumn{1}{c}{Nacional} &
+\multicolumn{1}{c}{pobreza} &
+\multicolumn{1}{c}{crecimiento} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(USD)} &
+\multicolumn{1}{c}{(USD)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{6}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: INEC\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_tasa_pobreza_extrema.tex}
 \end{longtable}
 }
 }

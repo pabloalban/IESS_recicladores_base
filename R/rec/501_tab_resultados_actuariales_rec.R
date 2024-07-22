@@ -37,13 +37,13 @@ aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
 aux_xtab <- tildes_a_latex( aux_xtab )
 
 print( aux_xtab,
-       file = paste0( parametros$resultado_tablas, 'iess_aportes_legal', '.tex' ),
+       file = paste0( parametros$resultado_tablas, 'iess_aportes_sbu', '.tex' ),
        type = 'latex',
        include.colnames = FALSE, 
        include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = c( nrow( aux ) - 1,nrow( aux ) ),
+       hline.after = c( nrow( aux ) ),
        sanitize.text.function = identity )
 
 #Tabla de Pensiones mínimas-------------------------------------------------------------------------
@@ -83,8 +83,29 @@ print( aux_xtab,
        include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = c( nrow( aux ) - 1,nrow( aux ) ),
+       hline.after = c( nrow( aux ) ),
        sanitize.text.function = identity )
+
+#Tabla de primas suficientes y aportaciones---------------------------------------------------------
+
+message( '\tTabla de primas suficientes y aportaciones' )
+
+aux <- primas_suficientes 
+
+aux_xtab <- xtable( aux, digits = c( 0, 0, rep( 2, ncol( aux ) - 1 ) ) )
+
+aux_xtab <- tildes_a_latex( aux_xtab )
+
+print( aux_xtab,
+       file = paste0( parametros$resultado_tablas, 'iess_primas_suficientes', '.tex' ),
+       type = 'latex',
+       include.colnames = FALSE, 
+       include.rownames = FALSE,
+       format.args = list( decimal.mark = ',', big.mark = '.' ),
+       only.contents = TRUE,
+       hline.after = c( nrow( aux ) - 1, nrow( aux ) ),
+       sanitize.text.function = identity )
+
 
 # Limpiar Ram---------------------------------------------------------------------------------------
 message( paste( rep('-', 100 ), collapse = '' ) )

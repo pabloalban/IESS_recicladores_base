@@ -33,9 +33,9 @@
 % Cuerpo del estudio
 \mainmatter
 
-% <<cap03, child='03_resumen_ejecutivo.Rnw'>>=
-% @
-% 
+<<cap03, child='03_resumen_ejecutivo.Rnw'>>=
+@
+
 <<cap04, child='04_antecedentes.Rnw'>>=
 @
 %  
@@ -47,58 +47,20 @@
   
 <<cap07, child='07_demografia.Rnw'>>=
 @
-%  
-% <<cap08, child='08_inversiones.Rnw'>>=
-% @
-%   
-% <<cap09, child='09_demografia.Rnw'>>=
-% @
-%    
-% <<cap10, child='10_metodologia.Rnw'>>=
-% @
-%    
-% <<cap11, child='11_hipotesis.Rnw'>>=
-% @ 
-%    
-% <<cap12, child='12_riesgos.Rnw'>>=
-% @
-%   
-% <<cap13, child='13_situacion.Rnw'>>=
-% @
-% 
-% <<cap14, child='14_sensibilidad.Rnw'>>=
-% @
-% 
-% <<cap15, child='15_conclusion.Rnw'>>=
-% @
-%  
-% <<cap16, child='16_opinion_actuarial.Rnw'>>=
-% @
+
+<<cap08, child='08_resultados.Rnw'>>=
+@
+
+<<cap09, child='09_conclusion.Rnw'>>=
+@
 
 %---------------------------------------------------------------------------------------------------
 % Apéndices
 \appendix
 %\appendixpage
 
-% <<cap16, child='16_anx_modelo_macro.Rnw'>>=
-% @
-
-% <<cap17, child='17_anx_tasas_morbilidad.Rnw'>>=
-% @
-
-% <<cap18, child='18_anx_tablas_biometricas.Rnw'>>=
-% @
-
-%<<cap20, child='20_anx_copia_optica.Rnw'>>=
-%@
-
 %---------------------------------------------------------------------------------------------------
 % Acrónimos
-%<<cap21, child='21_anx_acronimos.Rnw'>>=
-%@
-
-%<<cap16, child='18_anexos.Rnw'>>=
-%@
 
 %---------------------------------------------------------------------------------------------------
 %\backmatter
