@@ -7,13 +7,13 @@ message( "\tEstadísticas descriptivas" )
 
 #1.Número de recicladores por edad y sexo-----------------------------------------------------------
 
-cortes_edad <- c( 7, 14, 24, 64, 105 )
+cortes_edad <- c( 7, 18, 24, 64, 105 )
 
 etiquetas_edad <-
   c( paste0( 
     "De ",
     formatC( 
-      c( 7, 15, 25 ),
+      c( 7, 18, 25 ),
       digits = 0,
       format = 'f',
       big.mark = '.',
@@ -21,7 +21,7 @@ etiquetas_edad <-
     ),
     " a ",
     formatC( 
-      c( 14, 24, 64 ),
+      c( 17, 24, 64 ),
       digits = 0,
       format = 'f',
       big.mark = '.',
@@ -268,9 +268,9 @@ instr_sexo <- censo_miess %>%
           instruccion = as.character( instruccion ) ) %>% 
   rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) ) %>% 
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(porcentaje_mujeres = mujer * 100 / total[10],
-         porcentaje_hombres = hombre * 100 / total[10],
-         porc = total * 100 / total[10]) %>%
+  mutate(porcentaje_mujeres = mujer * 100 / total[nrow( . )],
+         porcentaje_hombres = hombre * 100 / total[nrow( . )],
+         porc = total * 100 / total[nrow( . )] ) %>%
   dplyr::select( instruccion, 
                  mujer, porcentaje_mujeres,
                  hombre, porcentaje_hombres, 

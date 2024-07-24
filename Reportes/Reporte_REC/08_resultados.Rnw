@@ -1,5 +1,5 @@
 %---------------------------------------------------------------------------------------------------
-\chapter{Presentación de resultados valuaciones y primas de aportación}
+\chapter{Resultados de las valuaciones actuariales y primas de aportación}
 \label{chp_resultados}
 %---------------------------------------------------------------------------------------------------
 \section{Tasa de aportación vigentes para afiliados voluntarios}

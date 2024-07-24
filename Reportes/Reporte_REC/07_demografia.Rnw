@@ -2,8 +2,10 @@
 \chapter[Análisis demográfico, de salarios y pensiones del Seguro de IVM del IESS]{Análisis demográfico, de salarios y pensiones del Seguro de IVM del IESS}
 \label{chp_demog}
 %---------------------------------------------------------------------------------------------------
-A continuación presentamos un análisis tabular y gráfico de las principales variables demográficas,
-salariales, aportaciones y montos de pensiones pagadas, de la población asegurada y beneficiaria.
+En el siguiente capitulo se presenta un análisis demográfico y de los ingresos de los afiliados al IESS y, a continuación, de los recicladores de base, en el cual se va a demostrar claramente una gran disparidad entre los ingresos de ambos grupos.
+
+La información de los afiliados al IESS tiene como fuente las bases de datos de las planillas de la Dirección de Afiliación y Cobertura del IESS. En contraste, para el análisis demográfico de los recicladores de base se utilizó el Censo Socioeconómico de los recicladores de base por parte del Ministerio de Inclusión Económica y Social entregado a la Dirección Actuarial, de Investigación y Estadística del IESS, mediante memorando Nro. IESS-DNAC-2023-1789-M.
+
 
 %---------------------------------------------------------------------------------------------------
 \section{Estructura demográfica de la población afiliada al Seguro de IVM del IESS}
@@ -38,10 +40,9 @@ Año
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
-
 
 En cambio, en la tabla \ref{tab:iess_afi_activos_sgo} se puede apreciar la evolución del número de
 afiliados en cada año observado, medida con la exposición al riesgo. Esta misma información se resume
@@ -69,26 +70,24 @@ Año
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
-
-Para el \Sexpr{REP$corte} existen \Sexpr{REP$afi_sgo} afiliados activos, que representa un
-crecimiento del \Sexpr{REP$cre_afi_sgo}\% en comparación al año 2012. Durante el período 2012-2019
-se observa un crecimiento sostenido de los afiliados; sin embargo, para el \Sexpr{REP$corte} se
-evidencia una caída importante producto de la crisis sanitaria, económica y social producida por la
-pandemia COVID-19, que en comparación al año 2019 representa un \Sexpr{REP$afi_var}\%. 
 
 \begin{figure}[H]
 \caption{Evolución de la población afiliada al SGO}
 \label{fig:iess_afi_activos_sgo}
 \centering
 \includegraphics[scale=1]{graficos/iess_pob_afi_sgo_ini.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
-En la figura \ref{fig:iess_pir_afiliados} se presenta la distribución de la población afiliada al 
+Para el \Sexpr{REP$corte} existen \Sexpr{REP$afi_sgo} afiliados activos, que representa un
+crecimiento del \Sexpr{REP$cre_afi_sgo}\% en comparación al año 2012. Durante el período 2012-2019
+se observa un crecimiento sostenido de los afiliados; sin embargo, para el \Sexpr{REP$corte} se
+evidencia una caída importante producto de la crisis sanitaria, económica y social producida por la
+pandemia COVID-19, que en comparación al año 2019 representa un \Sexpr{REP$afi_var}\%. En la figura \ref{fig:iess_pir_afiliados} se presenta la distribución de la población afiliada al 
 SGO por edad y sexo.
 
 \begin{figure}[H]
@@ -96,8 +95,8 @@ SGO por edad y sexo.
 \label{fig:iess_pir_afiliados}
 \centering
 \includegraphics[scale=1]{graficos/iess_pir_afiliados_sgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 Del total de afiliados en el \Sexpr{REP$corte}, el \Sexpr{REP$por_sgo_m}\% son mujeres y el
@@ -129,8 +128,8 @@ Año
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 En la tabla \ref{tab:iess_thnrh_act_pob} y figura \ref{fig:iess_afi_activos_tnrh} se muestra a la
@@ -156,8 +155,8 @@ Año
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 Para el \Sexpr{REP$corte} existen \Sexpr{REP$afi_tnrh} afiliados bajo esta modalidad, esta población afiliada presenta un crecimiento del \Sexpr{REP$por_tnrh_2019}\% con respecto al 2019; es evidente que para el 2016 esta población aumentó el número de beneficiarios de manera significativa.
@@ -167,8 +166,8 @@ Para el \Sexpr{REP$corte} existen \Sexpr{REP$afi_tnrh} afiliados bajo esta modal
 \label{fig:iess_afi_activos_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_pob_afi_tnrh_ini.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 Del total de afiliados en el \Sexpr{REP$corte}, el \Sexpr{REP$por_tnrh_m}\% son
@@ -180,8 +179,8 @@ es de \Sexpr{REP$edad_prom_tnrh_m} años. En la figura \ref{fig:iess_pir_afiliad
 \label{fig:iess_pir_afiliados_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_pir_afiliados_tnrh.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 %---------------------------------------------------------------------------------------------------
@@ -212,7 +211,7 @@ Año
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\ 
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\ 
 Elaborado: DAIE}
 \end{table}
 
@@ -229,8 +228,8 @@ económica y social producida por la pandemia COVID-19.
 \label{fig:iess_masa_salarial_sgo}
 \centering
 \includegraphics[scale=1]{graficos/iess_masa_salarial_sgo_ini.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -238,8 +237,8 @@ Elaborado: DAIE.}
 \label{fig:iess_pir_masa_salarial}
 \centering
 \includegraphics[scale=1]{graficos/iess_pir_masa_salarial_sgo.pdf}
-\caption*{\scriptsize Fuente: Base de datos de planillas. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 En la figura \ref{fig:iess_pir_masa_salarial} se muestra la distribución por sexo del salario
@@ -285,8 +284,8 @@ $[50, \infty)$ \\
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 \begin{table}[H]
@@ -319,8 +318,8 @@ $[50, \infty)$ \\
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 \begin{table}[H]
@@ -354,8 +353,8 @@ $[50, \infty)$ \\
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 \end{landscape}
@@ -387,7 +386,7 @@ Año
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\ 
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\ 
 Elaborado: DAIE}
 \end{table}
 
@@ -402,8 +401,8 @@ COVID - 19.
 \label{fig:iess_masa_salarial_tnrh_jefe}
 \centering
 \includegraphics[scale=1]{graficos/iess_masa_salarial_tnrh_ini.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS.. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 En la figura \ref{fig:iess_pir_masa_salarial_tnrh} se muestra la distribución por sexo del salario
@@ -417,8 +416,8 @@ ambos sexos.
 \label{fig:iess_pir_masa_salarial_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_pir_masa_salarial_tnrh.pdf}
-\caption*{\scriptsize Fuente: Base de datos de planillas. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 En la tabla \ref{tab:iess_tnrh_imp_sal} se presenta la cantidad de afiliados al TNRH,
@@ -463,8 +462,8 @@ $[50, \infty)$ \\
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 \begin{table}[H]
@@ -497,8 +496,8 @@ $[50, \infty)$ \\
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 \begin{table}[H]
@@ -531,8 +530,8 @@ $[50, \infty)$ \\
 \bottomrule
 \end{tabular}
 }
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{table}
 
 \end{landscape}
@@ -558,8 +557,8 @@ encuentran con aportes en el año de la fecha de corte del estudio} y el
 \label{fig:iess_jefes_act_inact}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_sgo_act_inact.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 Con la finalidad de realizar un análisis más descriptivo de la población mencionada en el párrafo
@@ -587,8 +586,8 @@ Hasta el año \Sexpr{REP$corte}, para la población de afiliados activos hombres
 \label{fig:iess_pastel_jefes_male_riesgo}
 \centering
 \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -596,8 +595,8 @@ Elaborado: DAIE.}
 \label{fig:iess_jef_male_edad_riesgo}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 En la figura \ref{fig:iess_jefe_male_num_cotiz} se muestra la distribución de los afiliados al SGO
@@ -609,8 +608,8 @@ años de imposiciones.
 \label{fig:iess_jefe_male_num_cotiz}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -618,8 +617,8 @@ Elaborado: DAIE.}
 \label{fig:iess_pastel_jefes_female_riesgo}
 \centering
 \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 Respecto a la población de mujeres afiliadas activas del SGO, el \Sexpr{REP$afi_er_sgo_m_g4}\%
@@ -633,8 +632,8 @@ invalidez y muerte y el \Sexpr{REP$afi_er_sgo_m_g1}\% tiene  requisitos no cumpl
 \label{fig:iess_jef_female_edad_riesgo}
 \centering
 \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_edad_riesgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -642,8 +641,8 @@ Elaborado: DAIE.}
 \label{fig:iess_jefe_female_num_cotiz}
 \centering
 \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 La distribución del número de años de imposiciones de mujeres afiliadas activas del SGO se puede
@@ -661,8 +660,8 @@ Para la población de afiliados inactivos hombres del SGO se tiene que, el
 \label{fig:iess_pastel_jefes_male_riesgo_inac}
 \centering
 \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 A continuación, en la figura \ref{fig:iess_afi_male_edad_riesgo_inac} se puede apreciar la
@@ -674,8 +673,8 @@ imposiciones.
 \label{fig:iess_afi_male_edad_riesgo_inac}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 La distribución del número de imposiciones en años se puede observar en la figura
@@ -687,8 +686,8 @@ años.
 \label{fig:iess_dis_male_num_cotiz_inac}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 Para las mujeres afiliadas inactivas del SGO tenemos que, el \Sexpr{REP$afi_er_sgo_ina_m_g4}\%
@@ -701,8 +700,8 @@ para invalidez y muerte y el \Sexpr{REP$afi_er_sgo_ina_m_g1}\% tiene  requisitos
 \label{fig:iess_pastel_jefes_female_riesgo_inac}
 \centering
 \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -711,8 +710,8 @@ de riesgo}
 \label{fig:iess_jef_female_edad_riesgo_inac}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 La desagregación de la población anterior en los 4 tipos de riesgo por edad y años de imposiciones
@@ -727,8 +726,8 @@ encuentra de 0 a 5 años de imposiciones.
 \label{fig:iess_jefe_female_num_cotiz_inac}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 %---------------------------------------------------------------------------------------------------
@@ -763,8 +762,8 @@ menos de un año.
 \label{fig:iess_jefes_act_inact_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_act_inact.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 
@@ -782,8 +781,8 @@ desagregación de los 4 tipos de riesgo por edad, años de imposiciones.
 \label{fig:iess_pastel_jefes_male_riesgo_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -792,8 +791,8 @@ tipo de riesgo}
 \label{fig:iess_jef_male_edad_riesgo_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_edad_riesgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 En la figura \ref{fig:iess_jefe_male_num_cotiz_tnrh} se muestra la distribución de los afiliados al
@@ -804,8 +803,8 @@ TNRH hombres que están activos por número de años de imposiciones, se observa
 \label{fig:iess_jefe_male_num_cotiz_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -813,8 +812,8 @@ Elaborado: DAIE.}
 \label{fig:iess_pastel_jefes_female_riesgo}
 \centering
 \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 Las mujeres afiliadas activas bajo este régimen especial nos indica que, no existen personas que
@@ -829,8 +828,8 @@ cumplidos. La clasificación de la población anterior en los 4 tipos de riesgos
 \label{fig:iess_jef_female_edad_riesgo_tnrh}
 \centering
 \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 
@@ -839,8 +838,8 @@ Elaborado: DAIE.}
 \label{fig:iess_jefe_female_num_cotiz_tnrh}
 \centering
 \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 En cuanto a la distribución en años del número  de imposiciones de las afiliadas activas mujeres,
@@ -858,8 +857,8 @@ invalidez y muerte y el \Sexpr{REP$afi_er_tnrh_ina_h_g1}\% tiene  requisitos no 
 \label{fig:iess_pastel_jefes_male_riesgo_inac}
 \centering
 \includegraphics[scale=0.8]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -868,8 +867,8 @@ tipo de riesgo}
 \label{fig:iess_jef_male_edad_riesgo_inac}
 \centering
 \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_mas_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 La distribución del número de imposiciones en años se puede observar en la figura
@@ -884,8 +883,8 @@ con menos de 1 año de aportación.
 \label{fig:iess_jefe_male_num_cotiz_inac}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -893,8 +892,8 @@ Elaborado: DAIE.}
 \label{fig:iess_pastel_jefes_female_riesgo_inac}
 \centering
 \includegraphics[scale=0.85]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 Las afiliadas inactivas mujeres de este régimen especial, no tienen personas que cumplirán
@@ -909,8 +908,8 @@ tipo de riesgo}
 \label{fig:iess_jef_female_edad_riesgo_inac_tnrh}
 \centering
 \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 \begin{figure}[H]
@@ -918,18 +917,23 @@ Elaborado: DAIE.}
 \label{fig:iess_jefe_female_num_cotiz_inac_tnrh}
 \centering
 \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_fem_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Datos administrativos del IESS. \\
-Elaborado: DAIE.}
+\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+Elaborado: DAIE}
 \end{figure}
 
 %---------------------------------------------------------------------------------------------------
-\section[Análisis demográfico de recicladores base]{Análisis demográfico de recicladores base}
+\section[Análisis demográfico de recicladores de base]{Análisis demográfico de recicladores de base}
 \label{chp_demog:rec}
 
+Con los datos del Censo Socioeconómico de los recicladores de base por parte del Ministerio de Inclusión Económica y Social entregado a la Dirección Actuarial, de Investigación y Estadística del IESS, mediante memorando Nro. IESS-DNAC-2023-1789-M, se realizó el siguiente análisis demográfico, de los ingresos, discapacidades entre otras variables sociodemográficas.
 
-\subsection{Recicladores base por edad y sexo}
+La base de datos del censo socioeconómico de los recicladores de base elaborado por el MIES dispone de 22.428 registros, de los cuales 9.744 son registros únicos sin repetir la variable “iddatosreciclador”. La duplicación de registros se debe a que el censo registra los diferentes materiales recuperados por el reciclador de base; por ejemplo, el reciclador base con iddatosreciclador igual a 6, tiene dos (2) registros en la base de datos, debido a que en el primer registro se informa que en el “Material Recuperado” se informa de “Plástico suave” y en el segundo registro “Papel y Cartón”, sin cambiar los valores de las otras variables.
 
-La tabla \ref{tab:iess_rec_edad_sexo} presenta el número de recicladores base según edad y sexo, observándose el mayor número en el sexo femenino dentro del rango de 30 a 64 años.
+En segundo lugar, se ha excluido a 16 recicladores de base con ingresos mayores a USD 5.072 (salario del Sr. Presidente de la República), debido que se debe a un ingreso incorrecto del valor, como por ejemplo en le caso del reciclador de base con iddatosreciclador igual 11806, el cual registra ingresos mensuales por USD 99.999 o se debería que se ha encuestado a dueños de empresas de reciclaje, los cuales no sería el objetivo del estudio. Por lo tanto, en el presente estudio abarca a 9.728 recicladores de base después de excluir registros duplicados y 16 recicladores de base con ingresos mayores a USD 5.072.
+
+\subsection{Recicladores de base por edad y sexo}
+
+Después de la depuración de la base del censo socioeconómico de los recicladores de base por parte del MIES, se registra 9.728 recicladores de base, de los cuales 5.084 son hombres (52,26\%) y 4.644 mujeres (47,74\%). En la tabla \ref{tab:iess_rec_edad_sexo} se presenta el número de recicladores de base según edad y sexo.
 
 {\fontsize{9}{11}\selectfont
 \begin{longtable}[H]{lrrrrrr}
@@ -970,35 +974,31 @@ La tabla \ref{tab:iess_rec_edad_sexo} presenta el número de recicladores base s
 \bottomrule \multicolumn{7}{r}{continúa...} \\
 \endfoot
 %\bottomrule
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_rec_edad_sexo.tex}
 \end{longtable}
 }
 
-Del total de personas dedicadas a esta actividad, el 33,57\% de mujeres corresponde a aquellas con edades comprendidas entre los 30 y los 64 años, seguidas por un 8,35\% perteneciente al grupo de entre 18 y 29 años. En el caso de los hombres, los porcentajes más altos son del 31,24\% y el 12,54\%, respectivamente, dentro del mismo rango de edades.
-
-En la figura \ref{fig:IESS_rec_pir_porc_edad_sexo}, se presenta la distribución de la población de recicladores base por edad y sexo.
+Se registra 1.477 recicladores de base con 65 años o más, la totalidad no ha contribuido al IESS, de los cuales 5.084 (52,26\%) son mujeres y 4.644 son hombres (47.74\%) y que deberían percibir una renta por vejez. La mayoría (74,04\%) de recicladores de base registra edad entre 25 a 64 años. Además, 883 recicladores tienen entre 18 a 24 años, más adelante se analizará los ingresos de esta población joven. Por último, hay registro de 9 recicladores de entre 7 a 14 años, los cuales deberían acceder a programas de protección infantil por parte del Estado. En la figura \ref{fig:IESS_rec_pir_porc_edad_sexo}, se presenta la distribución de la población de recicladores de base por edad y sexo.
 
 \begin{figure}[H]
-  \caption{Distribución por edad y sexo de la población de recicladores base}
+  \caption{Distribución por edad y sexo de la población de recicladores de base}
   \label{fig:IESS_rec_pir_porc_edad_sexo}
   \centering
   \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_porc_edad_sexo.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
+  \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
+    \textbf{Elaborado:} DAIE}
 \end{figure}
 
-
-\subsection{Ingresos ecónomicos de los recicladores base}
-
-En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio según edad y sexo.
+\subsection{Ingresos económicos de los recicladores de base}
+De la totalidad de 9.728 recicladores de base, 7.510 (77,20\%) recicladores solo tienen como su único ingreso del reciclaje; mientras que 2.218 (22,80\%) tiene otros ingresos. En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio según edad y sexo.
 
 {\setlength{\tabcolsep}{3pt}
 {\fontsize{10}{11}\selectfont
 \begin{longtable}[H]{lrrrrrrrrr}
-\caption{Ingresos económicos de los recicladores base por edad y sexo}
+\caption{Ingresos económicos de los recicladores de base por edad y sexo}
 \label{tab:iess_rec_edad_sal_prom}\\
 \toprule
 \multirow{3}[2]{*}{Rango:} &
@@ -1071,7 +1071,7 @@ En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio seg
 \bottomrule \multicolumn{10}{r}{continúa...} \\
 \endfoot
 %\bottomrule
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_rec_edad_sal_prom.tex}
@@ -1079,22 +1079,24 @@ En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio seg
 }
 }
 
-Se puede observar en la figura \ref{fig:IESS_rec_pir_edad_sal_prom} que los ingresos promedio más altos se encuentran en los rangos de edad de 18 a 29 y de 30 a 64, junto con una marcada disparidad entre los sexos, favoreciendo al masculino.
+En promedio, los recicladores de base registran ingresos mensuales por USD 218,56, de los cuales solo USD 87,94 provienen exclusivamente del reciclaje, lo cual trae una problemática porque el 77,20\% de los recicladores tienen ingresos exclusivos del reciclaje. Por sexo, las mujeres registran ingresos promedio totales por USD 183,90, de los cuales solo USD 80,81 provienen del reciclaje. Por otro lado, en los hombres el ingreso total promedio es USD 250,21, de los cuales solo USD 94, 45 proviene del reciclaje.
+
+Se puede observar en la figura \ref{fig:IESS_rec_pir_edad_sal_prom} se muestran los ingresos promedios por rangos de edad. Los ingresos promedio más altos se encuentran en los rangos de edad de 18 a 29 y de 30 a 64, junto con una marcada disparidad entre los sexos, favoreciendo al masculino.
 
 \begin{figure}[H]
-  \caption{Ingreso promedio de reciclaje por edad y sexo de la población de recicladores base}
+  \caption{Ingreso promedio de reciclaje por edad y sexo de la población de recicladores de base}
   \label{fig:IESS_rec_pir_edad_sal_prom}
   \centering
-  \includegraphics[ scale = 1.1 ]{graficos/IESS_rec_pir_edad_sal_prom.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
+  \includegraphics[ scale = 0.95 ]{graficos/IESS_rec_pir_edad_sal_prom.pdf}
+  \caption*{\scriptsize \textbf{Fuente:} Censo de recicladores de base del MIES \\
+    \textbf{Elaborado:} DAIE}
 \end{figure}
 
-Los mayores ingresos exclusivamente del reciclaje se registran en el sexo masculino en comparación con el total. Se evidencian los porcentajes más altos en el grupo de edades comprendido entre 30 y 64 años, del 26,15\% en mujeres y 40,15\% en hombres.
+Los mayores ingresos exclusivamente del reciclaje se registran en el sexo masculino en comparación con el total. Se evidencian los porcentajes más altos en el grupo de edades comprendido entre 30 y 64 años.
 
 {\fontsize{9}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
-\caption{Distribución de Personas según rango de ingreso total}
+\caption{Distribución de recicladores de base según rango de ingreso total}
 \label{tab:iess_rec_rang_sal_total}\\
 \toprule
 \multicolumn{1}{c}{Rango ingreso total} &
@@ -1120,18 +1122,20 @@ Los mayores ingresos exclusivamente del reciclaje se registran en el sexo mascul
 
 \bottomrule \multicolumn{7}{r}{continúa...}\\
 \endfoot
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_rec_rang_sal_total.tex}
 \end{longtable}
 }
 
-El total de ingresos provenientes del reciclaje según edad y sexo. El menor ingreso total se constata en el grupo de edad de 12 a 17 años, representando un 0,11\% para mujeres y un 0,27\% para hombres. Por otro lado, el ingreso total más elevado corresponde al sexo masculino de entre 30 y 64 años, alcanzando el 40,4\% respecto al total, evidenciando una diferencia significativa con respecto al sexo femenino en ese mismo rango de edad.
+La distribución de los ingresos totales (reciclaje más otros ingresos) de los recicladores de base se compone como sigue, a continuación: 1.680 (17,27\%) recicladores se encuentran bajo la línea de pobreza extrema (USD 50 en 2022); 2.948 (30,30\% recicladores se encuentran bajo la línea de la pobreza (USD 90 en 2022); 3.978 (40,89\%) recicladores tienen ingresos menores a USD 106,25 (25\% SBU en 2022); 6.863 (70,55\%) recicladores tienen ingresos menores a USD 212,50 (50\% SBU en 2022); 8.850 (90,97\%) recicladores tienen ingresos menor a un SBU (USD 425 en 2022); y, finalmente, solo 878 (9,03\%) recicladores tienen ingresos mayores a un SBU.
 
 \subsubsection{Ingresos de recicladores de base de entre 18 a 29 años}
 
-{\fontsize{9}{13}\selectfont
+Dentro del grupo de recicladores jóvenes entre 18 a 29 años (no se realizó el análisis a 25 años porque la encuesta solo ingresos edades por rango) de 1.999 recicladores que son potenciales afiliados del régimen de afiliación joven SUB24, se tiene que 699 (34,97\%) recicladores tienen ingresos mayores al 50\% del SBU; es decir, que el 65,03\% tiene ingresos menores a 50\% del SBU. En la tabla \ref{tab:iess_rec_rang_sal_total}, se presenta la distribución de los ingresos de los jóvenes recicladores por rango de ingresos en porcentajes del SBU.
+
+{\fontsize{9}{11}\selectfont
 \begin{longtable}[H]{lrrrrrr}
 \caption{Distribución de Personas según rango de ingreso total}
 \label{tab:iess_rec_rang_sal_total}\\
@@ -1159,7 +1163,7 @@ El total de ingresos provenientes del reciclaje según edad y sexo. El menor ing
 
 \bottomrule \multicolumn{7}{r}{continúa...}\\
 \endfoot
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_rec_rang_sal_joven.tex}
@@ -1168,16 +1172,15 @@ El total de ingresos provenientes del reciclaje según edad y sexo. El menor ing
 
 \subsection{Acceso a la Seguridad Social}
 
-%Tabla de afiliados por sexo------------------------------------------------------------------------
-La tabla \ref{tab:iess_rec_afiliados_sexo} indica el número de afiliados según la característica social y el sexo.
+La población no afiliada a la fecha de corte a los diferentes regímenes de seguros del sistema de seguridad social ecuatoriano alcanza el 92,17\%; es decir,  8.966 recicladores no tienen acceso a seguridad social, evidenciándose que el 4.354 mujeres y el 4.612 de los hombres no cuentan con cobertura alguna. Y, el 80,92\% nunca a aportado o tenido acceso a la Seguridad Social en su vida.  En la figura \ref{fig:IESS_rec_pir_afiliados_sexo} y en la tabla \ref{tab:iess_rec_afiliados_sexo}, se presenta la distribución de la población afiliada a los diferentes seguros que componen el sistema de seguridad social ecuatoriano.
 
 {\setlength{\tabcolsep}{3pt}
-{\fontsize{9}{13}\selectfont
+{\fontsize{9}{11}\selectfont
 \begin{longtable}[H]{lrrrrrr}
-\caption{Distribución de Recicladores Base afiliados por característica social y sexo}
+\caption{Recicladores de base afiliados por acceso a la seguridad social}
 \label{tab:iess_rec_afiliados_sexo}\\
 \toprule
-\multicolumn{1}{c}{Característica Social} &
+\multicolumn{1}{c}{Seguro:} &
 \multicolumn{1}{c}{Femenino } & 
 \multicolumn{1}{c}{Porcentaje (\%)} & 
 \multicolumn{1}{c}{Masculino} &
@@ -1200,7 +1203,7 @@ La tabla \ref{tab:iess_rec_afiliados_sexo} indica el número de afiliados según
 
 \bottomrule \multicolumn{7}{r}{continúa...}\\
 \endfoot
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_rec_afiliados_sexo.tex}
@@ -1208,74 +1211,21 @@ La tabla \ref{tab:iess_rec_afiliados_sexo} indica el número de afiliados según
 }
 }
 
-En la figura \ref{fig:IESS_rec_pir_afiliados_sexo}, se presenta la distribución de la población afiliada a los diferentes tipos de seguro por sexo. Se destaca que la mayoría de recicladores base no están cubiertos por ningún seguro, evidenciándose que el 45,58\% de las mujeres y el 46,54\% de los hombres no cuentan con cobertura alguna.
 
 \begin{figure}[H]
-  \caption{Distribución por edad y sexo de la población afiliada}
+  \caption{Distribución por edad y sexo de los recicladores afiliados}
   \label{fig:IESS_rec_pir_afiliados_sexo}
   \centering
-  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_afiliados_sexo.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
+  \includegraphics[ scale = 1.1 ]{graficos/IESS_rec_pir_afiliados_sexo.pdf}
+  \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
+    \textbf{Elaborado:} DAIE}
 \end{figure}
 
+\subsection{Discapacidades en los recicladores de base}
 
-%Tabla de afiliados antiguos por sexo------------------------------------------------------------------------
-A continuación, en la tabla \ref{tab:iess_rec_afiliados_antiguos_sexo} se muestra el número de recicladores base que estuvieron afiliados, según la característica social y el sexo.
+De la totalidad de 9.728 recicladores base, 1.218 recicladores dicen tener algún porcentaje de discapacidad, de los cuales 435 tienen carnet de discapacidad. Los recicladores con carnet de discapacidad se componen de 282 (64\%) hombres y 153 mujeres (35\%). Y, además, 97,70\% de ellos registra una discapacidad mayor al 30\%; es decir 425 recicladores deberían recibir el bono de discapacidad del MIESS. En la tabla \ref{tab:iess_discapacidad_con_carnet}, se presenta el número de recicladores con carnet de discapacidad por rangos de discapacidad y sexo.
 
-{\setlength{\tabcolsep}{3pt}
-{\fontsize{9}{13}\selectfont
-\begin{longtable}[H]{lrrrrrr}
-\caption{Distribución de Recicladores Base que estuvieron afiliados por característica social y sexo}
-\label{tab:iess_rec_afiliados_antiguos_sexo}\\
-\toprule
-\multicolumn{1}{c}{Característica Social} &
-\multicolumn{1}{c}{Femenino } & 
-\multicolumn{1}{c}{Porcentaje (\%)} & 
-\multicolumn{1}{c}{Masculino} &
-\multicolumn{1}{c}{Porcentaje (\%)} &
-\multicolumn{1}{c}{Total}&
-\multicolumn{1}{c}{Porcentaje (\%)}\\
-\midrule
-\endfirsthead
-
-\toprule
-\multicolumn{1}{c}{Característica Social} &
-\multicolumn{1}{c}{Femenino } & 
-\multicolumn{1}{c}{Porcentaje (\%)} & 
-\multicolumn{1}{c}{Masculino} &
-\multicolumn{1}{c}{Porcentaje (\%)} &
-\multicolumn{1}{c}{Total}&
-\multicolumn{1}{c}{Porcentaje (\%)}\\
-\midrule
-\endhead
-
-\bottomrule \multicolumn{7}{r}{continúa...}\\
-\endfoot
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
-\\Elaborado: DAIE}
-\endlastfoot
-  \input{tablas/iess_rec_afiliados_antiguos_sexo.tex}
-\end{longtable}
-}
-}
-
-Se observa un aumento representativo en el número de asegurados al MSP en ambos sexos. Además, se registra un incremento en la cantidad de personas sin cobertura de ningún tipo de seguro, con aumentos del 3,52\% y 8,88\% en mujeres y hombres, respectivamente. Por otro lado, se aprecia una disminución en el número de afiliados al Seguro General tanto en hombres como en mujeres, con reducciones del 8,56\% y 3,49\%, respectivamente. También se evidencia una baja en el número de asegurados al Seguro Campesino en ambos géneros.\\
-La figura \ref{fig:IESS_rec_pir_afiliados_antiguos_sexo} ilustra la distribución de la población que estuvo afiliada a los diferentes tipos de seguro por sexo.
-
-\begin{figure}[H]
-  \caption{Distribución por edad y sexo de la población que estuvo afiliada}
-  \label{fig:IESS_rec_pir_afiliados_antiguos_sexo}
-  \centering
-  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_afiliados_antiguos_sexo.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
-\end{figure}
-
-\subsection{Discapacidades en los recicladores base}
-
-
-{\fontsize{9}{11}\selectfont
+{\fontsize{9}{10}\selectfont
 \begin{longtable}[H]{lrrrrrr}
 \caption{Recicladores discapacitados con carnet}
 \label{tab:iess_discapacidad_con_carnet}\\
@@ -1314,20 +1264,20 @@ La figura \ref{fig:IESS_rec_pir_afiliados_antiguos_sexo} ilustra la distribució
 \bottomrule \multicolumn{7}{r}{continúa...} \\
 \endfoot
 %\bottomrule
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_discapacidad_con_carnet.tex}
 \end{longtable}
 }
 
-\subsection{Recicladores base por educación y provincia}
+\subsection{Recicladores de base por educación y provincia}
 
-A continuación, se indica el número de recicladores base según instrucción y sexo en la tabla \ref{tab:iess_rec_instr_sexo}.
+A continuación, se indica el número de recicladores de base según instrucción y sexo en la tabla \ref{tab:iess_rec_instr_sexo}.
 
 {\fontsize{9}{13}\selectfont
 \begin{longtable}[H]{lrrrrrr}
-\caption{Distribución de Recicladores Base por instrucción y sexo}
+\caption{Distribución de recicladores de base por instrucción y sexo}
 \label{tab:iess_rec_instr_sexo}\\
 \toprule
 \multicolumn{1}{c}{Instrucción} &
@@ -1353,31 +1303,39 @@ A continuación, se indica el número de recicladores base según instrucción y
 
 \bottomrule \multicolumn{7}{r}{continúa...}\\
 \endfoot
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_rec_instr_sexo.tex}
 \end{longtable}
 }
-Se evidencia que la mayoría de los recicladores base cuentan con una instrucción primaria, con un porcentaje del 42,62\%. De este total, el 21,07\% corresponde a mujeres y el 21,56\% a hombres.
 
-En la figura \ref{fig:IESS_rec_pir_instr_sexo}, se ilustra la distribución de la población de recicladores base según su instrucción y sexo.
+Se evidencia que la mayoría de los recicladores de base cuentan con una instrucción primaria, con un porcentaje del 41,64\%, lo que representa a 4.051 recicladores, de los cuales 1.988 so mujeres y 2.063 son hombres. En la figura \ref{fig:IESS_rec_pir_instr_sexo}, se ilustra la distribución de la población de recicladores de base según su instrucción y sexo.
 
 \begin{figure}[H]
-  \caption{Distribución por instrucción y sexo de la población de recicladores base}
+  \caption{Distribución por instrucción y sexo de la población de recicladores de base}
   \label{fig:IESS_rec_pir_instr_sexo}
   \centering
   \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_instr_sexo.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
+  \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
+    \textbf{Elaborado:} DAIE}
 \end{figure}
 
 
-En la Tabla \ref{tab:iess_rec_prov_sexo}, se detalla la cantidad de recicladores base agrupados por provincia y género.
+En la tabla \ref{tab:iess_rec_prov_sexo} y en la figura \ref{fig:IESS_rec_pir_prov_sexo} se detalla la cantidad de recicladores de base agrupados por provincia y género. Se muestra que la mayoría de personas que se dedican a esta actividad lo hacen en las provincias de Guayas con 2.477 (25,46\%), seguido de Pichincha con 1.158 (11,90\%) y en, tercer lugar, El Oro con 850 (8,74\%) recicladores de base.
 
-{\fontsize{9}{13}\selectfont
+\begin{figure}[H]
+  \caption{Distribución por provincia y sexo de la población de recicladores de base}
+  \label{fig:IESS_rec_pir_prov_sexo}
+  \centering
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_prov_sexo.pdf}
+  \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
+    \textbf{Elaborado:} DAIE}
+\end{figure}
+
+{\fontsize{10}{14}\selectfont
 \begin{longtable}[H]{lrrrrrr}
-\caption{Distribución de Recicladores Base por provincia y sexo}
+\caption{Distribución de recicladores de base por provincia y sexo}
 \label{tab:iess_rec_prov_sexo}\\
 \toprule
 \multicolumn{1}{c}{Provincia} &
@@ -1403,23 +1361,11 @@ En la Tabla \ref{tab:iess_rec_prov_sexo}, se detalla la cantidad de recicladores
 
 \bottomrule \multicolumn{7}{r}{continúa...}\\
 \endfoot
-\caption*{\scriptsize Fuente: Censo de Recicladores de Base.
+\caption*{\scriptsize Fuente: Censo de recicladores de base del MIES
 \\Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_rec_prov_sexo.tex}
 \end{longtable}
 }
-
-La figura \ref{fig:IESS_rec_pir_prov_sexo} muestra que la mayoría de personas que se dedican a esta actividad lo hacen en las provincias de Guayas, donde el 5,56\% son mujeres y el 14,73\% son hombres, y en Pichincha, donde el 12,09\% son mujeres y el 6,67\% son hombres.
-
-\begin{figure}[H]
-  \caption{Distribución por provincia y sexo de la población de recicladores base}
-  \label{fig:IESS_rec_pir_prov_sexo}
-  \centering
-  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_prov_sexo.pdf}
-  \caption*{\scriptsize \textbf{Fuente:}  Censo de Recicladores de Base. \\
-    \textbf{Elaborado:} DAIE.}
-\end{figure}
-
 
 

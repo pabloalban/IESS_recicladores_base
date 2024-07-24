@@ -1,66 +1,34 @@
 %---------------------------------------------------------------------------------------------------
 \chapter{Análisis del contexto económico}
 \label{chp_contexto}
+% %------------------------------------------------------------------------------
+El artículo 7 del CAPÍTULO II:``REQUISITOS TÉCNICOS PARA LA ELABORACIÓN, PRESENTACIÓN, APROBACIÓN Y REVISIÓN DE LOS ESTUDIOS ACTUARIALES DE LAS ENTIDADES DE SEGURIDAD SOCIAL'' del TÍTULO IV del LIBRO II, NORMAS DE CONTROL PARA LAS ENTIDADES DEL SISTEMA DE SEGURIDAD SOCIAL, establece en su literal B, lo siguiente:
 
-El artículo 7 del CAPÍTULO II:``REQUISITOS TÉCNICOS PARA LA ELABORACIÓN, PRESENTACIÓN, APROBACIÓN Y
-REVISIÓN DE LOS ESTUDIOS ACTUARIALES DE LAS ENTIDADES DE SEGURIDAD SOCIAL'' del TÍTULO IV del LIBRO
-II, NORMAS DE CONTROL PARA LAS ENTIDADES DEL SISTEMA DE SEGURIDAD SOCIAL, establece en su literal B,
-lo siguiente:
+``\textit{iv. Evolución y tendencia económica de al menos los últimos cinco (5) años: inflación, tasa de interés financiero, incremento de salarios y pensiones, entre otros}''.
 
-``\textit{iv. Evolución y tendencia económica de al menos los últimos cinco (5) años: inflación,
-tasa de interés financiero, incremento de salarios y pensiones, entre otros}''.
+En concordancia a la normativa antes señalada, en el presente capítulo se presenta un análisis del contexto económico del Ecuador, en el cual se abordarán: la evolución histórica desde la dolarización, predicciones en futuro de la condición económica del país, un breve análisis de la situación actual y prevista del mercado de inversiones en el Ecuador y un análisis de las tendencias demográficas de la población total del Ecuador y su población económicamente activa para dentro de 20 y 40 años.
 
-En concordancia a la normativa antes señalada, en el presente capítulo se presenta un análisis del
-contexto económico del Ecuador, en el cual se abordarán: la evolución histórica desde la
-dolarización, predicciones en futuro de la condición económica del país, un breve análisis de la
-situación actual y prevista del mercado de inversiones en el Ecuador y un análisis de las tendencias
-demográficas de la población total del Ecuador y su población económicamente activa para dentro de
-20 y 40 años.
-
-%---------------------------------------------------------------------------------------------------
 \section{Análisis de las tasas históricas relevantes para el estudio}
-En la presente sección, se abordará la evolución histórica de la inflación, desempleo, salario
-básico unificado, salarios promedio de los afiliados al SGO, producto interno bruto del Ecuador y
-crecimiento de las pensiones del IESS.
+% 
+% %----------------------------------------------------------------------------------
+En la presente sección, se abordará la evolución histórica de la inflación, desempleo, salario básico unificado, salarios promedio de los afiliados al SGO, producto interno bruto del Ecuador y crecimiento de las pensiones del IESS.
 
-Además, se presenta un análisis desde que se declaró al dólar con moneda oficial del Ecuador debido,
-a que se evidencian dos situaciones claramente diferentes, la primera, en la época del Sucre,
-período marcado por alta inflación, pérdida de valor adquisitivo de los salarios y estancamiento del
-salario básico y altas tasas de intereses para compensar la inflación. 
+Además, se presenta un análisis desde que se declaró al dólar con moneda oficial del Ecuador debido, a que se evidencian dos situaciones claramente diferentes, la primera, en la época del Sucre, período marcado por alta inflación, pérdida de valor adquisitivo de los salarios y estancamiento del salario básico y altas tasas de intereses para compensar la inflación. 
 
-Por otro lado, tenemos otro escenario totalmente distinto con la implementación de la dolarización,
-en el cual se conserva una inflación baja (incluso durante 2018 y 2020 se presenta deflación), lo
-cual permite conservar el poder adquisitivo tanto de los sueldos como de las pensiones; y, además,
-permitió un crecimiento lineal del salario básico unificado, ubicándolo entre los más altos en la
-región. 
+Por otro lado, tenemos otro escenario totalmente distinto con la implementación de la dolarización, en el cual se conserva una inflación baja (incluso durante 2018 y 2020 se presenta deflación), lo cual permite conservar el poder adquisitivo tanto de los sueldos como de las pensiones; y, además, permitió un crecimiento lineal del salario básico unificado, ubicándolo entre los más altos en la región. 
 
-Por las razones antes señaladas, esta Dirección considera que lo más apropiado es considerar, dentro
-del análisis de las hipótesis macroeconómicas, los datos e información desde la implementación de la
-dolarización; puesto que la principal suposición de las valuaciones actuariales es que el Ecuador
-continuará con el dólar como moneda oficial y que el primer escenario antes descrito con el Sucre o
-una posible moneda propia, es muy improbable.
+Por las razones antes señaladas, esta Dirección considera que lo más apropiado es considerar, dentro del análisis de las hipótesis macroeconómicas, los datos e información desde la implementación de la dolarización; puesto que la principal suposición de las valuaciones actuariales es que el Ecuador continuará con el dólar como moneda oficial y que el primer escenario antes descrito con el Sucre o una posible moneda propia, es muy improbable.
 
-%---------------------------------------------------------------------------------------------------
 \subsection{Evolución histórica de la inflación en el Ecuador}
 
-Una de las hipótesis importantes a considerar en los modelos matemáticos – actuariales es la
-inflación, que mide el aumento generalizado y sostenido de los precios de bienes y servicios en un
-país, cuya medición consiste en el cálculo de los incrementos que presenta el Índice de Precios al
-Consumidor (IPC). Es por ello por lo que se pone especial atención en dicho fenómeno económico en razón de
-que este afecta tanto a las tasas de interés como al incremento salarial, que es la base del
-crecimiento de las reservas y del crecimiento salarial en el tiempo, referente tanto de aportes como
-de beneficios.
+Una de las hipótesis importantes a considerar en los modelos matemáticos – actuariales es la inflación, que mide el aumento generalizado y sostenido de los precios de bienes y servicios en un país, cuya medición consiste en el cálculo de los incrementos que presenta el Índice de Precios al Consumidor (IPC). Es por ello que se pone especial atención en dicho fenómeno económico en razón de que este afecta tanto a las tasas de interés como al incremento salarial, que es la base del crecimiento de las reservas y del crecimiento salarial en el tiempo, referente tanto de aportes como de beneficios.
 
-La información presentada se descargó de la
-página web\footnote{\url{https://www.ecuadorencifras.gob.ec/indice-de-precios-al-consumidor/}} oficial
-del Instituto Nacional de Estadística y Censos (INEC). A continuación, se muestra la evolución
-histórica del índice de precios en la tabla \ref{tab:iess_inflacion} y la figura
-\ref{fig:iess_inflacion}.
+La información presentada se descargó de la pagina\footnote{\url{https://www.ecuadorencifras.gob.ec/indice-de-precios-al-consumidor/}} oficial del Instituto Nacional de Estadística y Censos (INEC). A continuación, se muestra la evolución histórica del índice de precios en la tabla \ref{tab:iess_inflacion} y la figura \ref{fig:iess_inflacion}.
 
 {\setlength{\tabcolsep}{5pt}
 {\fontsize{11}{14}\selectfont
 \begin{longtable}[H]{ccccc}
-  \caption{Índice de precios al consumidor a diciembre}
+  \caption{Evolución histórica de la tasa de desempleo nacional y tasa de empleo pleno}
 \label{tab:iess_inflacion} \\
 \toprule
  \multicolumn{1}{c}{\multirow{2}[2]{*}{Fecha:}}  &
@@ -101,11 +69,7 @@ Elaborado: DAIE}
 }
 }
 
-El Ecuador registró la inflación acumulada más alta de su historia en el año 2000 (91\%). A partir
-de la implementación de la dolarización, la inflación se redujo paulatinamente, considerando que la
-inflación está ligada a la política monetaria y fiscal de una economía. La inflación acumulada anual
-se redujo desde 22,4\% en el 2001 al -0,93\% en el 2020, siendo el menor registro desde la adopción
-del sistema monetario “dolarización”. 
+El Ecuador registró la inflación acumulada más alta de su historia en el año 2000 (91\%). A partir de la implementación de la dolarización, la inflación se redujo paulatinamente, considerando que la inflación está ligada a la política monetaria y fiscal de una economía. La inflación acumulada anual se redujo desde 22,4\% en el 2001 al -0,93\% en el 2020, siendo el menor registro desde la adopción del sistema monetario “dolarización”. 
 
 \begin{figure}[H]
 \centering
@@ -116,39 +80,27 @@ del sistema monetario “dolarización”.
             {\bf Elaborado:} DAIE}
 \end{figure}
 
-Los años con mayor inflación interanual fueron 2000, 2001, 2002 y 2008 con valores superiores al
-8\%; por el contrario, la deflación se dio en los años 2017, 2019 y 2020 con valores de -0,20\%,
--0,07\% y -0,93\% respectivamente. Para el año 2020, la inflación acumulada promedio fue igual a
--0,34\%. El promedio de la inflación acumulada anual de los últimos diez (10) años es 1,95\%; en
-cambio, la media de la inflación promedio de los últimos diez (10) años es 2,17\%.
+Los años con mayor inflación interanual fueron 2000, 2001, 2002 y 2008 con valores superiores al 8\%; por el contrario, la deflación se dio en los años 2017, 2019 y 2020 con valores de -0,20\%, -0,07\% y -0,93\% respectivamente. Para el año 2022, la inflación anual acumulada fue igual a 3,74\% y la inflación acumulada promedio fue igual a 3,46\%. El promedio de la inflación acumulada anual de los últimos diez (10) años es 1,56\%; en cambio, la media de la inflación promedio de los últimos diez (10) años es 1,57\%.
 
-%---------------------------------------------------------------------------------------------------
 \subsection{Evolución histórica del desempleo}
 
-Según la información levantada por el
-INEC\footnote{\url{https://www.ecuadorencifras.gob.ec/estadisticas-laborales-febrero-2023-2/}},
-mediante la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU), el Ecuador es un país con
-bajo porcentaje de empleo pleno o adecuado \footnote{Empleo adecuado pleno: personas con empleo que,
-durante la semana de referencia, perciben ingresos laborales iguales o superiores al salario mínimo,
-trabajan igual o más de 40 horas a la semana, independientemente del deseo y disponibilidad de
-trabajar horas adicionales.}, con 30,41\% de la población económicamente activa en diciembre de
-2020, y que antes de la pandemia de la COVID-19, se registraba al 31 de diciembre de 2019 el
-38,85\%. Históricamente el empleo pleno tiene una tendencia a la baja; puesto que a diciembre de
-2007, se registró el 43,20\% de empleo pleno en la población económicamente activa del Ecuador. Por
-otro lado, las mujeres ecuatorianas son las que registran menor empleo pleno (23,48\%), que los
-hombres con el 35,31\% a diciembre de 2020.
+Según la información levantada por el INEC\footnote{\url{https://www.ecuadorencifras.gob.ec/estadisticas-laborales-febrero-2023-2/}}, mediante la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU), el Ecuador es un país con bajo porcentaje de empleo pleno o adecuado \footnote{ Empleo adecuadoo pleno: Personas con empleo que, durante la semana de referencia, perciben ingresos laborales iguales o superiores al salario mínimo, trabajan igual o más de 40 horas a la semana, independientemente del deseo y disponibilidad de trabajar horas adicionales.}, con 36,04\% de la población económicamente activa en 2021, y que antes de la pandemia de la COVID-19, se registraba al 31 de diciembre de 2019 el 38,85\%. Históricamente el empleo pleno tiene una tendencia a la baja; puesto que a diciembre de 2007, se registró el 43,20\% de empleo pleno en la población económicamente activa del Ecuador. Por otro lado, las mujeres ecuatorianas son las que registran menor empleo pleno (28,81\%), que los hombres con el 41,12\% a diciembre de 2022.
+
+Por otro lado, la evolución histórica del subempleo \footnote{Subempleados: Personas con empleo que, durante la semana de referencia, percibieron ingresos inferiores al salario mínimo y/o trabajaron menos de la jornada legal y tienen el deseo y disponibilidad de trabajar horas adicionales.} en el Ecuador se registró en 19,37\% a diciembre de 2022, con el 23,43\% en los hombres y 19,05\% en las mujeres. Cabe señalar que el subempleo aumentó del 17,79\% a diciembre de 2019 a 22,85\% a diciembre de 2020, debido a la pandemia. Y el año que se registró menor tasa de subempleo fue en diciembre de 2012, con 9,01\%.
 
 \begin{figure}[H]
 \centering
-\caption{Evolución histórica de la tasa de desempleo nacional y tasa de empleo pleno}
+\caption{Serie histórica del Salario Básico Unificado}
 \label{fig:iess_desempleo}
 \includegraphics[scale=1.2]{graficos/iess_desempleo.pdf}
 \caption*{\scriptsize Fuente: INEC \\
   Elaborado: DAIE}
 \end{figure}
 
+La tasa de desempleo se ha reducido la activación económica después de la pandemia de la COVID – 19; para diciembre de 2020, la tasa desempleo fue igual a 4,90\%, para diciembre de 2021, se había reducido a 4,15\%; y a diciembre de 2022, se registró a 3,19\%. La mayor tasa de desempleo se registró a diciembre de 2009, con 6,47\%; y la menor a diciembre de 2019 (3,84\%), justo antes de la pandemia. En la tabla \ref{tab:iess_desempleo} y figura \ref{fig:iess_desempleo}, se presenta la evolución histórica de la tasa de desempleo.
+
 {\setlength{\tabcolsep}{5pt}
-{\fontsize{11}{13}\selectfont
+{\fontsize{11}{14}\selectfont
 \begin{longtable}[H]{cccccc}
   \caption{Evolución histórica de la tasa de desempleo nacional y tasa de empleo pleno}
 \label{tab:iess_desempleo} \\
@@ -193,30 +145,12 @@ Elaborado: DAIE}
 }
 }
 
-Por otro lado, la evolución histórica del subempleo \footnote{Subempleados: personas con empleo que,
-durante la semana de referencia, percibieron ingresos inferiores al salario mínimo y/o trabajaron
-menos de la jornada legal y tienen el deseo y disponibilidad de trabajar horas adicionales.} en el
-Ecuador se registró en 22,85\% a diciembre de 2020, con el 24,60\% en los hombres y 20,37\% en las
-mujeres. Cabe señalar que el subempleo aumentó del 17,79\% a diciembre de 2019 a 22,85\% a diciembre
-de 2020, debido a la pandemia. Y el año que se registró menor tasa de subempleo fue en diciembre de
-2012, con 9,01\%.
-
-La tasa de desempleo se ha reducido la activación económica después de la pandemia de la COVID – 19;
-para diciembre de 2020, la tasa desempleo fue igual a 4,90\%. La mayor tasa de desempleo se registró
-a diciembre de 2009, con 6,47\%; y la menor a diciembre de 2019 (3,84\%), justo antes de la
-pandemia. En la tabla \ref{tab:iess_desempleo} y figura \ref{fig:iess_desempleo}, se presenta la
-evolución histórica de la tasa de desempleo.
-
-%---------------------------------------------------------------------------------------------------
 \subsection{Evolución histórica del salario básico unificado}
 
-Otra de las hipótesis a considerarse en los modelos matemáticos – actuariales es el comportamiento
-del salario básico unificado (SBU), debido a que las pensiones máximas y mínimas dependen de un
-porcentaje del SBU y del número de aportaciones. El Salario Básico Unificado en el Ecuador presenta
-un crecimiento lineal desde la dolarización en el 2000, año el cual el SBU era igual a USD 48,17.
+Otra de las hipótesis a considerarse en los modelos matemáticos – actuariales es el comportamiento del salario básico unificado (SBU), debido a que las pensiones máximas y mínimas dependen de un porcentaje del SBU y del número de aportaciones. El Salario Básico Unificado en el Ecuador presenta un crecimiento lineal desde la dolarización en el 2000, año el cual el SBU era igual a USD 48,17.
 
 {\setlength{\tabcolsep}{16pt}
-{\fontsize{11}{13}\selectfont
+{\fontsize{11}{14}\selectfont
 \begin{longtable}[H]{crrr}
   \caption{Evolución histórica del Salario Básico Unificado}
 \label{tab:iess_sbu} \\
@@ -264,23 +198,20 @@ Elaborado: DAIE}
   {\bf Elaborado:} DAIE}
 \end{figure}
 
-En términos monetarios, los años con mayores incrementos fueron el año 2003, con incremento en USD
-33,12; y, el año 2008, con incremento igual a USD 30, en términos porcentuales fue el año 2001 con
-el 51,19\%. En cambio, los años con menor incremento fue el 2020 (0\%). En los últimos siete (7)
-años, el SBU creció en promedio 2,66\%. Calculado en dólares estadounidenses (USD) al 2022, es el
-más alto en Sudamérica, con USD 425, seguido por el salario mínimo chileno 350.000 pesos chilenos
-(USD 412). A continuación, se muestra la evolución del salario básico unificado en la tabla
-\ref{tab:iess_sbu} y la figura \ref{fig:iess_sbu}.
-
-%---------------------------------------------------------------------------------------------------
+En términos monetarios, los años con mayores incrementos fueron el año 2003, con incremento en USD 33,12; y, el año 2008, con incremento igual a USD 30, en términos porcentuales fue el año 2001 con el 51,19\%. En cambio, los años con menor incremento fue el 2020 (0\%). En los últimos siete (7) años, el SBU creció en promedio 2,66\%. Calculado en dólares estadounidenses (USD) al 2022, es el más alto en Sudamérica, con USD 425, seguido por el salario mínimo chileno 350.000 pesos chilenos (USD 412). A continuación, se muestra la evolución del salario básico unificado en la tabla \ref{tab:iess_sbu} y la figura \ref{fig:iess_sbu}.
+% % ------------------------------------------------------------------------------------------------
 \subsection{Evolución histórica de los salarios}
 
-Los ingresos por aportes que recibe el IESS es un porcentaje fijo de la materia gravada y está
-normado mediante la \legalcite{ResIESS_CD515}. Una de las variables claves de este estudio es la
-tasa de crecimiento de los salarios; pues de esta, se determina de cierta manera el ingreso futuro
-por concepto de los aportes. A continuación, se muestra la evolución histórica de los salarios en la
-tabla \ref{tab:iess_salarios} y la figura \ref{fig:iess_salarios}, los cuales fueron extraídos de
-las bases de datos de la Dirección Nacional de Afiliación y Cobertura (DNAC).
+Los ingresos por aportes que recibe el IESS es un porcentaje fijo de la materia gravada y está normado mediante la \legalcite{ResIESS_CD515}. Una de las variables claves de este estudio es la tasa de crecimiento de los salarios; pues de esta, se determina de cierta manera el ingreso futuro por concepto de los aportes. A continuación, se muestra la evolución histórica de los salarios en la tabla \ref{tab:iess_salarios} y la figura \ref{fig:iess_salarios}, los cuales fueron extraídos de las bases de datos de la Dirección Nacional de Afiliación y Cobertura (DNAC).
+
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del salario promedio de los cotizantes al SGO}
+\label{fig:iess_salarios}
+\includegraphics[scale=1]{graficos/iess_salarios_evo.pdf}
+\caption*{\scriptsize Fuente: Planillas de la DNAC - IESS \\
+  Elaborado: DAIE}
+\end{figure}
 
 {\setlength{\tabcolsep}{7pt}
 {\fontsize{11}{14}\selectfont
@@ -322,42 +253,16 @@ Elaborado: DAIE}
 }
 }
 
-\begin{figure}[H]
-\centering
-\caption{Evolución histórica del salario promedio de los cotizantes al SGO}
-\label{fig:iess_salarios}
-\includegraphics[scale=1]{graficos/iess_salarios_evo.pdf}
-\caption*{\scriptsize Fuente: Planillas de la DNAC - IESS \\
-  Elaborado: DAIE}
-\end{figure}
+A diciembre de 2022, los cotizantes del Seguro General Obligatorio registraron un salario promedio igual a USD 801,26 (USD 22,75 más que en diciembre de 2019), lo representa un crecimiento, con respeto a diciembre de 2021, igual a 2,92\%. En el año 2008, se registró el mayor crecimiento del salario promedio (18,62\%); mientras que en el año 2020, se redujo en 0,11\% debido al impacto de la pandemia de la COVID – 19. En los últimos 10 años, el salario creció en promedio 2,45\%.
 
-A diciembre de 2020, los cotizantes del Seguro General Obligatorio registraron un salario promedio
-igual a USD 764,18 (USD 0,84 menos que en diciembre de 2019), lo representa un decrecimiento, con
-respeto a diciembre de 2019, igual a 0,11\%. En el año 2008, se registró el mayor crecimiento del
-salario promedio (18,62\%); mientras que, en el año 2020, se redujo en 0,11\% debido al impacto de la
-pandemia de la COVID – 19. En los últimos 10 años, el salario creció en promedio 3,55\%.
-
-%---------------------------------------------------------------------------------------------------
+% % % % --------------------------------------------------------------------------------------------
 \subsection{Evolución histórica de la tasa de crecimiento real del PIB del Ecuador}
 
-La información referente al Producto Interno Bruto del Ecuador se obtuvo de la página oficial del
-BCE\footnote{\url{https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/CuentasNacionales/Indices/c122032023.htm}}.
-En primer lugar, se debe indicar que el PIB a precios constantes se mide en términos de dólares
-constantes del año 2007, a diferencia del PIB a precios actuales, los cuales se presentan en la
-tabla \ref{tab:iess_pib_real} y figura \ref{fig:iess_pib_real}.
-
-\begin{figure}[H]
-\centering
-\caption{Evolución histórica del crecimiento real del PIB del Ecuador}
-\label{fig:iess_pib_real}
-\includegraphics[scale=1.2]{graficos/iess_pib_real.pdf}
-\caption*{\scriptsize Fuente: Banco Mundial. \\
-  Elaborado: DAIE}
-\end{figure}
+La información referente al Producto Interno Bruto del Ecuador se obtuvo de la página oficial del BCE\footnote{\url{https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Catalogo/CuentasNacionales/Indices/c122032023.htm}}. En primer lugar, se debe indicar que el PIB a precios constantes se mide en términos de dólares constantes del año 2007, a diferencia del PIB a precios actuales, los cuales se presentan en la tabla \ref{tab:iess_pib_real} y figura \ref{fig:iess_pib_real}.
 
 
 {\setlength{\tabcolsep}{5pt}
-{\fontsize{10}{13}\selectfont
+{\fontsize{10}{12}\selectfont
 \begin{longtable}[H]{crrc}
   \caption{Evolución histórica del PIB del Ecuador}
 \label{tab:iess_pib_real} \\
@@ -396,34 +301,27 @@ Elaborado: DAIE}
 }
 }
 
-Desde la recesión atribuida a la caída del precio del petróleo en diciembre de 2014, la cual afectó
-directamente en la inversión pública y austeridad por parte del Estado, se observó una contracción
-del PIB igual a 1,23\% en 2016 y bajas tasas de crecimiento. En promedio, la tasa de crecimiento del
-PIB en términos constantes es igual 3,81\% (período 2011 a 2020).
+\begin{figure}[H]
+\centering
+\caption{Evolución histórica del crecimiento real del PIB del Ecuador}
+\label{fig:iess_pib_real}
+\includegraphics[scale=1.2]{graficos/iess_pib_real.pdf}
+\caption*{\scriptsize Fuente: Banco Mundial. \\
+  Elaborado: DAIE}
+\end{figure}
 
-Por último, la crisis económica provocada por la pandemia de la COVID - 19 condujo a la saturación
-del sistema de salud público y varios confinamientos, lo cual conllevó a la reducción del PIB en
-7,75\% en 2020.
+Desde la recesión atribuida a la caída del precio del petróleo en diciembre de 2014, la cual afectó directamente en la inversión pública y austeridad por parte del Estado, se observó una contracción del PIB igual a 1,23\% en 2016 y bajas tasas de crecimiento. En promedio, la tasa de crecimiento del PIB en términos constantes es igual 1,67\% (período 2015 a 2022).
 
-%---------------------------------------------------------------------------------------------------
+Por último, la crisis económica provocada por la pandemia de la COVID - 19 condujo a la saturación del sistema de salud público y varios confinamientos, lo cual conllevó a la reducción del PIB en 7,75\% en 2020; y, en recuperación de la pandemia de la COVID – 19, se creció en 4,24\% en 2021 y 2,95\% en 2022.
+
+% % % ---------------------------------------------------------------------------------------------
 \subsection{Evolución histórica de la tasa de crecimiento de las pensiones}
 
-Con la dolarización, se perdió el valor adquisitivo de las pensiones, por lo que el IESS procedió a
-conceder aumentos, de hasta dos y tres veces al año, a fin de que la pensión cubra las necesidades
-de los pensionistas. Para los aumentos se consideraban varios parámetros como: valor total de renta,
-la fecha del derecho de la prestación o el número de imposiciones; adicionalmente, se establecía
-diversos tipos de incrementos dependiendo si se trata del Seguro General o del Seguro del Trabajo
-Doméstico.
+Con la dolarización, se perdió el valor adquisitivo de las pensiones, por lo que el IESS procedió a conceder aumentos, de hasta dos y tres veces al año, a fin de que la pensión cubra las necesidades de los pensionistas. Para los aumentos se consideraban varios parámetros como: valor total de renta, la fecha del derecho de la prestación o el número de imposiciones; adicionalmente, se establecía diversos tipos de incrementos dependiendo si se trata del Seguro General o del Seguro del Trabajo Doméstico.
 
-El Consejo Directivo del IESS a través de la \legalcite{ResIESS_CD338} de 18 de noviembre de 2010,
-unifica el Seguro General y el Seguro del Trabajador Doméstico; y, estandariza el procedimiento de
-incremento de las pensiones, en base a una tabla de porcentajes, considerando el valor de la renta
-conforme a un porcentaje del salario básico unificado.
+El Consejo Directivo del IESS a través de la \legalcite{ResIESS_CD338} de 18 de noviembre de 2010, unifica el Seguro General y el Seguro del Trabajador Doméstico; y, estandariza el procedimiento de incremento de las pensiones, en base a una tabla de porcentajes, considerando el valor de la renta conforme a un porcentaje del salario básico unificado.
 
-A partir del año 2016, con la expedición de la \legalcite{Leyjlab}; la cual en su artículo 69
-modifica el artículo 234 de la \legalcite{LeySS}, se incrementan las pensiones en base a la tasa de
-inflación acumulada promedio anual del año anterior. En la tabla \ref{tab:iess_incre_pensiones}, se
-presenta los parámetros para el aumento de las pensiones, desde el año 2010 al 2020
+A partir del año 2016, con la expedición de la \legalcite{Leyjlab}; la cual en su artículo 69 modifica el artículo 234 de la \legalcite{LeySS}, se incrementan las pensiones en base a la tasa de inflación acumulada promedio anual del año anterior. En la tabla \ref{tab:iess_incre_pensiones}, se presenta los parámetros para el aumento de las pensiones, desde el año 2010 al 2022.
 
 
 {\setlength{\tabcolsep}{5pt}
@@ -477,7 +375,7 @@ presenta los parámetros para el aumento de las pensiones, desde el año 2010 al
 	\midrule
 \endhead
 
-\bottomrule \multicolumn{7}{c}{continúa...} \\
+\bottomrule \multicolumn{9}{c}{continúa...} \\
 \endfoot
 %\hline
 \caption*{ %\scriptsize Fuente: Sentecia XXX \\
@@ -488,10 +386,7 @@ Elaborado: DAIE}
 }
 }
 
-Mediante el artículo 234 de la \legalcite{LeySS}, se establecen las pensiones mínimas en porcentajes
-del SBU entregadas mensualmente por el IESS, en función de los años aportados (ver tabla
-\ref{tab:iess_pension_min}). En cambio, el artículo 5 de la \legalcite{ResIESS_CD300} establece las
-pensiones máximas en porcentajes del SBU (ver tabla \ref{tab:iess_pension_max}).
+Mediante el artículo 234 de la \legalcite{LeySS}, se establecen las pensiones mínimas en porcentajes del SBU entregadas mensualmente por el IESS, en función de los años aportados (ver tabla \ref{tab:iess_pension_min}). En cambio, el artículo 5 de la\legalcite{ResIESS_CD300} establece las pensiones máximas en porcentajes del SBU (ver tabla \ref{tab:iess_pension_max}).
 
 {\setlength{\tabcolsep}{5pt}
 {\fontsize{11}{13}\selectfont
@@ -569,7 +464,7 @@ pensiones máximas en porcentajes del SBU (ver tabla \ref{tab:iess_pension_max})
 \bottomrule \multicolumn{8}{c}{continúa...} \\
 \endfoot
 %\hline
-\caption*{ \scriptsize Fuente: Artículo 4 de la \legalcite{ResIESS_CD300}\\
+\caption*{ \scriptsize Fuente: artículo 4 de la \legalcite{ResIESS_CD300} \\
 Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_pension_min.tex}
@@ -578,7 +473,7 @@ Elaborado: DAIE}
 }
 
 
-{\setlength{\tabcolsep}{7pt}
+{\setlength{\tabcolsep}{5pt}
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lcrrrrrrr}
   \caption{Evolución histórica de las pensiones máximas}
@@ -656,7 +551,7 @@ Elaborado: DAIE}
 \bottomrule \multicolumn{9}{c}{continúa...} \\
 \endfoot
 %\hline
-\caption*{ \scriptsize Fuente: Artículo 5 de la \legalcite{ResIESS_CD300}\\
+\caption*{ \scriptsize Fuente: artículo 5 de la \legalcite{ResIESS_CD300} \\
 Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_pension_max.tex}
@@ -667,7 +562,7 @@ Elaborado: DAIE}
 %---------------------------------------------------------------------------------------------------
 \subsection{Evolución histórica de los indicadores de pobreza}
 
-
+Durante el año 2022, se estableció la línea de pobreza en USD 85,72, lo que representa un crecimiento igual a 3,68\% respecto al 2021. Los ecuatorianos bajo la línea de la pobreza en 2022 es 25,20\% de la población; por sexo, el 24,70\% de los hombres están por debajo de la línea de pobreza y el 25,70\% de las mujeres. En la tabla \ref{tab:iess_tasa_pobreza}, se muestra la evolución histórica de los indicadores de pobreza en el Ecuador desde 2009 a 2022.
 
 {\setlength{\tabcolsep}{5pt}
 {\fontsize{11}{13}\selectfont
@@ -730,6 +625,7 @@ Elaborado: DAIE}
 %---------------------------------------------------------------------------------------------------
 \subsection{Evolución histórica de los indicadores de pobreza extrema}
 
+Durante el año 2022, se estableció la línea de pobreza extrema en USD 50, lo que representa un crecimiento igual a 3,65\% respecto al 2021. Los ecuatorianos bajo la línea de la pobreza en 2022 es 8,20\% de la población; por sexo, el 8,30\% de los hombres están por debajo de la línea de pobreza extrema y el 8,20\% de las mujeres. En la tabla \ref{tab:iess_tasa_pobreza_extrema}, se muestra la evolución histórica de los indicadores de pobreza extrema en el Ecuador desde 2009 a 2022.
 
 {\setlength{\tabcolsep}{7pt}
 {\fontsize{11}{13}\selectfont

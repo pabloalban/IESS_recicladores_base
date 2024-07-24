@@ -157,6 +157,10 @@ edad_sexo_int <- edad_sexo %>%
   mutate( lx_acu_int = cumsum( lx_int ) ) %>% 
   ungroup( )
 
+#Número de recicladores con otros ingresos----------------------------------------------------------
+table( censo_miess$otro_ingreso )
+
+table(censo_miess$tiene_discapacidad)
 # Guarda resultados --------------------------------------------------------------------------------
 message( '\tGuardando suavizamiento de edades' )
 
