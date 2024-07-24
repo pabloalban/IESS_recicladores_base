@@ -1,9 +1,12 @@
 %---------------------------------------------------------------------------------------------------
 \chapter{Resultados de las valuaciones actuariales y primas de aportación}
 \label{chp_resultados}
+En este capítulo se presentan los resultados de las valuaciones actuariales, con fecha de corte 31 de diciembre de 2020, tales como: balance actuarial, prima suficiente y año de desfinanciamiento. Además, se realizan simulaciones en el hipotético caso que la base de aportación de los recicladores base sea el 75\%, 50\% y 25\% del SBU y las posibles distorsiones que esto crearía en el esquema pensional ecuatoriano.
+
+Las valuaciones actuariales de los seguros administrados por el IESS, con fecha de corte 31 de diciembre de 2020 se encuentran publicados en la página web del IESS \url{https://www.iess.gob.ec/es/web/guest/estudios-actuariales-2020}.
 %---------------------------------------------------------------------------------------------------
 \section{Tasa de aportación vigentes para afiliados voluntarios}
-
+De acuerdo con la \legalcite{ResIESS_CD515}, los afiliados al Seguro Voluntario del IESS aportarán el 17,6\% de su base de aportación que no podrá ser menor a un salario básico unificado. Es decir, el afiliado voluntario aporta a todos los seguros del IESS, con excepción al Seguro de Cesantía General y Adicional, y Seguro de Desempleo. Durante el año 2022, el aporte mensual con la base de aportación mínima permitida en la Ley fue de USD 74,80. En la tabla \ref{tab:iess_tasas_legal}, se detalla la distribución de la prima de aportación al Seguro Voluntario del IESS.
 {\setlength{\tabcolsep}{7pt}
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lrrr}
@@ -52,7 +55,9 @@ Elaborado: DAIE}
 
 \subsection{Pensiones mínimas de vejez del IESS}
 
+Para el cálculo de las pensiones por vejez se toma en cuenta el salario promedio de los cinco (5)mejores multiplicado por un coeficiente de años de aportación, según lo establecido en la \legalcite{ResIESS_CD300}. Y, además, ningún pensionista no recibirá una pensión menor a la pensión mínima del IESS que varia según los años de aportación según a lo establecido en el artículo 234 de la Ley de Seguridad Social.
 
+Por ejemplo, un afiliado que aporto sobre el SBU y aportó por 22 años recibirá al menos una pensión igual al 70\% del SBU. Pero en el caso, que el afiliado aportará sobre el 50\% del SBU por 22 años, recibiría 70\% del SBU en cumplimiento del artículo 234 de la Ley de Seguridad Social; es decir, existiría una clara distorsión puesto recibiría una pensión mayor a la base de aportación. Para el año 2022, en el caso de que un reciclador base aportará sobre el 50\% del SBU (USD 212,50) por 22 años, su pensión mínima sería USD 297,50, aplicando el artículo 234 de la Ley de Seguridad Social. En la siguiente tabla \ref{tab:iess_minimos_pen}, se presentan los porcentajes señalados en el artículo 234 de la Ley de Seguridad Social y sus equivalentes monetarios en el año 2022.
 {\setlength{\tabcolsep}{7pt}
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lcc}
@@ -87,7 +92,7 @@ Elaborado: DAIE}
 \bottomrule \multicolumn{3}{c}{continúa...} \\
 \endfoot
 %\hline
-\caption*{ \scriptsize Fuente: Valuaciones Actuariales, con corte 31/12/2020\\
+\caption*{ \scriptsize Fuente: Artículo 234 de la Ley de Seguridad Social\\
 Elaborado: DAIE}
 \endlastfoot
   \input{tablas/iess_minimos_pen.tex}
@@ -96,7 +101,15 @@ Elaborado: DAIE}
 }
 
 \section{Bases de aportación por porcentaje del SBU}
+A continuación, se va a realizar posibles simulaciones en el caso que se establecerá en 100\% y 50\% del salario base unificado (SBU) la base de aportación de los recicladores de base para los años 2022, 2023 y 2024:
+\begin{itemize}[itemsep=4mm, topsep=1pt]
+\item \textbf{Caso base de aportación igual a100\% del SBU}: en este caso el reciclador aportará el 17,60\% del 100\% del SBU; es decir USD 74,80. Según el análisis realizado en la tabla \ref{tab:iess_rec_rang_sal_total} de la sección \ref{chp_ingresos}, solo el 9,03\% de los recicladores base tiene ingresos mayores al 100\% del SBU que podrían pagar este aporte y 34\% de las mujeres recicladores tienen ingresos totales menores a USD 74,80.
 
+\item \textbf{Caso base de aportación igual a 75\% del SBU}: en este caso el reciclador aportará el 17,60\% del 75\% del SBU; es decir USD 56,10. Según el análisis realizado en la tabla \ref{tab:iess_rec_rang_sal_total} de la sección \ref{chp_ingresos}, solo el 16,63\% de los recicladores base tiene ingresos mayores al 75\% del SBU que podrían pagar este aporte y 20\% de las mujeres recicladoras tienen ingresos totales menores a USD 50.
+
+\item \textbf{Caso base de aportación igual a 50\% del SBU}: en este caso el reciclador aportará el 17,60\% del 50\% del SBU; es decir USD 37,40. Según el análisis realizado en la tabla \ref{tab:iess_rec_rang_sal_total} de la sección \ref{chp_ingresos}, solo el 29,46\% de los recicladores base tiene ingresos mayores al 50\% del SBU que podrían pagar este aporte.
+
+\end{itemize}
 {\setlength{\tabcolsep}{4pt}
 {\fontsize{10}{13}\selectfont
 \begin{longtable}[H]{lccccccc}
@@ -168,6 +181,7 @@ Elaborado: DAIE}
 
 \section{Resultados de las Valuaciones Actuariales}
 
+Los resultados de la Valuación Actuarial de los seguros administrados por el IESS, con fecha de corte 31 de diciembre de 2020, se obtuvo el resultado que existen tres (3) seguro deficitarios (Seguro de IVM, Seguro de Salud y Seguro Social Campesino) lo cuales es necesario para su sostenibilidad a largo plazo subir su prima: en el Seguro de IVM de 10,56\% a 13,36\% y en el Seguro de Salud de 5,16\% a 8,49\%.
 
 {\setlength{\tabcolsep}{4pt}
 {\fontsize{10}{13}\selectfont
@@ -226,7 +240,7 @@ Elaborado: DAIE}
 
 \subsection{Prima suficiente}
 
-
+Debido a la situación crítica que afronta el Seguro de IVM y Seguro de Salud la prima actual no garantiza la sostenibilidad de estos dos seguros. Por lo tanto, la prima de 17,60\% para los afiliados del régimen voluntario no es suficiente y es necesario subir a 23,50\%; es decir, no sería suficiente el aporte de USD 79,48 en el 2022, sino USD 99,88, que 2.948 (30,30\%) recicladores tienen ingresos menores que USD 90.
 
 {\setlength{\tabcolsep}{4pt}
 {\fontsize{10}{13}\selectfont

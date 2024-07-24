@@ -993,6 +993,7 @@ Se registra 1.477 recicladores de base con 65 años o más, la totalidad no ha c
 \end{figure}
 
 \subsection{Ingresos económicos de los recicladores de base}
+\label{chp_ingresos}
 De la totalidad de 9.728 recicladores de base, 7.510 (77,20\%) recicladores solo tienen como su único ingreso del reciclaje; mientras que 2.218 (22,80\%) tiene otros ingresos. En la tabla \ref{tab:iess_rec_edad_sal_prom}, se muestra el ingreso promedio según edad y sexo.
 
 {\setlength{\tabcolsep}{3pt}

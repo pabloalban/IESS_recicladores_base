@@ -133,11 +133,11 @@ edad_sexo_ingreso <- left_join( edad_ingreso_rec, edad_ingreso_tot, by = 'edad_m
 
 ## 2.4. Rango de ingresos totales por sexo y edad---------------------------------------------------
 
-cortes_monto <- c( 0, 50, 90, 106.25, 212.5, 425, Inf )
+cortes_monto <- c( 0, 50, 90, 106.25, 212.5, 318.75, 425, Inf )
 
-etiquetas_monto <- c(paste0("( \\$", formatC(cortes_monto[ 1:5 ],
+etiquetas_monto <- c(paste0("( \\$", formatC(cortes_monto[ 1:6 ],
                                             digits = 2, format = 'f', big.mark = '.', decimal.mark = ','),
-                            " - \\$", formatC(cortes_monto[ 2:6 ],
+                            " - \\$", formatC(cortes_monto[ 2:7 ],
                                             digits = 2, format = 'f', big.mark = '.', decimal.mark = ','), " ]"), 
                      "Mayor a 425" ) 
 
@@ -161,9 +161,9 @@ rang_sal_total <- censo_miess %>%
   mutate(  rango_monto = as.character(  rango_monto  )  ) %>%
   rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) )  %>%
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(  porc_mujer = 100 * sexo_reciclador_mujer / sexo_reciclador_mujer[7] , 
-           porc_hombre = 100* sexo_reciclador_hombre / sexo_reciclador_hombre[7] , 
-           porc_total = 100 * total / total[7] ) %>%
+  mutate(  porc_mujer = 100 * sexo_reciclador_mujer / sexo_reciclador_mujer[ nrow( . ) ] , 
+           porc_hombre = 100* sexo_reciclador_hombre / sexo_reciclador_hombre[ nrow( . ) ] , 
+           porc_total = 100 * total / total[ nrow( . ) ] ) %>%
   dplyr::select(  rango_monto, 
                   sexo_reciclador_mujer, porc_mujer, 
                   sexo_reciclador_hombre, porc_hombre, 
@@ -190,9 +190,9 @@ rang_sal_rec <- censo_miess %>%
   mutate(  rango_monto = as.character(  rango_monto  )  ) %>%
   rbind(  ., c( "Total", as.character( colSums( .[,2:ncol( . )],  na.rm =TRUE  ) ) ) )  %>%
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
-  mutate(  porc_mujer = 100 * sexo_reciclador_mujer / total[7] , 
-           porc_hombre = 100* sexo_reciclador_hombre / total[7] , 
-           porc_total = 100 * total / total[7] ) %>%
+  mutate(  porc_mujer = 100 * sexo_reciclador_mujer / total[nrow( . )] , 
+           porc_hombre = 100* sexo_reciclador_hombre / total[nrow( . )] , 
+           porc_total = 100 * total / total[nrow( . )] ) %>%
   dplyr::select(  rango_monto, 
                   sexo_reciclador_mujer, porc_mujer, 
                   sexo_reciclador_hombre, porc_hombre, 
