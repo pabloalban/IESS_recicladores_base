@@ -60,7 +60,7 @@ Elaborado: DAIE}
 \label{tab:iess_minimos_pen} \\
 \toprule
 \multicolumn{1}{c}{\multirow{3}[2]{*}{Años Aportados:}}  &
-\multicolumn{3}{c}{2022} \\
+\multicolumn{2}{c}{2022} \\
  \cline{2-3}
  &
 \multicolumn{1}{c}{Pensión Mínima} &
@@ -73,7 +73,7 @@ Elaborado: DAIE}
 
 \toprule
 \multicolumn{1}{c}{\multirow{3}[2]{*}{Años Aportados:}}  &
-\multicolumn{3}{c}{2022} \\
+\multicolumn{2}{c}{2022} \\
  \cline{2-3}
  &
 \multicolumn{1}{c}{Pensión Mínima} &
