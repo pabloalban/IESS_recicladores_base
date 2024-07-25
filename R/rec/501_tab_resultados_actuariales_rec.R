@@ -63,7 +63,7 @@ print( aux_xtab,
        include.rownames = FALSE,
        format.args = list( decimal.mark = ',', big.mark = '.' ),
        only.contents = TRUE,
-       hline.after = c( nrow( aux ) - 1,nrow( aux ) ),
+       hline.after = c( nrow( aux ) ),
        sanitize.text.function = identity )
 
 #Tabla de resultados de valuaciones actuariales-----------------------------------------------------

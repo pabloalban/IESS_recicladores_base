@@ -536,390 +536,390 @@ Elaborado: DAIE}
 
 \end{landscape}
 
-%---------------------------------------------------------------------------------------------------
-\section{Afiliados activos e inactivos según la exposición al riesgo}
-
-%---------------------------------------------------------------------------------------------------
-\subsection{Afiliados del Seguro IVM}
-%---------------------------------------------------------------------------------------------------
-En la figura \ref{fig:iess_jefes_act_inact} se puede apreciar que, del número total de afiliados que
-cotizaron al menos una vez al SGO hasta el 31 de diciembre de \Sexpr{REP$corte}
-(\Sexpr{REP$afi_er_sgo} afiliados), el \Sexpr{REP$afi_er_sgo_act_h}\% corresponde a hombres
-afiliados activos\footnote{\textbf{Afiliados Activos}: Los afiliados que aportaron al SGO al menos
-una vez en el año de la fecha de corte el estudio}, el \Sexpr{REP$afi_er_sgo_act_m}\% a  mujeres
-afiliadas activas, el \Sexpr{REP$afi_er_sgo_ina_h}\% a hombres afiliados
-inactivos\footnote{\textbf{Afiliados Inactivos}: Los afiliados que aportaron al SGO, pero no se
-encuentran con aportes en el año de la fecha de corte del estudio} y el
-\Sexpr{REP$afi_er_sgo_ina_m}\% a mujeres afiliadas inactivas.
-
-\begin{figure}[H]
-\caption{Porcentaje de afiliados activos e inactivos del SGO ambos sexos}
-\label{fig:iess_jefes_act_inact}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_sgo_act_inact.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-Con la finalidad de realizar un análisis más descriptivo de la población mencionada en el párrafo
-anterior, se ha procedido a clasificarla en los siguientes tipos de riesgo:
-
-\begin{itemize}
-\item \textbf{Grupo 1}: Los afiliados que no cumplen requisitos, por tanto, no son elegibles a
-ninguna pensión o prestación por muerte, \vspace{-0.2cm}
-\item \textbf{Grupo 2}: Los afiliados que tienen al menos cinco años de cotización, por tanto, son
-elegibles para una pensión resultante de una eventual invalidez o muerte,\vspace{-0.2cm}
-\item \textbf{Grupo 3}: Los afiliados que, en menos de cinco años, cumplirían con los criterios de
-edad y tiempo de contribución para recibir una pensión de vejez; y,\vspace{-0.2cm}
-\item \textbf{Grupo 4}: Los afiliados que ya tienen derecho a su pensión de vejez o lo tendrán en
-menos de un año.
-\end{itemize}
-
-Hasta el año \Sexpr{REP$corte}, para la población de afiliados activos hombres del SGO se tiene que, el
-\Sexpr{REP$afi_er_sgo_h_g4}\%  cumplirá requisitos de vejez en un año o menos, el
-\Sexpr{REP$afi_er_sgo_h_g3}\% cumplirá requisitos de vejez en 5 años, el
-\Sexpr{REP$afi_er_sgo_h_g2}\%  tiene requisitos cumplidos para invalidez y muerte y el
-\Sexpr{REP$afi_er_sgo_h_g1}\% tiene  requisitos no cumplidos.
-
-\begin{figure}[H]
-\caption{Afiliados activos hombres por tipo de riesgo}
-\label{fig:iess_pastel_jefes_male_riesgo}
-\centering
-\includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Afiliados activos hombres por edad, número de años de imposiciones y tipo de riesgo}
-\label{fig:iess_jef_male_edad_riesgo}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-En la figura \ref{fig:iess_jefe_male_num_cotiz} se muestra la distribución de los afiliados al SGO
-por número de años de imposiciones, se observa que la mayor concentración se encuentra de 5 a 10
-años de imposiciones.
-
-\begin{figure}[H]
-\caption{Afiliados activos hombres por número de años de imposiciones}
-\label{fig:iess_jefe_male_num_cotiz}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Afiliadas activas mujeres por tipo de riesgo}
-\label{fig:iess_pastel_jefes_female_riesgo}
-\centering
-\includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-Respecto a la población de mujeres afiliadas activas del SGO, el \Sexpr{REP$afi_er_sgo_m_g4}\%
-cumplirá requisitos de vejez en un año o menos, el \Sexpr{REP$afi_er_sgo_m_g3}\% cumplirá
-requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_sgo_m_g2}\%  tiene requisitos cumplidos para
-invalidez y muerte y el \Sexpr{REP$afi_er_sgo_m_g1}\% tiene  requisitos no cumplidos. La clasificación de la población anterior en los 4 tipos de riesgos se puede apreciar en la figura
-\ref{fig:iess_jef_female_edad_riesgo}.
-
-\begin{figure}[H]
-\caption{Afiliadas activas mujeres por edad, número de años de imposiciones y tipo de riesgo}
-\label{fig:iess_jef_female_edad_riesgo}
-\centering
-\includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_edad_riesgo.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Afiliadas activas mujeres por número de años de imposiciones}
-\label{fig:iess_jefe_female_num_cotiz}
-\centering
-\includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-La distribución del número de años de imposiciones de mujeres afiliadas activas del SGO se puede
-apreciar en la figura \ref{fig:iess_jefe_female_num_cotiz}. La mayor concentración de personas se
-encuentra en el intervalo de 5 a 10 año de imposiciones.
-
-Para la población de afiliados inactivos hombres del SGO se tiene que, el
-\Sexpr{REP$afi_er_sgo_ina_h_g4}\%  cumplirá requisitos de vejez en un año o menos, el
-\Sexpr{REP$afi_er_sgo_ina_h_g3}\% cumplirá requisitos de vejez en 5 años, el
-\Sexpr{REP$afi_er_sgo_ina_h_g2}\%  tiene requisitos cumplidos para invalidez y muerte y el
-\Sexpr{REP$afi_er_sgo_ina_h_g1}\% tiene  requisitos no cumplidos.
-
-\begin{figure}[H]
-\caption{Afiliados inactivos hombres por tipo de riesgo}
-\label{fig:iess_pastel_jefes_male_riesgo_inac}
-\centering
-\includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-A continuación, en la figura \ref{fig:iess_afi_male_edad_riesgo_inac} se puede apreciar la
-desagregación  de los afiliados inactivos hombres para los 4 tipos de riesgo por edad y años de
-imposiciones.
-
-\begin{figure}[H]
-\caption{Afiliados inactivos hombres por edad, número de años de imposiciones y tipo de riesgo}
-\label{fig:iess_afi_male_edad_riesgo_inac}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-La distribución del número de imposiciones en años se puede observar en la figura
-\ref{fig:iess_dis_male_num_cotiz_inac}. La mayor concentración se encuentra en el intervalo de 0 a 5
-años.
-
-\begin{figure}[H]
-\caption{Afiliados inactivos hombres por número de años de imposiciones}
-\label{fig:iess_dis_male_num_cotiz_inac}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-Para las mujeres afiliadas inactivas del SGO tenemos que, el \Sexpr{REP$afi_er_sgo_ina_m_g4}\%
-cumplirá requisitos de vejez en un año o menos, el \Sexpr{REP$afi_er_sgo_ina_m_g3}\% cumplirá
-requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_sgo_ina_m_g2}\%  tiene requisitos cumplidos
-para invalidez y muerte y el \Sexpr{REP$afi_er_sgo_ina_m_g1}\% tiene  requisitos no cumplidos.
-
-\begin{figure}[H]
-\caption{Afiliadas inactivas mujeres por tipo de riesgo}
-\label{fig:iess_pastel_jefes_female_riesgo_inac}
-\centering
-\includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Afiliados inactivos del sexo femenino por edad, número de \\ años de imposiciones y tipo 
-de riesgo}
-\label{fig:iess_jef_female_edad_riesgo_inac}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-La desagregación de la población anterior en los 4 tipos de riesgo por edad y años de imposiciones
-se puede apreciar en la figura \ref{fig:iess_jef_female_edad_riesgo_inac}.
-
-Por otro lado, en la figura \ref{fig:iess_jefe_female_num_cotiz_inac} se muestra la distribución de
-mujeres afiliadas inactivas por el número de años de imposiciones. La mayor concentración se
-encuentra de 0 a 5 años de imposiciones.
-
-\begin{figure}[H]
-\caption{Afiliadas inactivas mujeres por número \\ de años de imposiciones}
-\label{fig:iess_jefe_female_num_cotiz_inac}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-%---------------------------------------------------------------------------------------------------
-\subsection{Afiliados TNRH}
-%---------------------------------------------------------------------------------------------------
-En la figura \ref{fig:iess_jefes_act_inact_tnrh} se puede apreciar que, del número total de
-afiliados que cotizaron al menos una vez bajo el régimen TNRH, hasta el 31 de diciembre de
-\Sexpr{REP$corte} (\Sexpr{REP$afi_er_tnrh} afiliados), el \Sexpr{REP$afi_er_tnrh_act_h}\%
-corresponde a hombres afiliados activos\footnote{\textbf{Afiliados Activos}: Los afiliados que
-aportaron al régimen TNRH al menos una vez en el año de la fecha de corte el estudio}, el
-\Sexpr{REP$afi_er_tnrh_act_m}\% a mujeres afiliadas activas, el \Sexpr{REP$afi_er_tnrh_ina_h}\% a
-hombres afiliados inactivos\footnote{\textbf{Afiliados Inactivos}: Los afiliados que aportaron al
-régimen TNRH, pero no se encuentran con aportes en el año de la fecha de corte del estudio} y el
-\Sexpr{REP$afi_er_tnrh_ina_m}\% a mujeres afiliadas inactivas.
-
-Al igual que en el SGO, a fin de realizar un análisis más descriptivo de la población afiliada bajo 
-este régimen, se ha procedido a clasificarla en los siguientes tipos de riesgo:
-
-\begin{itemize}
-\item \textbf{Grupo 1}: Los afiliados que no cumplen requisitos, por tanto, no son elegibles a
-ninguna pensión o prestación por muerte, \vspace{-0.2cm}
-\item \textbf{Grupo 2}: Los afiliados que tienen al menos cinco años de cotización, por tanto, son
-elegibles para una pensión resultante de una eventual invalidez o muerte,\vspace{-0.2cm}
-\item \textbf{Grupo 3}: Los afiliados que, en menos de cinco años, cumplirían con los criterios de
-edad y tiempo de contribución para recibir una pensión de vejez y\vspace{-0.2cm}
-\item \textbf{Grupo 4}: Los afiliados que ya tienen derecho a su pensión de vejez o lo tendrán en
-menos de un año.
-\end{itemize}
-
-\begin{figure}[H]
-\caption{Porcentaje de afiliados activos e inactivos bajo la modalidad de TNRH por sexo}
-\label{fig:iess_jefes_act_inact_tnrh}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_tnrh_act_inact.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-
-Bajo este régimen especial de afiliación hasta el \Sexpr{REP$corte}, los afiliados activos hombres
-nos indica que, el \Sexpr{REP$afi_er_tnrh_h_g4}\% cumplirá requisitos de vejez en un año o menos,
-el \Sexpr{REP$afi_er_tnrh_h_g3}\% cumplirá requisitos  de vejez en 5 años, el
-\Sexpr{REP$afi_er_tnrh_h_g2}\%  tiene requisitos cumplidos para invalidez y  muerte y el
-\Sexpr{REP$afi_er_tnrh_h_g1}\% tiene requisitos no cumplidos.
-
-A continuación, en la figura \ref{fig:iess_jef_male_edad_riesgo_tnrh} se puede apreciar la
-desagregación de los 4 tipos de riesgo por edad, años de imposiciones.
-
-\begin{figure}[H]
-\caption{Hombres afiliados al TNRH que están activos por tipo de riesgo}
-\label{fig:iess_pastel_jefes_male_riesgo_tnrh}
-\centering
-\includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Hombres afiliados al TNRH que están activos por edad, número de años de imposiciones y 
-tipo de riesgo}
-\label{fig:iess_jef_male_edad_riesgo_tnrh}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_edad_riesgo.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-En la figura \ref{fig:iess_jefe_male_num_cotiz_tnrh} se muestra la distribución de los afiliados al
-TNRH hombres que están activos por número de años de imposiciones, se observa que la mayor concentración se encuentra de 0 a 5 años de imposiciones, considerando una vez mas que está modalidad de afiliación entro en vigencia a partir del año 2015.
-
-\begin{figure}[H]
-\caption{Hombres afiliados al TNRH que están activos por número de años de imposiciones}
-\label{fig:iess_jefe_male_num_cotiz_tnrh}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Mujeres afiliados al TNRH que están activas por tipo de riesgo}
-\label{fig:iess_pastel_jefes_female_riesgo}
-\centering
-\includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-Las mujeres afiliadas activas bajo este régimen especial nos indica que, no existen personas que
-cumplirán requisitos de vejez en un año o menos, no obstante, el \Sexpr{REP$afi_er_tnrh_m_g3}\%
-cumplirá requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_tnrh_m_g2}\%  tiene requisitos
-cumplidos para invalidez y muerte y el \Sexpr{REP$afi_er_tnrh_m_g1}\% tiene  requisitos no
-cumplidos. La clasificación de la población anterior en los 4 tipos de riesgos se puede apreciar en la figura
-\ref{fig:iess_jef_female_edad_riesgo_tnrh}.
-
-\begin{figure}[H]
-\caption{Mujeres afiliadas al TNRH que están activas por edad, número de años de imposiciones y tipo de riesgo}
-\label{fig:iess_jef_female_edad_riesgo_tnrh}
-\centering
-\includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-
-\begin{figure}[H]
-\caption{Mujeres afiliadas al TNRH que están activas por número de años de imposiciones}
-\label{fig:iess_jefe_female_num_cotiz_tnrh}
-\centering
-\includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_num_cotiz.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-En cuanto a la distribución en años del número  de imposiciones de las afiliadas activas mujeres,
-para este régimen especial, se observa en la figura \ref{fig:iess_jefe_female_num_cotiz_tnrh} que la
-mayor concentración de personas se encuentra en el intervalo de 0 a 5 años de imposiciones.
-
-%Inactivos TNRH
-Los afiliados inactivos hombres de este régimen especial, no tienen personas que cumplan requisitos
-de vejez en un año o menos; sin embargo, el \Sexpr{REP$afi_er_tnrh_ina_h_g3}\% cumplirá requisitos
-de vejez en 5 años, el \Sexpr{REP$afi_er_tnrh_ina_h_g2}\%  tiene requisitos cumplidos para
-invalidez y muerte y el \Sexpr{REP$afi_er_tnrh_ina_h_g1}\% tiene  requisitos no cumplidos. A continuación, en la figura \ref{fig:iess_jef_male_edad_riesgo_inac} se puede apreciar la desagregación  de los afiliados inactivos hombres, para los 4 tipos de riesgo por edad y años de imposiciones.
-
-\begin{figure}[H]
-\caption{Hombres afiliados al TNRH que están inactivos por tipo de riesgo}
-\label{fig:iess_pastel_jefes_male_riesgo_inac}
-\centering
-\includegraphics[scale=0.8]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Hombres afiliados al TNRH que están inactivos por edad, número de años de imposiciones y 
-tipo de riesgo}
-\label{fig:iess_jef_male_edad_riesgo_inac}
-\centering
-\includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_mas_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-La distribución del número de imposiciones en años se puede observar en la figura
-\ref{fig:iess_jefe_male_num_cotiz_inac}. La mayor parte de esta población se encuentra 
-con menos de 1 año de aportación.
-
-
-%observar que la población afiliada que se encuentra inactiva aún tiene meses de imposiciones.
-
-\begin{figure}[H]
-\caption{Hombres afiliados al TNRH que están inactivos por número de años de imposiciones}
-\label{fig:iess_jefe_male_num_cotiz_inac}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Mujeres afiliadas al TNRH que están inactivas por tipo de riesgo}
-\label{fig:iess_pastel_jefes_female_riesgo_inac}
-\centering
-\includegraphics[scale=0.85]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-Las afiliadas inactivas mujeres de este régimen especial, no tienen personas que cumplirán
-requisitos de vejez en un año o menos, no obstante, el \Sexpr{REP$afi_er_tnrh_ina_m_g3}\% cumplirá
-requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_tnrh_ina_m_g2}\%  tiene requisitos cumplidos
-para invalidez y muerte y el \Sexpr{REP$afi_er_tnrh_ina_m_g1}\% tiene  requisitos no cumplidos. La desagregación de la población anterior en los 4 tipos de riesgo por edad y años de imposiciones se
-puede apreciar en la figura \ref{fig:iess_jef_female_edad_riesgo_inac_tnrh}. Por otro lado, la mayor parte de esta población se encuentra con menos de 1 año de aportación.
-
-\begin{figure}[H]
-\caption{Mujeres afiliadas al TNRH que están inactivas por edad, número de años de imposiciones y 
-tipo de riesgo}
-\label{fig:iess_jef_female_edad_riesgo_inac_tnrh}
-\centering
-\includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
-
-\begin{figure}[H]
-\caption{Mujeres afiliadas al TNRH que están inactivas por número \\ de años de imposiciones}
-\label{fig:iess_jefe_female_num_cotiz_inac_tnrh}
-\centering
-\includegraphics[scale=1]{graficos/iess_afiliados_tnrh_fem_num_cotiz_inac.pdf}
-\caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
-Elaborado: DAIE}
-\end{figure}
+% %---------------------------------------------------------------------------------------------------
+% \section{Afiliados activos e inactivos según la exposición al riesgo}
+% 
+% %---------------------------------------------------------------------------------------------------
+% \subsection{Afiliados del Seguro IVM}
+% %---------------------------------------------------------------------------------------------------
+% En la figura \ref{fig:iess_jefes_act_inact} se puede apreciar que, del número total de afiliados que
+% cotizaron al menos una vez al SGO hasta el 31 de diciembre de \Sexpr{REP$corte}
+% (\Sexpr{REP$afi_er_sgo} afiliados), el \Sexpr{REP$afi_er_sgo_act_h}\% corresponde a hombres
+% afiliados activos\footnote{\textbf{Afiliados Activos}: Los afiliados que aportaron al SGO al menos
+% una vez en el año de la fecha de corte el estudio}, el \Sexpr{REP$afi_er_sgo_act_m}\% a  mujeres
+% afiliadas activas, el \Sexpr{REP$afi_er_sgo_ina_h}\% a hombres afiliados
+% inactivos\footnote{\textbf{Afiliados Inactivos}: Los afiliados que aportaron al SGO, pero no se
+% encuentran con aportes en el año de la fecha de corte del estudio} y el
+% \Sexpr{REP$afi_er_sgo_ina_m}\% a mujeres afiliadas inactivas.
+% 
+% \begin{figure}[H]
+% \caption{Porcentaje de afiliados activos e inactivos del SGO ambos sexos}
+% \label{fig:iess_jefes_act_inact}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_act_inact.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% Con la finalidad de realizar un análisis más descriptivo de la población mencionada en el párrafo
+% anterior, se ha procedido a clasificarla en los siguientes tipos de riesgo:
+% 
+% \begin{itemize}
+% \item \textbf{Grupo 1}: Los afiliados que no cumplen requisitos, por tanto, no son elegibles a
+% ninguna pensión o prestación por muerte, \vspace{-0.2cm}
+% \item \textbf{Grupo 2}: Los afiliados que tienen al menos cinco años de cotización, por tanto, son
+% elegibles para una pensión resultante de una eventual invalidez o muerte,\vspace{-0.2cm}
+% \item \textbf{Grupo 3}: Los afiliados que, en menos de cinco años, cumplirían con los criterios de
+% edad y tiempo de contribución para recibir una pensión de vejez; y,\vspace{-0.2cm}
+% \item \textbf{Grupo 4}: Los afiliados que ya tienen derecho a su pensión de vejez o lo tendrán en
+% menos de un año.
+% \end{itemize}
+% 
+% Hasta el año \Sexpr{REP$corte}, para la población de afiliados activos hombres del SGO se tiene que, el
+% \Sexpr{REP$afi_er_sgo_h_g4}\%  cumplirá requisitos de vejez en un año o menos, el
+% \Sexpr{REP$afi_er_sgo_h_g3}\% cumplirá requisitos de vejez en 5 años, el
+% \Sexpr{REP$afi_er_sgo_h_g2}\%  tiene requisitos cumplidos para invalidez y muerte y el
+% \Sexpr{REP$afi_er_sgo_h_g1}\% tiene  requisitos no cumplidos.
+% 
+% \begin{figure}[H]
+% \caption{Afiliados activos hombres por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_male_riesgo}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Afiliados activos hombres por edad, número de años de imposiciones y tipo de riesgo}
+% \label{fig:iess_jef_male_edad_riesgo}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% En la figura \ref{fig:iess_jefe_male_num_cotiz} se muestra la distribución de los afiliados al SGO
+% por número de años de imposiciones, se observa que la mayor concentración se encuentra de 5 a 10
+% años de imposiciones.
+% 
+% \begin{figure}[H]
+% \caption{Afiliados activos hombres por número de años de imposiciones}
+% \label{fig:iess_jefe_male_num_cotiz}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Afiliadas activas mujeres por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_female_riesgo}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% Respecto a la población de mujeres afiliadas activas del SGO, el \Sexpr{REP$afi_er_sgo_m_g4}\%
+% cumplirá requisitos de vejez en un año o menos, el \Sexpr{REP$afi_er_sgo_m_g3}\% cumplirá
+% requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_sgo_m_g2}\%  tiene requisitos cumplidos para
+% invalidez y muerte y el \Sexpr{REP$afi_er_sgo_m_g1}\% tiene  requisitos no cumplidos. La clasificación de la población anterior en los 4 tipos de riesgos se puede apreciar en la figura
+% \ref{fig:iess_jef_female_edad_riesgo}.
+% 
+% \begin{figure}[H]
+% \caption{Afiliadas activas mujeres por edad, número de años de imposiciones y tipo de riesgo}
+% \label{fig:iess_jef_female_edad_riesgo}
+% \centering
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_edad_riesgo.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Afiliadas activas mujeres por número de años de imposiciones}
+% \label{fig:iess_jefe_female_num_cotiz}
+% \centering
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_num_cotiz.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% La distribución del número de años de imposiciones de mujeres afiliadas activas del SGO se puede
+% apreciar en la figura \ref{fig:iess_jefe_female_num_cotiz}. La mayor concentración de personas se
+% encuentra en el intervalo de 5 a 10 año de imposiciones.
+% 
+% Para la población de afiliados inactivos hombres del SGO se tiene que, el
+% \Sexpr{REP$afi_er_sgo_ina_h_g4}\%  cumplirá requisitos de vejez en un año o menos, el
+% \Sexpr{REP$afi_er_sgo_ina_h_g3}\% cumplirá requisitos de vejez en 5 años, el
+% \Sexpr{REP$afi_er_sgo_ina_h_g2}\%  tiene requisitos cumplidos para invalidez y muerte y el
+% \Sexpr{REP$afi_er_sgo_ina_h_g1}\% tiene  requisitos no cumplidos.
+% 
+% \begin{figure}[H]
+% \caption{Afiliados inactivos hombres por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_male_riesgo_inac}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% A continuación, en la figura \ref{fig:iess_afi_male_edad_riesgo_inac} se puede apreciar la
+% desagregación  de los afiliados inactivos hombres para los 4 tipos de riesgo por edad y años de
+% imposiciones.
+% 
+% \begin{figure}[H]
+% \caption{Afiliados inactivos hombres por edad, número de años de imposiciones y tipo de riesgo}
+% \label{fig:iess_afi_male_edad_riesgo_inac}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% La distribución del número de imposiciones en años se puede observar en la figura
+% \ref{fig:iess_dis_male_num_cotiz_inac}. La mayor concentración se encuentra en el intervalo de 0 a 5
+% años.
+% 
+% \begin{figure}[H]
+% \caption{Afiliados inactivos hombres por número de años de imposiciones}
+% \label{fig:iess_dis_male_num_cotiz_inac}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% Para las mujeres afiliadas inactivas del SGO tenemos que, el \Sexpr{REP$afi_er_sgo_ina_m_g4}\%
+% cumplirá requisitos de vejez en un año o menos, el \Sexpr{REP$afi_er_sgo_ina_m_g3}\% cumplirá
+% requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_sgo_ina_m_g2}\%  tiene requisitos cumplidos
+% para invalidez y muerte y el \Sexpr{REP$afi_er_sgo_ina_m_g1}\% tiene  requisitos no cumplidos.
+% 
+% \begin{figure}[H]
+% \caption{Afiliadas inactivas mujeres por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_female_riesgo_inac}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Afiliados inactivos del sexo femenino por edad, número de \\ años de imposiciones y tipo 
+% de riesgo}
+% \label{fig:iess_jef_female_edad_riesgo_inac}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_edad_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% La desagregación de la población anterior en los 4 tipos de riesgo por edad y años de imposiciones
+% se puede apreciar en la figura \ref{fig:iess_jef_female_edad_riesgo_inac}.
+% 
+% Por otro lado, en la figura \ref{fig:iess_jefe_female_num_cotiz_inac} se muestra la distribución de
+% mujeres afiliadas inactivas por el número de años de imposiciones. La mayor concentración se
+% encuentra de 0 a 5 años de imposiciones.
+% 
+% \begin{figure}[H]
+% \caption{Afiliadas inactivas mujeres por número \\ de años de imposiciones}
+% \label{fig:iess_jefe_female_num_cotiz_inac}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_num_cotiz_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% %---------------------------------------------------------------------------------------------------
+% \subsection{Afiliados TNRH}
+% %---------------------------------------------------------------------------------------------------
+% En la figura \ref{fig:iess_jefes_act_inact_tnrh} se puede apreciar que, del número total de
+% afiliados que cotizaron al menos una vez bajo el régimen TNRH, hasta el 31 de diciembre de
+% \Sexpr{REP$corte} (\Sexpr{REP$afi_er_tnrh} afiliados), el \Sexpr{REP$afi_er_tnrh_act_h}\%
+% corresponde a hombres afiliados activos\footnote{\textbf{Afiliados Activos}: Los afiliados que
+% aportaron al régimen TNRH al menos una vez en el año de la fecha de corte el estudio}, el
+% \Sexpr{REP$afi_er_tnrh_act_m}\% a mujeres afiliadas activas, el \Sexpr{REP$afi_er_tnrh_ina_h}\% a
+% hombres afiliados inactivos\footnote{\textbf{Afiliados Inactivos}: Los afiliados que aportaron al
+% régimen TNRH, pero no se encuentran con aportes en el año de la fecha de corte del estudio} y el
+% \Sexpr{REP$afi_er_tnrh_ina_m}\% a mujeres afiliadas inactivas.
+% 
+% Al igual que en el SGO, a fin de realizar un análisis más descriptivo de la población afiliada bajo 
+% este régimen, se ha procedido a clasificarla en los siguientes tipos de riesgo:
+% 
+% \begin{itemize}
+% \item \textbf{Grupo 1}: Los afiliados que no cumplen requisitos, por tanto, no son elegibles a
+% ninguna pensión o prestación por muerte, \vspace{-0.2cm}
+% \item \textbf{Grupo 2}: Los afiliados que tienen al menos cinco años de cotización, por tanto, son
+% elegibles para una pensión resultante de una eventual invalidez o muerte,\vspace{-0.2cm}
+% \item \textbf{Grupo 3}: Los afiliados que, en menos de cinco años, cumplirían con los criterios de
+% edad y tiempo de contribución para recibir una pensión de vejez y\vspace{-0.2cm}
+% \item \textbf{Grupo 4}: Los afiliados que ya tienen derecho a su pensión de vejez o lo tendrán en
+% menos de un año.
+% \end{itemize}
+% 
+% \begin{figure}[H]
+% \caption{Porcentaje de afiliados activos e inactivos bajo la modalidad de TNRH por sexo}
+% \label{fig:iess_jefes_act_inact_tnrh}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_act_inact.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% 
+% Bajo este régimen especial de afiliación hasta el \Sexpr{REP$corte}, los afiliados activos hombres
+% nos indica que, el \Sexpr{REP$afi_er_tnrh_h_g4}\% cumplirá requisitos de vejez en un año o menos,
+% el \Sexpr{REP$afi_er_tnrh_h_g3}\% cumplirá requisitos  de vejez en 5 años, el
+% \Sexpr{REP$afi_er_tnrh_h_g2}\%  tiene requisitos cumplidos para invalidez y  muerte y el
+% \Sexpr{REP$afi_er_tnrh_h_g1}\% tiene requisitos no cumplidos.
+% 
+% A continuación, en la figura \ref{fig:iess_jef_male_edad_riesgo_tnrh} se puede apreciar la
+% desagregación de los 4 tipos de riesgo por edad, años de imposiciones.
+% 
+% \begin{figure}[H]
+% \caption{Hombres afiliados al TNRH que están activos por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_male_riesgo_tnrh}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Hombres afiliados al TNRH que están activos por edad, número de años de imposiciones y 
+% tipo de riesgo}
+% \label{fig:iess_jef_male_edad_riesgo_tnrh}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_edad_riesgo.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% En la figura \ref{fig:iess_jefe_male_num_cotiz_tnrh} se muestra la distribución de los afiliados al
+% TNRH hombres que están activos por número de años de imposiciones, se observa que la mayor concentración se encuentra de 0 a 5 años de imposiciones, considerando una vez mas que está modalidad de afiliación entro en vigencia a partir del año 2015.
+% 
+% \begin{figure}[H]
+% \caption{Hombres afiliados al TNRH que están activos por número de años de imposiciones}
+% \label{fig:iess_jefe_male_num_cotiz_tnrh}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Mujeres afiliados al TNRH que están activas por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_female_riesgo}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% Las mujeres afiliadas activas bajo este régimen especial nos indica que, no existen personas que
+% cumplirán requisitos de vejez en un año o menos, no obstante, el \Sexpr{REP$afi_er_tnrh_m_g3}\%
+% cumplirá requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_tnrh_m_g2}\%  tiene requisitos
+% cumplidos para invalidez y muerte y el \Sexpr{REP$afi_er_tnrh_m_g1}\% tiene  requisitos no
+% cumplidos. La clasificación de la población anterior en los 4 tipos de riesgos se puede apreciar en la figura
+% \ref{fig:iess_jef_female_edad_riesgo_tnrh}.
+% 
+% \begin{figure}[H]
+% \caption{Mujeres afiliadas al TNRH que están activas por edad, número de años de imposiciones y tipo de riesgo}
+% \label{fig:iess_jef_female_edad_riesgo_tnrh}
+% \centering
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% 
+% \begin{figure}[H]
+% \caption{Mujeres afiliadas al TNRH que están activas por número de años de imposiciones}
+% \label{fig:iess_jefe_female_num_cotiz_tnrh}
+% \centering
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_num_cotiz.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% En cuanto a la distribución en años del número  de imposiciones de las afiliadas activas mujeres,
+% para este régimen especial, se observa en la figura \ref{fig:iess_jefe_female_num_cotiz_tnrh} que la
+% mayor concentración de personas se encuentra en el intervalo de 0 a 5 años de imposiciones.
+% 
+% %Inactivos TNRH
+% Los afiliados inactivos hombres de este régimen especial, no tienen personas que cumplan requisitos
+% de vejez en un año o menos; sin embargo, el \Sexpr{REP$afi_er_tnrh_ina_h_g3}\% cumplirá requisitos
+% de vejez en 5 años, el \Sexpr{REP$afi_er_tnrh_ina_h_g2}\%  tiene requisitos cumplidos para
+% invalidez y muerte y el \Sexpr{REP$afi_er_tnrh_ina_h_g1}\% tiene  requisitos no cumplidos. A continuación, en la figura \ref{fig:iess_jef_male_edad_riesgo_inac} se puede apreciar la desagregación  de los afiliados inactivos hombres, para los 4 tipos de riesgo por edad y años de imposiciones.
+% 
+% \begin{figure}[H]
+% \caption{Hombres afiliados al TNRH que están inactivos por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_male_riesgo_inac}
+% \centering
+% \includegraphics[scale=0.8]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Hombres afiliados al TNRH que están inactivos por edad, número de años de imposiciones y 
+% tipo de riesgo}
+% \label{fig:iess_jef_male_edad_riesgo_inac}
+% \centering
+% \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_mas_edad_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% La distribución del número de imposiciones en años se puede observar en la figura
+% \ref{fig:iess_jefe_male_num_cotiz_inac}. La mayor parte de esta población se encuentra 
+% con menos de 1 año de aportación.
+% 
+% 
+% %observar que la población afiliada que se encuentra inactiva aún tiene meses de imposiciones.
+% 
+% \begin{figure}[H]
+% \caption{Hombres afiliados al TNRH que están inactivos por número de años de imposiciones}
+% \label{fig:iess_jefe_male_num_cotiz_inac}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Mujeres afiliadas al TNRH que están inactivas por tipo de riesgo}
+% \label{fig:iess_pastel_jefes_female_riesgo_inac}
+% \centering
+% \includegraphics[scale=0.85]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% Las afiliadas inactivas mujeres de este régimen especial, no tienen personas que cumplirán
+% requisitos de vejez en un año o menos, no obstante, el \Sexpr{REP$afi_er_tnrh_ina_m_g3}\% cumplirá
+% requisitos de vejez en 5 años, el \Sexpr{REP$afi_er_tnrh_ina_m_g2}\%  tiene requisitos cumplidos
+% para invalidez y muerte y el \Sexpr{REP$afi_er_tnrh_ina_m_g1}\% tiene  requisitos no cumplidos. La desagregación de la población anterior en los 4 tipos de riesgo por edad y años de imposiciones se
+% puede apreciar en la figura \ref{fig:iess_jef_female_edad_riesgo_inac_tnrh}. Por otro lado, la mayor parte de esta población se encuentra con menos de 1 año de aportación.
+% 
+% \begin{figure}[H]
+% \caption{Mujeres afiliadas al TNRH que están inactivas por edad, número de años de imposiciones y 
+% tipo de riesgo}
+% \label{fig:iess_jef_female_edad_riesgo_inac_tnrh}
+% \centering
+% \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
+% 
+% \begin{figure}[H]
+% \caption{Mujeres afiliadas al TNRH que están inactivas por número \\ de años de imposiciones}
+% \label{fig:iess_jefe_female_num_cotiz_inac_tnrh}
+% \centering
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_fem_num_cotiz_inac.pdf}
+% \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
+% Elaborado: DAIE}
+% \end{figure}
 
 %---------------------------------------------------------------------------------------------------
 \section[Análisis demográfico de recicladores de base]{Análisis demográfico de recicladores de base}

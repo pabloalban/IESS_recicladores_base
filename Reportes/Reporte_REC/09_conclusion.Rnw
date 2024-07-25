@@ -10,18 +10,19 @@ Del presente estudio se obtienen las siguientes conclusiones:
 
 \item Se registra 9.728 recicladores de base, de los cuales 1.477 (15,18\%) recicladores de base tienen 65 años o más, la totalidad no ha contribuido al IESS y que están en edad de percibir una renta por vejez. Por último, hay registro de 9 recicladores de entre 7 a 14años, los cuales deberían acceder a programas de protección infantil por parte del Estado.
 
-\item De la totalidad de 9.728 recicladores de base, 7.510 (77,20 %) recicladores solo tienen como su único ingreso del reciclaje; mientras que 2.218 (22,80 %) tiene otros ingresos.
-\item En promedio, los recicladores de base registran ingresos mensuales por USD 218,56, de los cuales solo USD 87,94 provienen exclusivamente del reciclaje, lo cual trae una problemática porque el 77,20 % de los recicladores tienen ingresos exclusivos del reciclaje. Las mujeres registran ingresos promedio totales por USD 183,90, de los cuales solo USD 80,81 provienen del reciclaje. Por otro lado, en los hombres el ingreso total promedio es USD 250,21, de los cuales solo USD 94, 45 proviene del reciclaje.
+\item De la totalidad de 9.728 recicladores de base, 7.510 (77,20\%) recicladores solo tienen como su único ingreso del reciclaje; mientras que 2.218 (22,80\%) tiene otros ingresos.
 
-\item La distribución de los ingresos totales de los recicladores de base se compone como sigue, a continuación: 1.680 (17,27 %) recicladores se encuentran bajo la línea de pobreza extrema (USD 50 en 2022); 2.948 (30,30 % recicladores se encuentran bajo la línea de la pobreza (USD 90 en 2022); 3.978 (40,89 %) recicladores tienen ingresos menores a USD 106,25 (25 % SBU en 2022); 6.863 (70,55 %) recicladores tienen ingresos menores a USD 212,50 (50 % SBU en 2022); 8.850 (90,97 %) recicladores tienen ingresos menor a un SBU (USD 425 en 2022); y, finalmente, solo 878 (9,03 %) recicladores tienen ingresos mayores a un SBU.
+\item En promedio, los recicladores de base registran ingresos mensuales por USD 218,56, de los cuales solo USD 87,94 provienen exclusivamente del reciclaje, lo cual trae una problemática porque el 77,20\% de los recicladores tienen ingresos exclusivos del reciclaje. Las mujeres registran ingresos promedio totales por USD 183,90, de los cuales solo USD 80,81 provienen del reciclaje. Por otro lado, en los hombres el ingreso total promedio es USD 250,21, de los cuales solo USD 94,45 proviene del reciclaje.
 
-\item La población no afiliada a la fecha de corte a los diferentes regímenes de seguros del sistema de seguridad social ecuatoriano alcanza el 92,17 %; es decir, 8.966 recicladores no tienen acceso a seguridad social.
+\item La distribución de los ingresos totales de los recicladores de base se compone como sigue, a continuación: 1.680 (17,27\%) recicladores se encuentran bajo la línea de pobreza extrema (USD 50 en 2022); 2.948 (30,30\% recicladores se encuentran bajo la línea de la pobreza (USD 90 en 2022); 3.978 (40,89\%) recicladores tienen ingresos menores a USD 106,25 (25\% SBU en 2022); 6.863 (70,55\%) recicladores tienen ingresos menores a USD 212,50 (50\% SBU en 2022); 8.850 (90,97\%) recicladores tienen ingresos menor a un SBU (USD 425 en 2022); y, finalmente, solo 878 (9,03\%) recicladores tienen ingresos mayores a un SBU.
 
-\item De la totalidad de 9.728 recicladores base, 1.218(12,52\%) recicladores dicen tener algún porcentaje de discapacidad, de los cuales 435(4,47\%) tienen carnet de discapacidad. Los recicladores con carnet de discapacidad se componen de 282 (64 %) hombres y 153 mujeres (35 %). Y, además, 97,70 % de ellos registra una discapacidad mayor al 30 %; es decir 425 recicladores deberían recibir el bono de discapacidad del MIESS.
+\item La población no afiliada a la fecha de corte a los diferentes regímenes de seguros del sistema de seguridad social ecuatoriano alcanza el 92,17\%; es decir, 8.966 recicladores no tienen acceso a seguridad social.
+
+\item De la totalidad de 9.728 recicladores base, 1.218(12,52\%) recicladores dicen tener algún porcentaje de discapacidad, de los cuales 435(4,47\%) tienen carnet de discapacidad. Los recicladores con carnet de discapacidad se componen de 282 (64\%) hombres y 153 mujeres (35\%). Y, además, 97,70\% de ellos registra una discapacidad mayor al 30\%; es decir 425 recicladores deberían recibir el bono de discapacidad del MIESS.
 
 \item Debido a la situación crítica que afronta el Seguro de IVM y Seguro de Salud del IESS, la prima de aportación actual no garantiza la sostenibilidad de estos dos seguros. Por lo tanto, la prima de 17,60\% para los afiliados del régimen voluntario no es suficiente y es necesario subir a 23,50\%.
 
-\item En el caso que se determinará una base de aportación menor a un SBU para los recicladores de base, existiría una clara distorsión, puesto recibiría una pensión mayor a la base de aportación, debido a que las pensiones mínimas del IESS están en porcentajes al SBU, de acuerdo con el artículo 234 de la Ley de Seguridad Social.
+\item En el caso que se determinará una base de aportación menor a un SBU para los recicladores de base, existiría una clara distorsión, puesto recibiría una pensión mayor a la base de aportación, debido a que las pensiones mínimas del IESS están en porcentajes al SBU, de acuerdo con el artículo 234 de la Ley de Seguridad Social. Por ejemplo, en el caso de que un reciclador de base aportará sobre el 50\% del SBU (USD 212,50 en 2022) por 22 años, su pensión mínima sería el 60\% del SBU (USD 297,50), aplicando el artículo 234 de la Ley de Seguridad Social. 
 \end{enumerate}
 
 %---------------------------------------------------------------------------------------------------
@@ -31,13 +32,15 @@ Sobre la base del análisis efectuado y los resultados obtenidos en el presente 
 
 \begin{enumerate}
 
-\item Debido a los bajos ingresos de los recicladores de base que les hace imposible aportar a un régimen contributivo, se recomienda que el Estado subsidie la aportación de los recicladores de base por medio del IESS o prestaciones no contributivas en el MIES.
+\item Debido a los bajos ingresos de los recicladores de base que les hace imposible aportar a un régimen contributivo, se recomienda que el Estado subsidie la totalidad de la aportación de los recicladores de base en el IESS o entregue prestaciones no contributivas con el MIES.
 
 \item El MIES debería crear programas contra el trabajo infantil y entregar bonos de pobreza a las familias de los 10 niños menores de 14 años dedicados al reciclaje.
-\item El MIES debería entregar bonos de vejez a los 1.477 recicladores de base que tienen 65 años o más, debido a que casi la totalidad nunca ha aportado al IESS.
 
-\item El MIES debería estudiar los casos de los 1.218 recicladores que dicen tener algún porcentaje de discapacidad y entregar un bono por discapacidad a los 425 recicladores que poseen carnet con discapacidad mayor a 30\%.
+\item El MIES debería entregar el bono de pobreza a 2.948 (30,30\%) recicladores de base que se encuentran bajo la línea de la pobreza.
 
+\item El MIES debería entregar bonos de vejez a los 1.477 recicladores de base que tienen 65 años o más, debido a que casi la totalidad nunca han aportado al IESS.
+
+\item El MIES debería estudiar los casos de los 1.218 recicladores de base que dicen tener algún porcentaje de discapacidad y entregar un bono por discapacidad a los 425 recicladores que poseen carnet que registran una discapacidad mayor a 30\%.
 
 \end{enumerate}
 
