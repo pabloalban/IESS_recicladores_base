@@ -1080,9 +1080,9 @@ De la totalidad de 9.728 recicladores de base, 7.510 (77,20\%) recicladores solo
 }
 }
 
-En promedio, los recicladores de base registran ingresos mensuales por USD 218,56, de los cuales solo USD 87,94 provienen exclusivamente del reciclaje, lo cual trae una problemática porque el 77,20\% de los recicladores tienen ingresos exclusivos del reciclaje. Por sexo, las mujeres registran ingresos promedio totales por USD 183,90, de los cuales solo USD 80,81 provienen del reciclaje. Por otro lado, en los hombres el ingreso total promedio es USD 250,21, de los cuales solo USD 94, 45 proviene del reciclaje.
+En promedio, los recicladores de base registran ingresos mensuales por USD 218,56, de los cuales solo USD 87,94 provienen exclusivamente del reciclaje, lo cual trae una problemática porque el 77,20\% de los recicladores tienen ingresos exclusivos del reciclaje. Por sexo, las mujeres registran ingresos promedio totales por USD 183,90, de los cuales solo USD 80,81 provienen del reciclaje. Por otro lado, en los hombres el ingreso total promedio es USD 250,21, de los cuales solo USD 94,45 proviene del reciclaje.
 
-Se puede observar en la figura \ref{fig:IESS_rec_pir_edad_sal_prom} se muestran los ingresos promedios por rangos de edad. Los ingresos promedio más altos se encuentran en los rangos de edad de 18 a 29 y de 30 a 64, junto con una marcada disparidad entre los sexos, favoreciendo al masculino.
+En la figura \ref{fig:IESS_rec_pir_edad_sal_prom} se presentan los ingresos promedios por rangos de edad y sexo. Los ingresos promedio más altos se encuentran en los rangos de edad de 18 a 29 y de 30 a 64, junto con una marcada disparidad entre los sexos, favoreciendo al masculino.
 
 \begin{figure}[H]
   \caption{Ingreso promedio de reciclaje por edad y sexo de la población de recicladores de base}

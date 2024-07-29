@@ -33,12 +33,12 @@
 % Cuerpo del estudio
 \mainmatter
 
-%<<cap03, child='03_resumen_ejecutivo.Rnw'>>=
-%@
+<<cap03, child='03_resumen_ejecutivo.Rnw'>>=
+@
 
 <<cap04, child='04_antecedentes.Rnw'>>=
 @
-%  
+  
 <<cap05, child='05_base_legal.Rnw'>>=
 @
  
