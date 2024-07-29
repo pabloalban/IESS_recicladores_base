@@ -60,6 +60,7 @@ Sobre la base del análisis efectuado y los resultados obtenidos en el presente 
 %Quito, 29 de enero de 2024 \\
 
 %\vspace{2cm}
+\newpage
 Atentamente,
 \vspace{4cm}
 %--------------------------------------------------------------------------------------------------
