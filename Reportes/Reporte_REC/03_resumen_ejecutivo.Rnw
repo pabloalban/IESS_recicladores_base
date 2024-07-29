@@ -77,6 +77,6 @@ Sobre la base del análisis efectuado y los resultados obtenidos en el presente 
 \item El MIES debe entregar bonos de vejez a los 1.477 recicladores de base que tienen 65 años o más, debido a que casi la totalidad nunca han aportado al IESS.
 
 \item El MIES debe estudiar los casos de los 1.218 recicladores de base que dicen tener algún porcentaje de discapacidad y entregar un bono por discapacidad a los 425 recicladores que poseen carné de discapacidad mayor al 30\%.
-\item Es necesario que las autoridades tanto del IESS como del MIESS, definan primero el aporte y luego que seguro sería el encargado de ofrecer el beneficio acorde con el aporte y su financiamiento.
+% \item Es necesario que las autoridades tanto del IESS como del MIESS, definan primero el aporte y luego que seguro sería el encargado de ofrecer el beneficio acorde con el aporte y su financiamiento.
 \end{enumerate}
 
