@@ -21,7 +21,7 @@ aux <- edad_sexo_int %>%
 
 salto_y <- 0.005
 brks_y <- seq( -0.04, 0.04, salto_y )
-lbls_y <- paste0( as.character( c( seq( 0.04, 0, -salto_y )*100, seq( salto_y, 0.04, salto_y )*100 ) ), '%')
+lbls_y <- paste0( formatC( 100 * abs( brks_y ), digits = 1, format = 'f', big.mark = '.', decimal.mark = ',' ), '%' )
 salto_x <- 10
 brks_x <- seq( 15, 100, salto_x )
 lbls_x <- paste0( as.character( brks_x ) )
