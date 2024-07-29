@@ -78,7 +78,7 @@ Elaborado: DAIE}
 \caption{Evolución de la población afiliada al SGO}
 \label{fig:iess_afi_activos_sgo}
 \centering
-\includegraphics[scale=1]{graficos/iess_pob_afi_sgo_ini.pdf}
+\includegraphics[scale=1]{graficos/iess_pob_afi_sgo_ini.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -94,7 +94,7 @@ SGO por edad y sexo.
 \caption{Distribución por edad y sexo de la población afiliada al SGO}
 \label{fig:iess_pir_afiliados}
 \centering
-\includegraphics[scale=1]{graficos/iess_pir_afiliados_sgo.pdf}
+\includegraphics[scale=1]{graficos/iess_pir_afiliados_sgo.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -165,7 +165,7 @@ Para el \Sexpr{REP$corte} existen \Sexpr{REP$afi_tnrh} afiliados bajo esta modal
 \caption{Evolución de la población afiliada al TNRH}
 \label{fig:iess_afi_activos_tnrh}
 \centering
-\includegraphics[scale=1]{graficos/iess_pob_afi_tnrh_ini.pdf}
+\includegraphics[scale=1]{graficos/iess_pob_afi_tnrh_ini.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -178,7 +178,7 @@ es de \Sexpr{REP$edad_prom_tnrh_m} años. En la figura \ref{fig:iess_pir_afiliad
 \caption{Distribución por edad y sexo de la población afiliada al TNRH}
 \label{fig:iess_pir_afiliados_tnrh}
 \centering
-\includegraphics[scale=1]{graficos/iess_pir_afiliados_tnrh.pdf}
+\includegraphics[scale=1]{graficos/iess_pir_afiliados_tnrh.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -227,7 +227,7 @@ económica y social producida por la pandemia COVID-19.
 \caption{Evolución anual de la masa salarial del SGO en el período 2012–\Sexpr{REP$corte}}
 \label{fig:iess_masa_salarial_sgo}
 \centering
-\includegraphics[scale=1]{graficos/iess_masa_salarial_sgo_ini.pdf}
+\includegraphics[scale=1]{graficos/iess_masa_salarial_sgo_ini.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -236,7 +236,7 @@ Elaborado: DAIE}
 \caption{Distribución por sexo del salario declarado de los afiliados del SGO en el \Sexpr{REP$corte}}
 \label{fig:iess_pir_masa_salarial}
 \centering
-\includegraphics[scale=1]{graficos/iess_pir_masa_salarial_sgo.pdf}
+\includegraphics[scale=1]{graficos/iess_pir_masa_salarial_sgo.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -400,7 +400,7 @@ COVID - 19.
 \caption{Evolución de la masa salarial anual del TNRH en el período 2015–\Sexpr{REP$corte} }
 \label{fig:iess_masa_salarial_tnrh_jefe}
 \centering
-\includegraphics[scale=1]{graficos/iess_masa_salarial_tnrh_ini.pdf}
+\includegraphics[scale=1]{graficos/iess_masa_salarial_tnrh_ini.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -415,7 +415,7 @@ ambos sexos.
 \caption{Distribución por sexo del salario declarado de los afiliados TNRH del \Sexpr{REP$corte}}
 \label{fig:iess_pir_masa_salarial_tnrh}
 \centering
-\includegraphics[scale=1]{graficos/iess_pir_masa_salarial_tnrh.pdf}
+\includegraphics[scale=1]{graficos/iess_pir_masa_salarial_tnrh.png}
 \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 Elaborado: DAIE}
 \end{figure}
@@ -556,7 +556,7 @@ Elaborado: DAIE}
 % \caption{Porcentaje de afiliados activos e inactivos del SGO ambos sexos}
 % \label{fig:iess_jefes_act_inact}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_act_inact.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_act_inact.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -585,7 +585,7 @@ Elaborado: DAIE}
 % \caption{Afiliados activos hombres por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_male_riesgo}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo.pdf}
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -594,7 +594,7 @@ Elaborado: DAIE}
 % \caption{Afiliados activos hombres por edad, número de años de imposiciones y tipo de riesgo}
 % \label{fig:iess_jef_male_edad_riesgo}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -607,7 +607,7 @@ Elaborado: DAIE}
 % \caption{Afiliados activos hombres por número de años de imposiciones}
 % \label{fig:iess_jefe_male_num_cotiz}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -616,7 +616,7 @@ Elaborado: DAIE}
 % \caption{Afiliadas activas mujeres por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_female_riesgo}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo.pdf}
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -631,7 +631,7 @@ Elaborado: DAIE}
 % \caption{Afiliadas activas mujeres por edad, número de años de imposiciones y tipo de riesgo}
 % \label{fig:iess_jef_female_edad_riesgo}
 % \centering
-% \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_edad_riesgo.pdf}
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_edad_riesgo.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -640,7 +640,7 @@ Elaborado: DAIE}
 % \caption{Afiliadas activas mujeres por número de años de imposiciones}
 % \label{fig:iess_jefe_female_num_cotiz}
 % \centering
-% \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_num_cotiz.pdf}
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_sgo_fem_num_cotiz.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -659,7 +659,7 @@ Elaborado: DAIE}
 % \caption{Afiliados inactivos hombres por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_male_riesgo_inac}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_mas_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -672,7 +672,7 @@ Elaborado: DAIE}
 % \caption{Afiliados inactivos hombres por edad, número de años de imposiciones y tipo de riesgo}
 % \label{fig:iess_afi_male_edad_riesgo_inac}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_edad_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -685,7 +685,7 @@ Elaborado: DAIE}
 % \caption{Afiliados inactivos hombres por número de años de imposiciones}
 % \label{fig:iess_dis_male_num_cotiz_inac}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_mas_num_cotiz_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -699,7 +699,7 @@ Elaborado: DAIE}
 % \caption{Afiliadas inactivas mujeres por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_female_riesgo_inac}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_sgo_fem_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -709,7 +709,7 @@ Elaborado: DAIE}
 % de riesgo}
 % \label{fig:iess_jef_female_edad_riesgo_inac}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_edad_riesgo_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_edad_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -725,7 +725,7 @@ Elaborado: DAIE}
 % \caption{Afiliadas inactivas mujeres por número \\ de años de imposiciones}
 % \label{fig:iess_jefe_female_num_cotiz_inac}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_num_cotiz_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_sgo_fem_num_cotiz_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -761,7 +761,7 @@ Elaborado: DAIE}
 % \caption{Porcentaje de afiliados activos e inactivos bajo la modalidad de TNRH por sexo}
 % \label{fig:iess_jefes_act_inact_tnrh}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_act_inact.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_act_inact.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -780,7 +780,7 @@ Elaborado: DAIE}
 % \caption{Hombres afiliados al TNRH que están activos por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_male_riesgo_tnrh}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo.pdf}
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -790,7 +790,7 @@ Elaborado: DAIE}
 % tipo de riesgo}
 % \label{fig:iess_jef_male_edad_riesgo_tnrh}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_edad_riesgo.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_edad_riesgo.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -802,7 +802,7 @@ Elaborado: DAIE}
 % \caption{Hombres afiliados al TNRH que están activos por número de años de imposiciones}
 % \label{fig:iess_jefe_male_num_cotiz_tnrh}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -811,7 +811,7 @@ Elaborado: DAIE}
 % \caption{Mujeres afiliados al TNRH que están activas por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_female_riesgo}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo.pdf}
+% \includegraphics[scale=1]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -827,7 +827,7 @@ Elaborado: DAIE}
 % \caption{Mujeres afiliadas al TNRH que están activas por edad, número de años de imposiciones y tipo de riesgo}
 % \label{fig:iess_jef_female_edad_riesgo_tnrh}
 % \centering
-% \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -837,7 +837,7 @@ Elaborado: DAIE}
 % \caption{Mujeres afiliadas al TNRH que están activas por número de años de imposiciones}
 % \label{fig:iess_jefe_female_num_cotiz_tnrh}
 % \centering
-% \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_num_cotiz.pdf}
+% \includegraphics[scale=0.95]{graficos/iess_afiliados_tnrh_fem_num_cotiz.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -856,7 +856,7 @@ Elaborado: DAIE}
 % \caption{Hombres afiliados al TNRH que están inactivos por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_male_riesgo_inac}
 % \centering
-% \includegraphics[scale=0.8]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo_inac.pdf}
+% \includegraphics[scale=0.8]{graficos/iess_pastel_afiliados_tnrh_mas_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -866,7 +866,7 @@ Elaborado: DAIE}
 % tipo de riesgo}
 % \label{fig:iess_jef_male_edad_riesgo_inac}
 % \centering
-% \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_mas_edad_riesgo_inac.pdf}
+% \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_mas_edad_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -882,7 +882,7 @@ Elaborado: DAIE}
 % \caption{Hombres afiliados al TNRH que están inactivos por número de años de imposiciones}
 % \label{fig:iess_jefe_male_num_cotiz_inac}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_mas_num_cotiz_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -891,7 +891,7 @@ Elaborado: DAIE}
 % \caption{Mujeres afiliadas al TNRH que están inactivas por tipo de riesgo}
 % \label{fig:iess_pastel_jefes_female_riesgo_inac}
 % \centering
-% \includegraphics[scale=0.85]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo_inac.pdf}
+% \includegraphics[scale=0.85]{graficos/iess_pastel_afiliados_tnrh_fem_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -907,7 +907,7 @@ Elaborado: DAIE}
 % tipo de riesgo}
 % \label{fig:iess_jef_female_edad_riesgo_inac_tnrh}
 % \centering
-% \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.pdf}
+% \includegraphics[scale=0.9]{graficos/iess_afiliados_tnrh_fem_edad_riesgo_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -916,7 +916,7 @@ Elaborado: DAIE}
 % \caption{Mujeres afiliadas al TNRH que están inactivas por número \\ de años de imposiciones}
 % \label{fig:iess_jefe_female_num_cotiz_inac_tnrh}
 % \centering
-% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_fem_num_cotiz_inac.pdf}
+% \includegraphics[scale=1]{graficos/iess_afiliados_tnrh_fem_num_cotiz_inac.png}
 % \caption*{\scriptsize Fuente: Bases de datos de las planillas de la DNAC \\
 % Elaborado: DAIE}
 % \end{figure}
@@ -987,7 +987,7 @@ Se registra 1.477 recicladores de base con 65 años o más, la totalidad no ha c
   \caption{Distribución por edad y sexo de la población de recicladores de base}
   \label{fig:IESS_rec_pir_porc_edad_sexo}
   \centering
-  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_porc_edad_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_porc_edad_sexo.png}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
     \textbf{Elaborado:} DAIE}
 \end{figure}
@@ -1088,7 +1088,7 @@ En la figura \ref{fig:IESS_rec_pir_edad_sal_prom} se presentan los ingresos prom
   \caption{Ingreso promedio de reciclaje por edad y sexo de la población de recicladores de base}
   \label{fig:IESS_rec_pir_edad_sal_prom}
   \centering
-  \includegraphics[ scale = 0.95 ]{graficos/IESS_rec_pir_edad_sal_prom.pdf}
+  \includegraphics[ scale = 0.95 ]{graficos/IESS_rec_pir_edad_sal_prom.png}
   \caption*{\scriptsize \textbf{Fuente:} Censo de recicladores de base del MIES \\
     \textbf{Elaborado:} DAIE}
 \end{figure}
@@ -1217,7 +1217,7 @@ La población no afiliada a la fecha de corte a los diferentes regímenes de seg
   \caption{Distribución por edad y sexo de los recicladores afiliados}
   \label{fig:IESS_rec_pir_afiliados_sexo}
   \centering
-  \includegraphics[ scale = 1.1 ]{graficos/IESS_rec_pir_afiliados_sexo.pdf}
+  \includegraphics[ scale = 1.1 ]{graficos/IESS_rec_pir_afiliados_sexo.png}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
     \textbf{Elaborado:} DAIE}
 \end{figure}
@@ -1317,7 +1317,7 @@ Se evidencia que la mayoría de los recicladores de base cuentan con una instruc
   \caption{Distribución por instrucción y sexo de la población de recicladores de base}
   \label{fig:IESS_rec_pir_instr_sexo}
   \centering
-  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_instr_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_instr_sexo.png}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
     \textbf{Elaborado:} DAIE}
 \end{figure}
@@ -1329,7 +1329,7 @@ En la tabla \ref{tab:iess_rec_prov_sexo} y en la figura \ref{fig:IESS_rec_pir_pr
   \caption{Distribución por provincia y sexo de la población de recicladores de base}
   \label{fig:IESS_rec_pir_prov_sexo}
   \centering
-  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_prov_sexo.pdf}
+  \includegraphics[ scale = 1 ]{graficos/IESS_rec_pir_prov_sexo.png}
   \caption*{\scriptsize \textbf{Fuente:}  Censo de recicladores de base del MIES \\
     \textbf{Elaborado:} DAIE}
 \end{figure}

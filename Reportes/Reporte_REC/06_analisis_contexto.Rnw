@@ -75,7 +75,7 @@ El Ecuador registró la inflación acumulada más alta de su historia en el año
 \centering
 \caption{Evolución histórica del índice de precios al consumidor e inflación acumulada}
 \label{fig:iess_inflacion}
-\includegraphics[scale=1.2]{graficos/iess_inflacion.pdf}
+\includegraphics[scale=1.2]{graficos/iess_inflacion.png}
 \caption*{\scriptsize {\bf Fuente:} Instituto Nacional de Estadísticas y Censos \\
             {\bf Elaborado:} DAIE}
 \end{figure}
@@ -92,7 +92,7 @@ Por otro lado, la evolución histórica del subempleo \footnote{Subempleados: Pe
 \centering
 \caption{Serie histórica del Salario Básico Unificado}
 \label{fig:iess_desempleo}
-\includegraphics[scale=1.2]{graficos/iess_desempleo.pdf}
+\includegraphics[scale=1.2]{graficos/iess_desempleo.png}
 \caption*{\scriptsize Fuente: INEC \\
   Elaborado: DAIE}
 \end{figure}
@@ -193,7 +193,7 @@ Elaborado: DAIE}
 \centering
 \caption{Serie histórica del Salario Básico Unificado}
 \label{fig:iess_sbu}
-\includegraphics[scale=1]{graficos/iess_sbu.pdf}
+\includegraphics[scale=1]{graficos/iess_sbu.png}
 \caption*{\scriptsize {\bf Fuente:} Ministerio de Relaciones Laborales \\
   {\bf Elaborado:} DAIE}
 \end{figure}
@@ -208,7 +208,7 @@ Los ingresos por aportes que recibe el IESS es un porcentaje fijo de la materia 
 \centering
 \caption{Evolución histórica del salario promedio de los cotizantes al SGO}
 \label{fig:iess_salarios}
-\includegraphics[scale=1]{graficos/iess_salarios_evo.pdf}
+\includegraphics[scale=1]{graficos/iess_salarios_evo.png}
 \caption*{\scriptsize Fuente: Planillas de la DNAC - IESS \\
   Elaborado: DAIE}
 \end{figure}
@@ -305,7 +305,7 @@ Elaborado: DAIE}
 \centering
 \caption{Evolución histórica del crecimiento real del PIB del Ecuador}
 \label{fig:iess_pib_real}
-\includegraphics[scale=1.2]{graficos/iess_pib_real.pdf}
+\includegraphics[scale=1.2]{graficos/iess_pib_real.png}
 \caption*{\scriptsize Fuente: Banco Mundial. \\
   Elaborado: DAIE}
 \end{figure}

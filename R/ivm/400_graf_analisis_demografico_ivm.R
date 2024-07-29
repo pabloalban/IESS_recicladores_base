@@ -35,7 +35,8 @@ iess_pob_afi_ini_sgo <- ggplot( data = aux ) +
                 'Total Afiliados' = parametros$iess_total ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
-  plt_theme_legend +
+  theme_bw( ) +
+  plt_theme +
   labs( x = 'Año', y = 'Afiliados' ) +
   theme( axis.text.x = element_text( angle = 90, hjust = 1, vjust = 0.5 ),
          legend.text = element_text( colour = 'black' ) )
@@ -71,7 +72,7 @@ iess_pob_afi_ini_tnrh <- ggplot( data = aux ) +
                 'Total Afiliados' = parametros$iess_total ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
-  plt_theme_legend +
+  plt_theme +
   labs( x = 'Año', y = 'Afiliados' ) +
   theme( axis.text.x = element_text( angle = 90, hjust = 1, vjust = 0.5 ),
          legend.text = element_text( colour = 'black' ) )
@@ -107,7 +108,7 @@ iess_pir_afiliados <-  ggplot( data = aux ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   coord_flip() +
-  plt_theme_legend +
+  plt_theme +
   guides( fill = guide_legend( title = NULL, label.position = 'right', label.hjust = 0 ) ) +
   scale_fill_manual( breaks = c( 'H', 'M' ), 
                      labels = c( 'Hombres', 'Mujeres' ), 
@@ -146,7 +147,7 @@ iess_pir_afiliados_tnrh <- ggplot( data = aux ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   coord_flip() +
-  plt_theme_legend +
+  plt_theme +
   guides( fill = guide_legend( title = NULL, label.position = 'right', label.hjust = 0 ) ) +
   scale_fill_manual( breaks = c( 'H', 'M' ), 
                      labels = c( 'Hombres', 'Mujeres' ), 
@@ -182,7 +183,7 @@ iess_masa_salarial_ini <- ggplot( data = aux ) +
                        values = c( parametros$col_male, parametros$col_female, parametros$iess_green ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
-  plt_theme_legend +
+  plt_theme +
   labs( x = 'Año', y = 'Masa Salarial ( millones )' ) +
   theme( axis.text.x = element_text( angle = 90, hjust = 1 ) )
 
@@ -216,7 +217,7 @@ iess_masa_salarial_ini <- ggplot( data = aux ) +
                        values = c( parametros$col_male, parametros$col_female, parametros$iess_green ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
-  plt_theme_legend +
+  plt_theme +
   labs( x = 'Año', y = 'Masa Salarial ( millones )' ) +
   theme( axis.text.x = element_text( angle = 90, hjust = 1 ) )
 
@@ -245,7 +246,7 @@ iess_pir_masa_salarial <- ggplot( data = aux ) +
   ylab( 'Porcentaje por grupo' ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   coord_flip() +
-  plt_theme_legend +
+  plt_theme +
   guides( fill = guide_legend( title = NULL, label.position = 'right', label.hjust = 0 ) ) +
   scale_fill_manual( breaks = c( 'H', 'M' ), 
                      labels = c( 'Hombres', 'Mujeres' ), 
@@ -276,7 +277,7 @@ iess_pir_masa_salarial <- ggplot( data = aux ) +
   ylab( 'Porcentaje por grupo' ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   coord_flip() +
-  plt_theme_legend +
+  plt_theme +
   guides( fill = guide_legend( title = NULL, label.position = 'right', label.hjust = 0 ) ) +
   scale_fill_manual( breaks = c( 'H', 'M' ), 
                      labels = c( 'Hombres', 'Mujeres' ), 
@@ -388,7 +389,7 @@ iess_afi_female_edad_riesgo <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -432,7 +433,7 @@ iess_afi_male_edad_riesgo <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -476,7 +477,7 @@ iess_afi_female_edad_riesgo <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -521,7 +522,7 @@ iess_afi_male_edad_riesgo <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -895,7 +896,7 @@ iess_jef_female_edad_riesgo_inac <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -939,7 +940,7 @@ iess_jef_male_edad_riesgo_inac <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -983,7 +984,7 @@ iess_jef_female_edad_riesgo_inac <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -1027,7 +1028,7 @@ iess_jef_male_edad_riesgo_inac <- ggplot( df2, aes( x = s , y = -x ) ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   labs( x = 'Imposiciones en años', y = 'Edad' ) +
   guides( size = F ) +
-  plt_theme_legend +
+  plt_theme +
   theme( legend.position = c( 0.7, 0.85 ), legend.direction = 'vertical',
          legend.key.size = unit( 0.2, 'cm' ), legend.text = element_text( size = 7 ) ) +
   theme( axis.text.x = element_text( angle = 0 , vjust = 1 ) ) +
@@ -1093,7 +1094,7 @@ iess_pension_ssc_male <- ggplot( male_pen ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
   labs( x = NULL, y = NULL, fill = NULL ) +
-  plt_theme_legend +
+  plt_theme +
   theme( axis.text.x = element_text( angle = 0, hjust = 0.5 ) ) +
   theme( legend.position = 'bottom' ) +
   theme( legend.key.size = unit( 0.5, 'cm' ) ) +
@@ -1144,7 +1145,7 @@ iess_pension_ssc_female <- ggplot( female_pen ) +
   scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
   scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
   labs( x = NULL, y = NULL, fill = NULL ) +
-  plt_theme_legend +
+  plt_theme +
   theme( axis.text.x = element_text( angle = 0, hjust = 0.5 ) ) +
   theme( legend.position = 'bottom' ) +
   theme( legend.key.size = unit( 0.5, 'cm' ) ) +
@@ -1242,7 +1243,7 @@ for ( i in 1:length( tipos ) ) {
     scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
     scale_x_continuous( breaks = x_brk, labels = x_lbl, limits = x_lim ) +
     coord_flip() +
-    plt_theme_legend +
+    plt_theme +
     guides( fill = guide_legend( title = NULL, label.position = 'right', label.hjust = 0, label.vjust = 0.5 ) ) +
     scale_fill_manual( values = c( parametros$iess_blue, parametros$iess_green ),
                        labels = c( 'Hombres', 'Mujeres' ) )
@@ -1318,7 +1319,7 @@ for ( i in 1:length( tipos ) ) {
     ylab( 'Porcentaje por grupo' ) +
     scale_y_continuous( breaks = y_brk, labels = y_lbl, limits = y_lim ) +
     coord_flip() +
-    plt_theme_legend +
+    plt_theme +
     guides( fill = guide_legend( title = NULL, label.position = 'right', label.hjust = 0 ) ) +
     scale_fill_manual( breaks = c( 'H', 'M' ), 
                        labels = c( 'Hombres', 'Mujeres' ), 
