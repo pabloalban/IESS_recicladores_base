@@ -392,7 +392,7 @@ Elaborado: DAIE}
 
 Se observa un  crecimiento de la masa salarial en el período 2015 - \Sexpr{REP$corte}, con una tasa 
 promedio anual del \Sexpr{REP$masa_salarial_cre_prom}\%. Para el \Sexpr{REP$corte}, se evidencia 
-que existe un crecimiento del \Sexpr{REP$masa_salarial_cre }\% con respecto al año 2019, es notable 
+que existe un crecimiento del \Sexpr{REP$masa_salarial_cre}\% con respecto al año 2019, es notable 
 que la variación del ingreso anual de esta población afiliada no se vio afectada por la pandemia 
 COVID - 19.
 
@@ -424,8 +424,7 @@ En la tabla \ref{tab:iess_tnrh_imp_sal} se presenta la cantidad de afiliados al 
 clasificados por edad, tiempo de aportes en años y el valor promedio del sueldo sobre el que se
 aporta.  En esta matriz se puede evidenciar que, aunque este régimen especial entró en vigencia a 
 partir del 2015, existen personas con aportes superiores a los 10 años, debido a que existen afiliados
-de este régimen quienes acreditan aportes anteriores al año 2015, posiblemente en calidad de afiliados 
-voluntarios. 
+de este régimen quienes acreditan aportes anteriores al año 2015, posiblemente en calidad de trabajadores autónomos, sin relación de dependencia y afiliados voluntarios. 
 Se evidencia además que más del 50\% de la población afiliada está comprendida entre 26 y 45 años de 
 edad y que el 44,27\% representa a la población que tiene entre 0 y 5 años de  aportes y el 55,67\%  
 entre 5 y 10 años aportados.

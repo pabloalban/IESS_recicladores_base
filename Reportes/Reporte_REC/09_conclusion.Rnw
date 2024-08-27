@@ -31,7 +31,55 @@ Del presente estudio se obtienen las siguientes conclusiones:
 
 \item De la totalidad de 9.728 recicladores base, 1.218(12,52\%) recicladores expresan tener algún porcentaje de discapacidad, de los cuales 435 (4,47\%) tienen carné de discapacidad, 282 (64\%) hombres y 153 mujeres (35\%). Además, 97,70\% de ellos registra una discapacidad mayor al 30\%; es decir 425 recicladores deberían recibir el bono de discapacidad del MIES.
 
-\item Debido a la situación crítica que afronta el Seguro de IVM y Seguro de Salud del IESS, la prima de aportación actual no garantiza la sostenibilidad de estos dos seguros. Por lo tanto, la prima de 17,60\% para los afiliados del régimen voluntario no es suficiente y es necesario subir a 23,50\%, de conformidad a los estudios actuariales.
+\item De acuerdo con la \legalcite{ResIESS_CD515}, de fecha 30 de marzo de 2016, el trabajador autónomo, sin relación de dependencia, aporta el 17,6\% de su base de aportación, la cual se distribuye de la siguiente manera:
+
+{\setlength{\tabcolsep}{7pt}
+{\fontsize{11}{13}\selectfont
+\begin{longtable}[H]{lrrr}
+  \caption{Tasas de aportación vigentes para afiliados autónomo, sin relación de dependencia}
+\label{tab:iess_tasas_legal} \\
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{3}{c}{Tasa de aportación} \\
+ \cline{2-4}
+ &
+\multicolumn{1}{c}{Personal} &
+\multicolumn{1}{c}{Patronal} &
+\multicolumn{1}{c}{Total} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} \\
+\midrule
+\endfirsthead
+
+\toprule
+\multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
+\multicolumn{3}{c}{Tasa de aportación} \\
+ \cline{2-3}
+ &
+\multicolumn{1}{c}{Personal} &
+\multicolumn{1}{c}{Patronal} &
+\multicolumn{1}{c}{Total} \\
+ &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} &
+\multicolumn{1}{c}{(\%)} \\
+	\midrule
+\endhead
+
+\bottomrule \multicolumn{3}{c}{continúa...} \\
+\endfoot
+%\hline
+\caption*{ \scriptsize Fuente: Valuaciones Actuariales, con corte 31/12/2020\\
+Elaborado: DAIE}
+\endlastfoot
+  \input{tablas/iess_tasas_legal.tex}
+\end{longtable}
+}
+}
+
+Debido a la situación crítica que afronta el Seguro de IVM y Seguro de Salud del IESS, la prima de aportación actual no garantiza la sostenibilidad de estos dos seguros. Por lo tanto, la prima de 17,60\% para los trabajadores autónomos, sin relación de dependencia, no es suficiente y es necesario subir a 23,50\%. Para futuras reformas en la tasa de contribución al IESS establecidas en la \legalcite{ResIESS_CD515}, se debe contar con estudios actuariales independientes, contratados por el IESS, según lo estipula el artículo 15 de la \legalcite{LeySS}.
 
 \item En el caso de que se determine una base de aportación menor a un SBU para los recicladores de base, existiría una clara distorsión, puesto que recibirían una pensión mayor a la base de aportación, debido a que las pensiones mínimas del IESS están en porcentajes al SBU de acuerdo con el artículo 234 de la Ley de Seguridad Social. Por ejemplo, en el caso de que un reciclador de base aportará sobre el 50\% del SBU (USD 212,50 en 2022) por 22 años, su pensión mínima sería el 60\% del SBU (USD 255), aplicando el artículo 234 de la Ley de Seguridad Social, esto implica que se entregarían beneficios sin el debido financiamiento, contraviniendo el artículo 233 de la Ley 2001-55 de Seguridad Social. 
 
@@ -53,6 +101,7 @@ Sobre la base del análisis efectuado y los resultados obtenidos en el presente 
 \item El MIES debe entregar bonos de vejez a los 1.477 recicladores de base que tienen 65 años o más, debido a que casi la totalidad nunca han aportado al IESS.
 
 \item El MIES debe estudiar los casos de los 1.218 recicladores de base que dicen tener algún porcentaje de discapacidad y entregar un bono por discapacidad a los 425 recicladores que poseen carné de discapacidad mayor al 30\%.
+
 % \item Es necesario que las autoridades tanto del IESS como del MIESS, definan primero el aporte y luego que seguro sería el encargado de ofrecer el beneficio acorde con el aporte y su financiamiento.
 \end{enumerate}
 
@@ -60,7 +109,7 @@ Sobre la base del análisis efectuado y los resultados obtenidos en el presente 
 %Quito, 29 de enero de 2024 \\
 
 %\vspace{2cm}
-\newpage
+%\newpage
 Atentamente,
 \vspace{4cm}
 %--------------------------------------------------------------------------------------------------

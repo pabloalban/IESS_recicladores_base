@@ -5,6 +5,12 @@ load( paste0( parametros$RData, "MIESS_censo_recicladores.RData" ) )
 load( paste0( parametros$RData, 'MIESS_censo_recicladores_ajustado.RData' ) )
 message( "\tEstadísticas descriptivas" )
 
+censo_miess <- censo_miess %>% 
+  mutate( caracteristica_social_afiliado = if_else( 
+    caracteristica_social_afiliado == 'IESS, Seguro Voluntario',
+    'IESS, Afiliado trabajador autónomo',
+    caracteristica_social_afiliado ) )
+
 #1.Número de recicladores por edad y sexo-----------------------------------------------------------
 
 cortes_edad <- c( 7, 18, 24, 64, 105 )
@@ -310,7 +316,7 @@ afiliados_sexo <- censo_miess %>%
   dplyr::select( sexo_reciclador, caracteristica_social_afiliado, afiliados ) %>% 
   mutate( caracteristica_social_afiliado = factor( caracteristica_social_afiliado,
                                                    levels = c( 'IESS, Seguro General',
-                                                               'IESS, Seguro Voluntario',
+                                                               'IESS, Afiliado trabajador autónomo',
                                                                'Ninguno',
                                                                'Seguro Campesino',
                                                                'Seguro de salud privado con hospitalización',
@@ -326,11 +332,11 @@ afiliados_sexo <- censo_miess %>%
   mutate_at(  c( 2:ncol( . ) ), as.numeric ) %>%
   mutate(porcentaje_mujeres = mujer * 100 / total[10],
          porcentaje_hombres = hombre * 100 / total[10],
-         porc = total * 100 / total[10]) %>%
+         porc = total * 100 / total[10] ) %>%
   dplyr::select( caracteristica_social_afiliado,
                  mujer, porcentaje_mujeres, 
                  hombre, porcentaje_hombres,
-                 total, porc)
+                 total, porc )
 
 ##5.1. Número de personas que estuvieron afiliadas---------------------------------------------------
 
@@ -343,7 +349,7 @@ afiliados_antiguos_sexo <- censo_miess %>%
   mutate( caracteristica_social_estuvo_afiliado = factor( caracteristica_social_estuvo_afiliado,
                                                           levels = c( 'Aseguramiento Universal de la Salud',
                                                                       'IESS, Seguro General',  
-                                                                      'IESS, Seguro Voluntario',
+                                                                      'IESS, Afiliado trabajador autónomo',
                                                                       'Ninguno',
                                                                       'Seguro Campesino',
                                                                       'Seguro de salud privado con hospitalización',

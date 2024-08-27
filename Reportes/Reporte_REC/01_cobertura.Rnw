@@ -39,10 +39,10 @@ Instituto Ecuatoriano de Seguridad Social}}}}}
 \vspace{0.5cm}
 \hspace*{7cm}{\color{iess_green}{\rule{11cm}{1pt}}}
 
-\vspace{5cm}
+\vspace{4cm}
 
 \vspace{1.3cm}
-\hspace*{7cm}{\fontsize{15}{18}{\bfseries{\selectfont{\textcolor{iess_blue}{Quito - Ecuador, julio de 2024 }}}}}
+\hspace*{6cm}{\fontsize{15}{18}{\bfseries{\selectfont{\textcolor{iess_blue}{Quito - Ecuador, agosto de 2024}}}}}
 \normalfont
 \clearpage
 

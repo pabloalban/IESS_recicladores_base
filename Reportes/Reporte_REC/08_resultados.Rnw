@@ -5,12 +5,13 @@ En este capítulo se presentan los resultados de las valuaciones actuariales, co
 
 Las valuaciones actuariales de los seguros administrados por el IESS, con fecha de corte 31 de diciembre de 2020 se encuentran publicados en la página web del IESS \url{https://www.iess.gob.ec/es/web/guest/estudios-actuariales-2020}.
 %---------------------------------------------------------------------------------------------------
-\section{Tasa de aportación vigentes para afiliados voluntarios}
-De acuerdo con la \legalcite{ResIESS_CD515}, los afiliados al Seguro Voluntario del IESS aportarán el 17,6\% de su base de aportación que no podrá ser menor a un salario básico unificado. Es decir, el afiliado voluntario aporta a todos los seguros del IESS, con excepción al Seguro de Cesantía General y Adicional, y Seguro de Desempleo. Durante el año 2022, el aporte mensual con la base de aportación mínima permitida en la Ley fue de USD 74,80. En la tabla \ref{tab:iess_tasas_legal}, se detalla la distribución de la prima de aportación al Seguro Voluntario del IESS.
+\section{Tasa de aportación vigentes para afiliados autónomos, sin relación de dependencia}
+De acuerdo con la \legalcite{ResIESS_CD515}, el trabajador autónomo, sin relación de dependencia, aportará el 17,6\% de su base de aportación que no podrá ser menor a un salario básico unificado. Es decir, el afiliado autónomo aporta a todos los seguros del IESS, con excepción al Seguro de Cesantía General y Adicional, y Seguro de Desempleo. Durante el año 2022, el aporte mensual con la base de aportación mínima permitida en la Ley fue de USD 74,80. En la tabla \ref{tab:iess_tasas_legal}, se detalla la distribución de la prima de aportación de los trabajadores autónomos, sin relación de dependencia, al IESS.
+
 {\setlength{\tabcolsep}{7pt}
 {\fontsize{11}{13}\selectfont
 \begin{longtable}[H]{lrrr}
-  \caption{Tasas de aportación vigentes para afiliados voluntarios}
+  \caption{Tasas de aportación vigentes para afiliados autónomo, sin relación de dependencia}
 \label{tab:iess_tasas_legal} \\
 \toprule
 \multicolumn{1}{c}{\multirow{3}[2]{*}{Seguro:}}  &
@@ -240,7 +241,7 @@ Elaborado: DAIE}
 
 \subsection{Prima suficiente}
 
-Debido a la situación crítica que afronta el Seguro de IVM y Seguro de Salud la prima actual no garantiza la sostenibilidad de estos dos seguros. Por lo tanto, la prima de 17,60\% para los afiliados del régimen voluntario no es suficiente y es necesario subir a 23,50\%; es decir, no sería suficiente el aporte de USD 79,48 en el 2022, sino USD 99,88, que 2.948 (30,30\%) recicladores tienen ingresos menores que USD 90.
+Debido a la situación crítica que afronta el Seguro de IVM y Seguro de Salud la prima actual no garantiza la sostenibilidad de estos dos seguros. Por lo tanto, la prima de 17,60\% para los trabajadores autónomos, sin relación de dependencia, no es suficiente y es necesario subir a 23,50\%; es decir, no sería suficiente el aporte de USD 79,48 en el 2022, sino USD 99,88, que 2.948 (30,30\%) recicladores tienen ingresos menores que USD 90.
 
 {\setlength{\tabcolsep}{4pt}
 {\fontsize{10}{13}\selectfont
